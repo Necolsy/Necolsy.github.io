@@ -23,21 +23,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/journey/";
           },
-        },{id: "nav-travel",
-          title: "travel",
-          description: "Planning the route, then following the landscape.",
+        },{id: "nav-interests",
+          title: "interests",
+          description: "Travel, games, and creative work beyond research.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/travel/";
+            window.location.href = "/interests/";
           },
-        },{id: "news-presented-physics-informed-large-language-models-for-hvac-anomaly-detection-as-an-oral-contribution-at-the-neurips-2025-urbanai-workshop",
-          title: 'Presented Physics-Informed Large Language Models for HVAC Anomaly Detection as an oral contribution...',
-          description: "",
-          section: "News",},{id: "news-my-article-on-the-design-trade-offs-of-building-porosity-for-urban-ventilation-was-published-in-the-journal-of-wind-engineering-and-industrial-aerodynamics",
-          title: 'My article on the design trade-offs of building porosity for urban ventilation was...',
-          description: "",
-          section: "News",},{id: "news-presented-work-on-building-porosity-and-street-canyon-ventilation-at-iaqvec-2026-in-los-angeles-and-received-the-iaqvec-fellowship-for-participation-support",
-          title: 'Presented work on building porosity and street-canyon ventilation at IAQVEC 2026 in Los...',
+        },{id: "news-presented-validation-of-rans-and-les-against-wind-tunnel-measurements-for-urban-street-canyon-aerodynamics-at-indoor-air-2026-in-singapore-15-18-june-2026",
+          title: 'Presented Validation of RANS and LES Against Wind Tunnel Measurements for Urban Street...',
           description: "",
           section: "News",},{
         id: 'social-cv',
@@ -80,13 +74,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://scholar.google.com/citations?user=tbNGYBQAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
         },
       },{
       id: 'light-theme',
