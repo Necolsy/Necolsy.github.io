@@ -79,6 +79,22 @@ html[data-theme="dark"] body {
   line-height: 1.45;
 }
 
+ol.bibliography .preview {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  border: 1px solid var(--global-divider-color);
+  background: #fff;
+  object-fit: contain;
+}
+
+.paper-summary {
+  margin: 0.45rem 0 0.55rem;
+  color: var(--global-text-color-light);
+  font-size: 0.93rem;
+  line-height: 1.48;
+}
+
 @media (max-width: 640px) {
   .research-glance {
     grid-template-columns: 1fr;

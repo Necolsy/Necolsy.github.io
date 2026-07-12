@@ -186,6 +186,9 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {% if entry.summary %}
+      <p class="paper-summary">{{ entry.summary }}</p>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
