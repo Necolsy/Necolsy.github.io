@@ -36,14 +36,22 @@ Before NUS, I completed an MSc by Research in Civil and Environmental Engineerin
 ## Research Interests
 
 - **Urban ventilation and building porosity** - how openings, geometry, and density affect air exchange in street canyons.
-- **Validated CFD** - RANS and LES workflows grounded in wind-tunnel evidence and ready for real design decisions.
+- **Experiments and validated CFD** - wind-tunnel and wet-lab experience connected to RANS and LES workflows for robust, design-ready evidence.
 - **Physics-informed AI** - graph neural networks, time-series learning, surrogate models, and LLM-assisted research workflows.
 - **Data-rich environmental systems** - AI-enabled building-energy forecasting and water-treatment process prediction.
 
 <div class="research-glance" aria-label="Research at a glance">
   <div class="glance-card"><span>01</span><strong>Urban air</strong><p>Ventilation, building porosity, and street-canyon flow.</p></div>
-  <div class="glance-card"><span>02</span><strong>Validated CFD</strong><p>Wind-tunnel evidence, RANS, LES, and design-ready simulations.</p></div>
+  <div class="glance-card"><span>02</span><strong>Hands-on experiments</strong><p>Wind-tunnel measurements, water-treatment wet-lab work, and model validation.</p></div>
   <div class="glance-card"><span>03</span><strong>Physics + AI</strong><p>Surrogate models, graph learning, and scientific automation.</p></div>
 </div>
+
+## Cross-disciplinary, hands-on, and independent
+
+I am comfortable entering a new field, learning its fundamentals deeply, and connecting it to the next problem. My path has moved from civil and environmental engineering, to machine-learning-driven water-treatment research, to CFD and wind-tunnel studies of urban ventilation. At KAIST, I deliberately broadened my training through coursework in machine learning, deep learning, programming, and probability; at NUS, I built the CFD foundations needed to run simulations and interpret experiments with care. More recently, I have explored LLMs for building systems research, contributing work to a NeurIPS workshop.
+
+I value research that connects physical work with computation: water-treatment wet-lab experiments and long-term operational data, wind-tunnel measurements, RANS and LES simulations, and physics-informed AI. Across my BSc, MSc, and PhD, I have earned full scholarships and learned to work independently, take on difficult problems, and follow them through from experiment or data to a defensible result.
+
+Studying in Israel, South Korea, and Singapore has also made me adaptable across cultures and languages. I completed the Technion preparatory programme in Hebrew, learned Korean after moving to Daejeon, and still seek out unfamiliar places through travel and outdoor exploration. The same curiosity extends to games and creative work, including a CHI paper on *Spiritfarer*.
 
 For a correctly ordered overview of my academic path, please visit the [journey page]({{ '/journey/' | relative_url }}). A complete record of my work is available on the [publications page]({{ '/publications/' | relative_url }}).

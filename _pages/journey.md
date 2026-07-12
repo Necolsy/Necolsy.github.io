@@ -15,6 +15,7 @@ nav_order: 2
 Haifa, Israel | GPA: 89.3/100
 
 Studied and lived in Israel for four years. Received a full four-year scholarship and Dean's List scholarships.
+Completed the Technion preparatory programme in Hebrew before beginning the degree.
 
 ### 2020 - 2022 | KAIST
 
@@ -22,6 +23,7 @@ Studied and lived in Israel for four years. Received a full four-year scholarshi
 Daejeon, South Korea | GPA: 96.67/100
 
 Conducted research on data-rich water-treatment operations and deep learning. Received a full two-year scholarship.
+Alongside research, expanded formal training in machine learning, deep learning, programming, and probability.
 
 ### Sep. 2022 - Dec. 2022 | Berkeley Education Alliance for Research in Singapore
 
@@ -35,7 +37,7 @@ Worked on urban and building-environment research before beginning doctoral stud
 **PhD in Built Environment**<br>
 Singapore
 
-Researching urban ventilation, wind-tunnel-validated CFD, building porosity, and physics-informed AI for healthier cities.
+Researching urban ventilation, wind-tunnel-validated CFD, building porosity, and physics-informed AI for healthier cities. Developed practical CFD foundations through wind-tunnel campaigns, RANS and LES simulations, and detailed model validation.
 
 ## Recognition
 
