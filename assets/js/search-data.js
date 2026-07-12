@@ -30,7 +30,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/interests/";
           },
-        },{id: "news-presented-validation-of-rans-and-les-against-wind-tunnel-measurements-for-urban-street-canyon-aerodynamics-at-indoor-air-2026-in-singapore-15-18-june-2026",
+        },{id: "news-published-the-district-scale-thermal-infrared-dataset-in-scientific-data",
+          title: 'Published the district-scale thermal infrared dataset in Scientific Data.',
+          description: "",
+          section: "News",},{id: "news-posted-the-preprint-physics-informed-large-language-models-for-hvac-anomaly-detection-with-autonomous-rule-generation-on-arxiv",
+          title: 'Posted the preprint Physics-Informed Large Language Models for HVAC Anomaly Detection with Autonomous...',
+          description: "",
+          section: "News",},{id: "news-published-design-trade-offs-in-building-porosity-a-parametric-analysis-of-vertical-placement-and-geometry-for-urban-ventilation-in-the-journal-of-wind-engineering-and-industrial-aerodynamics",
+          title: 'Published Design trade-offs in building porosity: A parametric analysis of vertical placement and...',
+          description: "",
+          section: "News",},{id: "news-received-the-iaqvec-fellowship-for-participation-support",
+          title: 'Received the IAQVEC Fellowship for participation support.',
+          description: "",
+          section: "News",},{id: "news-presented-validation-of-rans-and-les-against-wind-tunnel-measurements-for-urban-street-canyon-aerodynamics-at-indoor-air-2026-in-singapore",
           title: 'Presented Validation of RANS and LES Against Wind Tunnel Measurements for Urban Street...',
           description: "",
           section: "News",},{
