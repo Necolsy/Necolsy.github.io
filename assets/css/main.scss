@@ -28,8 +28,8 @@ $max-content-width: {{ site.max_width }};
 /* Personal visual accents: keep al-folio's academic layout, with a quieter sense of air and landscape. */
 body {
   background:
-    radial-gradient(58rem 34rem at 100% 3%, rgba(115, 168, 184, 0.18), transparent 70%),
-    radial-gradient(36rem 24rem at 0% 48%, rgba(222, 174, 113, 0.12), transparent 72%),
+    radial-gradient(58rem 34rem at 100% 3%, rgba(115, 168, 184, 0.24), transparent 70%),
+    radial-gradient(36rem 24rem at 0% 48%, rgba(222, 174, 113, 0.2), transparent 72%),
     var(--global-bg-color);
   background-attachment: fixed;
 }
@@ -53,7 +53,7 @@ html[data-theme="dark"] body {
   padding: 1.15rem;
   border: 1px solid var(--global-divider-color);
   border-radius: 0.7rem;
-  background: color-mix(in srgb, var(--global-card-bg-color) 86%, transparent);
+  background: rgba(255, 255, 255, 0.78);
   box-shadow: 0 0.65rem 1.8rem rgba(31, 53, 61, 0.06);
 }
 
@@ -95,8 +95,105 @@ ol.bibliography .preview {
   line-height: 1.48;
 }
 
+/* A clear visual rhythm for the About page. */
+.about-panel {
+  margin: 1.5rem -1.75rem;
+  padding: 1.6rem 1.75rem;
+  border: 1px solid var(--global-divider-color);
+  border-left-width: 0.45rem;
+  border-radius: 1rem;
+}
+
+.about-panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
+
+.about-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.about-bio {
+  border-left-color: #4c92a8;
+  background: linear-gradient(118deg, rgba(194, 225, 235, 0.82), rgba(247, 252, 253, 0.88));
+}
+
+.about-research {
+  border-left-color: #c98545;
+  background: linear-gradient(118deg, rgba(253, 232, 205, 0.9), rgba(255, 250, 244, 0.9));
+}
+
+.about-strengths {
+  border-left-color: #8260a9;
+  background: linear-gradient(118deg, rgba(228, 216, 239, 0.9), rgba(248, 244, 251, 0.9));
+}
+
+.strength-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.strength-card {
+  min-height: 8.8rem;
+  padding: 1rem;
+  border: 1px solid rgba(70, 60, 80, 0.13);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.strength-card:nth-child(1) { border-top: 0.25rem solid #4c92a8; }
+.strength-card:nth-child(2) { border-top: 0.25rem solid #c98545; }
+.strength-card:nth-child(3) { border-top: 0.25rem solid #8260a9; }
+.strength-card:nth-child(4) { border-top: 0.25rem solid #598c6a; }
+
+.strength-card strong {
+  display: block;
+  margin-bottom: 0.38rem;
+  color: var(--global-text-color);
+  font-size: 1rem;
+}
+
+.strength-card p {
+  margin: 0;
+  color: var(--global-text-color-light);
+  font-size: 0.91rem;
+  line-height: 1.46;
+}
+
+.about-links {
+  margin: 1.8rem 0 0.8rem;
+  text-align: center;
+}
+
+html[data-theme="dark"] .about-bio {
+  background: linear-gradient(118deg, rgba(31, 82, 101, 0.5), rgba(31, 33, 36, 0.9));
+}
+
+html[data-theme="dark"] .about-research {
+  background: linear-gradient(118deg, rgba(109, 66, 32, 0.45), rgba(31, 33, 36, 0.9));
+}
+
+html[data-theme="dark"] .about-strengths {
+  background: linear-gradient(118deg, rgba(77, 55, 104, 0.55), rgba(31, 33, 36, 0.9));
+}
+
+html[data-theme="dark"] .glance-card,
+html[data-theme="dark"] .strength-card {
+  background: rgba(39, 41, 45, 0.86);
+}
+
 @media (max-width: 640px) {
+  .about-panel {
+    margin: 1.2rem 0;
+    padding: 1.25rem;
+  }
+
   .research-glance {
+    grid-template-columns: 1fr;
+  }
+
+  .strength-grid {
     grid-template-columns: 1fr;
   }
 
