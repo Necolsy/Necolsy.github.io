@@ -1,9 +1,9 @@
 ---
 layout: post
-date: 2026-05-01
-date_display: May 2026
+date: 2026-05-18
+date_display: 18-22 May 2026
 inline: true
 related_posts: false
 ---
 
-Received the **IAQVEC Fellowship** for participation support.
+Presented **Aerodynamic response and ventilation enhancement in urban street canyons through building porosity** at **IAQVEC 2026** in Los Angeles and received the **IAQVEC Fellowship**.

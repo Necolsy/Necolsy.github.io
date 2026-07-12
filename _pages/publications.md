@@ -15,11 +15,11 @@ nav_order: 1
 
 <div class="publications">
 
-## First-author publications
+<h2>First-author publications</h2>
 
 {% bibliography --query @*[first_author=true]* %}
 
-## Co-authored publications
+<h2>Co-authored publications</h2>
 
 Papers on which I contributed as a co-author.
 

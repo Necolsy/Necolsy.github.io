@@ -74,14 +74,15 @@ html[data-theme="dark"] body {
 
 .glance-card p {
   margin: 0;
-  color: var(--global-text-color-light);
-  font-size: 0.9rem;
+  color: var(--global-text-color);
+  font-size: 0.98rem;
   line-height: 1.45;
 }
 
 ol.bibliography .preview {
   display: block;
   width: 100%;
+  max-width: 205px;
   margin-top: 0.35rem;
   border: 1px solid var(--global-divider-color);
   background: #fff;
@@ -90,9 +91,25 @@ ol.bibliography .preview {
 
 .paper-summary {
   margin: 0.45rem 0 0.55rem;
-  color: var(--global-text-color-light);
-  font-size: 0.93rem;
+  color: var(--global-text-color);
+  font-size: 1.03rem;
   line-height: 1.48;
+}
+
+ol.bibliography .periodical {
+  color: var(--global-text-color);
+  font-size: 1rem;
+}
+
+.profile .more-info {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.profile .more-info p {
+  display: block;
+  margin: 0.25rem 0;
 }
 
 /* A clear visual rhythm for the About page. */
@@ -113,6 +130,11 @@ ol.bibliography .preview {
   margin-bottom: 0;
 }
 
+.about-panel,
+.about-links {
+  font-size: 1.04rem;
+}
+
 .about-bio {
   border-left-color: #4c92a8;
   background: linear-gradient(118deg, rgba(194, 225, 235, 0.82), rgba(247, 252, 253, 0.88));
@@ -126,6 +148,49 @@ ol.bibliography .preview {
 .about-strengths {
   border-left-color: #8260a9;
   background: linear-gradient(118deg, rgba(228, 216, 239, 0.9), rgba(248, 244, 251, 0.9));
+}
+
+.route-band {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+  padding: 0.7rem;
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.route-stop {
+  position: relative;
+  min-height: 6.6rem;
+  padding: 0.7rem 0.75rem 0.7rem 1.05rem;
+  border-left: 0.28rem solid #4c92a8;
+}
+
+.route-stop:nth-child(2) { border-left-color: #c98545; }
+.route-stop:nth-child(3) { border-left-color: #8260a9; }
+
+.route-stop span {
+  display: block;
+  margin-bottom: 0.24rem;
+  color: var(--global-text-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.route-stop strong {
+  display: block;
+  margin-bottom: 0.18rem;
+  color: var(--global-text-color);
+  font-size: 1.03rem;
+}
+
+.route-stop p {
+  margin: 0;
+  color: var(--global-text-color);
+  font-size: 0.92rem;
+  line-height: 1.35;
 }
 
 .strength-grid {
@@ -156,8 +221,8 @@ ol.bibliography .preview {
 
 .strength-card p {
   margin: 0;
-  color: var(--global-text-color-light);
-  font-size: 0.91rem;
+  color: var(--global-text-color);
+  font-size: 0.99rem;
   line-height: 1.46;
 }
 
@@ -190,6 +255,10 @@ html[data-theme="dark"] .strength-card {
   }
 
   .research-glance {
+    grid-template-columns: 1fr;
+  }
+
+  .route-band {
     grid-template-columns: 1fr;
   }
 

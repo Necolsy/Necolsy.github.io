@@ -31,6 +31,11 @@ latest_posts:
   <h2>Short Bio</h2>
   <p>I am a PhD candidate in the Department of Built Environment at the <strong>National University of Singapore (NUS)</strong>. My work combines wind-tunnel experiments, computational fluid dynamics (CFD), and machine learning to understand how urban form shapes ventilation, heat, and pedestrian-level environmental quality.</p>
   <p>Before NUS, I completed an MSc by Research in Civil and Environmental Engineering at <strong>KAIST</strong> in South Korea and a BSc in Civil and Environmental Engineering at the <strong>Technion - Israel Institute of Technology</strong>. I have also worked as a Senior Research Engineer at the Berkeley Education Alliance for Research in Singapore.</p>
+  <div class="route-band" aria-label="Academic route from Israel to South Korea to Singapore">
+    <div class="route-stop"><span>2016-2020</span><strong>Israel</strong><p>Civil &amp; environmental engineering</p></div>
+    <div class="route-stop"><span>2020-2022</span><strong>South Korea</strong><p>Water, data, and machine learning</p></div>
+    <div class="route-stop"><span>2023-now</span><strong>Singapore</strong><p>Wind tunnels, CFD, and urban air</p></div>
+  </div>
 </section>
 
 <section class="about-panel about-research">
@@ -49,12 +54,12 @@ latest_posts:
 </section>
 
 <section class="about-panel about-strengths">
-  <h2>What I bring to a research team</h2>
+  <h2>Curious, adaptive, and self-directed</h2>
   <div class="strength-grid">
-    <article class="strength-card"><strong>Hands-on to computational</strong><p>Comfortable moving between water-treatment wet-lab experiments, long-term operational data, wind-tunnel measurements, RANS/LES simulations, and AI models.</p></article>
-    <article class="strength-card"><strong>Learn fast, then go deep</strong><p>Trained first in civil and environmental engineering, then in ML, deep learning, programming, and probability before building strong CFD fundamentals and exploring LLMs for building systems.</p></article>
-    <article class="strength-card"><strong>Independence and resilience</strong><p>I funded my international education through full scholarships across my BSc, MSc, and PhD, developing the self-direction to take on difficult problems and carry them through.</p></article>
-    <article class="strength-card"><strong>Cross-cultural curiosity</strong><p>Study and life in Israel, South Korea, and Singapore taught me to adapt across cultures and languages - from the Technion preparatory programme in Hebrew to learning Korean in Daejeon.</p></article>
+    <article class="strength-card"><strong>Hands-on thinker</strong><p>I enjoy moving between water-treatment wet-lab experiments, long-term operational data, wind-tunnel measurements, RANS/LES simulations, and AI models.</p></article>
+    <article class="strength-card"><strong>Learn fast, then go deep</strong><p>I have moved from civil and environmental engineering into ML, deep learning, programming, probability, CFD, and now LLMs - always taking time to build the fundamentals.</p></article>
+    <article class="strength-card"><strong>Independent and resilient</strong><p>I funded my international education through full scholarships across my BSc, MSc, and PhD, and I am comfortable taking ownership of difficult problems from start to finish.</p></article>
+    <article class="strength-card"><strong>Open to the unfamiliar</strong><p>Life in Israel, South Korea, and Singapore taught me to adapt across cultures and languages - from the Technion preparatory programme in Hebrew to learning Korean in Daejeon.</p></article>
   </div>
 </section>
 
