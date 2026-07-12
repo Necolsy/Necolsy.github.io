@@ -9,9 +9,7 @@ profile:
   image: subin-lin-beach.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Singapore</p>
-    <p><a href="https://scholar.google.com/citations?user=tbNGYBQAAAAJ&hl=en">Google Scholar</a></p>
-    <p><a href="https://www.linkedin.com/in/subin-lin-81710b211/">LinkedIn</a></p>
+    <div>Singapore<br><a href="https://scholar.google.com/citations?user=tbNGYBQAAAAJ&hl=en">Google Scholar</a><br><a href="https://www.linkedin.com/in/subin-lin-81710b211/">LinkedIn</a></div>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
