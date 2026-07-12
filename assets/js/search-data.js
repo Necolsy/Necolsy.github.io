@@ -30,17 +30,17 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/interests/";
           },
-        },{id: "news-published-the-district-scale-thermal-infrared-dataset-in-scientific-data",
-          title: 'Published the district-scale thermal infrared dataset in Scientific Data.',
+        },{id: "news-attended-cobee-2025-the-6th-international-conference-on-building-energy-and-environment-in-eindhoven-the-netherlands",
+          title: 'Attended COBEE 2025 - the 6th International Conference on Building Energy and Environment...',
           description: "",
-          section: "News",},{id: "news-posted-the-preprint-physics-informed-large-language-models-for-hvac-anomaly-detection-with-autonomous-rule-generation-on-arxiv",
-          title: 'Posted the preprint Physics-Informed Large Language Models for HVAC Anomaly Detection with Autonomous...',
+          section: "News",},{id: "news-physics-informed-large-language-models-for-hvac-anomaly-detection-with-autonomous-rule-generation-was-selected-as-an-oral-contribution-at-the-neurips-2025-urbanai-workshop",
+          title: 'Physics-Informed Large Language Models for HVAC Anomaly Detection with Autonomous Rule Generation was...',
           description: "",
           section: "News",},{id: "news-published-design-trade-offs-in-building-porosity-a-parametric-analysis-of-vertical-placement-and-geometry-for-urban-ventilation-in-the-journal-of-wind-engineering-and-industrial-aerodynamics",
           title: 'Published Design trade-offs in building porosity: A parametric analysis of vertical placement and...',
           description: "",
-          section: "News",},{id: "news-received-the-iaqvec-fellowship-for-participation-support",
-          title: 'Received the IAQVEC Fellowship for participation support.',
+          section: "News",},{id: "news-presented-aerodynamic-response-and-ventilation-enhancement-in-urban-street-canyons-through-building-porosity-at-iaqvec-2026-in-los-angeles-and-received-the-iaqvec-fellowship",
+          title: 'Presented Aerodynamic response and ventilation enhancement in urban street canyons through building porosity...',
           description: "",
           section: "News",},{id: "news-presented-validation-of-rans-and-les-against-wind-tunnel-measurements-for-urban-street-canyon-aerodynamics-at-indoor-air-2026-in-singapore",
           title: 'Presented Validation of RANS and LES Against Wind Tunnel Measurements for Urban Street...',
@@ -87,30 +87,4 @@ ninja.data = [{
         handler: () => {
           window.open("https://scholar.google.com/citations?user=tbNGYBQAAAAJ", "_blank");
         },
-      },{
-      id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("light");
-      },
-    },
-    {
-      id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("dark");
-      },
-    },
-    {
-      id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("system");
-      },
-    },];
+      },];
