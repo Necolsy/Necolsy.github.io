@@ -6,7 +6,7 @@ subtitle: PhD Candidate in Built Environment, National University of Singapore
 
 profile:
   align: right
-  image: subin-lin-paradise.png
+  image: subin-lin-beach.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Singapore</p>
