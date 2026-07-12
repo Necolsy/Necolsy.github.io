@@ -18,7 +18,7 @@ icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name 
 
 url: https://necolsy.github.io
 baseurl: # the site is served from the root of this GitHub Pages domain
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # display the most recent site update in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
