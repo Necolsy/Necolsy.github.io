@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-06-01
+date: 2026-06-15
 inline: true
 related_posts: false
 ---
 
-Presented work on building porosity and street-canyon ventilation at **IAQVEC 2026** in Los Angeles, and received the IAQVEC Fellowship for participation support.
+Presented **Validation of RANS and LES Against Wind Tunnel Measurements for Urban Street Canyon Aerodynamics** at **Indoor Air 2026** in Singapore (15–18 June 2026).

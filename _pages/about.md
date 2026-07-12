@@ -6,7 +6,7 @@ subtitle: PhD Candidate in Built Environment, National University of Singapore
 
 profile:
   align: right
-  image: subin-lin-beach.jpg
+  image: subin-lin-paradise.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Singapore</p>
@@ -39,5 +39,11 @@ Before NUS, I completed an MSc by Research in Civil and Environmental Engineerin
 - **Validated CFD** - RANS and LES workflows grounded in wind-tunnel evidence and ready for real design decisions.
 - **Physics-informed AI** - graph neural networks, time-series learning, surrogate models, and LLM-assisted research workflows.
 - **Data-rich environmental systems** - AI-enabled building-energy forecasting and water-treatment process prediction.
+
+<div class="research-glance" aria-label="Research at a glance">
+  <div class="glance-card"><span>01</span><strong>Urban air</strong><p>Ventilation, building porosity, and street-canyon flow.</p></div>
+  <div class="glance-card"><span>02</span><strong>Validated CFD</strong><p>Wind-tunnel evidence, RANS, LES, and design-ready simulations.</p></div>
+  <div class="glance-card"><span>03</span><strong>Physics + AI</strong><p>Surrogate models, graph learning, and scientific automation.</p></div>
+</div>
 
 For a correctly ordered overview of my academic path, please visit the [journey page]({{ '/journey/' | relative_url }}). A complete record of my work is available on the [publications page]({{ '/publications/' | relative_url }}).

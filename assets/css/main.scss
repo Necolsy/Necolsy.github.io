@@ -24,3 +24,71 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+/* Personal visual accents: keep al-folio's academic layout, with a quieter sense of air and landscape. */
+body {
+  background:
+    radial-gradient(58rem 34rem at 100% 3%, rgba(115, 168, 184, 0.18), transparent 70%),
+    radial-gradient(36rem 24rem at 0% 48%, rgba(222, 174, 113, 0.12), transparent 72%),
+    var(--global-bg-color);
+  background-attachment: fixed;
+}
+
+html[data-theme="dark"] body {
+  background:
+    radial-gradient(52rem 30rem at 100% 3%, rgba(31, 91, 110, 0.28), transparent 70%),
+    radial-gradient(32rem 24rem at 0% 48%, rgba(111, 76, 45, 0.2), transparent 72%),
+    var(--global-bg-color);
+}
+
+.research-glance {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 2rem 0 1.6rem;
+}
+
+.glance-card {
+  min-height: 10.5rem;
+  padding: 1.15rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.7rem;
+  background: color-mix(in srgb, var(--global-card-bg-color) 86%, transparent);
+  box-shadow: 0 0.65rem 1.8rem rgba(31, 53, 61, 0.06);
+}
+
+.glance-card span {
+  display: block;
+  margin-bottom: 1.6rem;
+  color: var(--global-theme-color);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.glance-card strong {
+  display: block;
+  margin-bottom: 0.42rem;
+  font-size: 1.05rem;
+}
+
+.glance-card p {
+  margin: 0;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 640px) {
+  .research-glance {
+    grid-template-columns: 1fr;
+  }
+
+  .glance-card {
+    min-height: auto;
+  }
+
+  .glance-card span {
+    margin-bottom: 0.7rem;
+  }
+}
