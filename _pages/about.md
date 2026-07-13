@@ -3,6 +3,7 @@ layout: about
 title: About
 permalink: /
 subtitle: PhD Candidate in Built Environment, National University of Singapore
+about_animation: true
 
 profile:
   align: right
@@ -24,6 +25,17 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
+<section class="about-motion-intro" aria-labelledby="about-manifesto">
+  <div class="about-motion-intro__orb about-motion-intro__orb--one" aria-hidden="true"></div>
+  <div class="about-motion-intro__orb about-motion-intro__orb--two" aria-hidden="true"></div>
+  <p class="about-motion-intro__label">RESEARCHER &middot; MAKER &middot; EXPLORER</p>
+  <h2 id="about-manifesto">Observe. Model. <em>Move forward.</em></h2>
+  <p class="about-motion-intro__manifesto">I take difficult questions across experiments, simulations, data, and new places - then learn what it takes to answer them.</p>
+  <div class="about-motion-intro__signals" aria-label="Key research practices">
+    <span>Wind tunnels</span><span>CFD</span><span>Machine learning</span><span>Open horizons</span>
+  </div>
+</section>
 
 <section class="about-panel about-bio">
   <h2>Short Bio</h2>

@@ -330,3 +330,7 @@
 {% if site.newsletter.enabled %}
   <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
+
+{% if page.about_animation %}
+  <script defer src="{{ '/assets/js/about-motion.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}
