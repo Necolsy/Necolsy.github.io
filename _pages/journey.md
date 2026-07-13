@@ -75,7 +75,7 @@ nav_order: 2
       <h2>National University of Singapore</h2>
       <p class="journey-degree">PhD in Built Environment</p>
       <p class="journey-location">Singapore</p>
-      <p>Researching urban ventilation, wind-tunnel-validated CFD, building porosity, and physics-informed AI for healthier cities. Built practical CFD foundations through wind-tunnel campaigns, RANS and LES simulations, and detailed model validation.</p>
+      <p>Researching urban ventilation, wind-tunnel-validated CFD, building porosity, and physics-informed AI for healthier cities. Built practical CFD foundations by conducting wind-tunnel experiments, running RANS and LES simulations, and carrying out detailed model validation.</p>
       <div class="journey-tags"><span>Full scholarship</span><span>Wind tunnel + CFD</span><span>Physics-informed AI</span></div>
     </div>
   </article>
@@ -85,16 +85,16 @@ nav_order: 2
   <article class="journey-mini-card">
     <p class="journey-kicker">RECOGNITION</p>
     <ul>
-      <li><strong>2026</strong> IAQVEC Fellowship, Participation Support</li>
-      <li><strong>2022</strong> A*STAR Merit Award (AMA, SINGA)</li>
-      <li><strong>2021</strong> Third Prize, AI &amp; Big Data Hackathon, Daewoong Foundation</li>
+      <li><strong>2026</strong> <mark class="journey-highlight journey-highlight--award">IAQVEC Fellowship</mark>, Participation Support</li>
+      <li><strong>2022</strong> <mark class="journey-highlight journey-highlight--award">A*STAR Merit Award</mark> (AMA, SINGA)</li>
+      <li><strong>2021</strong> <mark class="journey-highlight journey-highlight--award">Third Prize</mark>, AI &amp; Big Data Hackathon, Daewoong Foundation</li>
     </ul>
   </article>
   <article class="journey-mini-card">
     <p class="journey-kicker">TEACHING</p>
     <ul>
-      <li><strong>2026</strong> TA, BCA-GMAAP CFD Modelling for Naturally Ventilated Buildings</li>
-      <li><strong>2024</strong> TA, BPS5112 Green Building Integration and Evaluation Studio, NUS</li>
+      <li><strong>2026</strong> TA, <mark class="journey-highlight journey-highlight--teaching">BCA-GMAAP CFD Modelling for Naturally Ventilated Buildings</mark></li>
+      <li><strong>2024</strong> TA, <mark class="journey-highlight journey-highlight--teaching">BPS5112 Green Building Integration and Evaluation Studio</mark>, NUS</li>
     </ul>
   </article>
 </section>
