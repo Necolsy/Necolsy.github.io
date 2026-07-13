@@ -40,7 +40,7 @@ latest_posts:
 <section class="about-panel about-bio">
   <h2>Short Bio</h2>
   <p>I am a PhD candidate in the Department of Built Environment at the <strong>National University of Singapore (NUS)</strong>. My work combines wind-tunnel experiments, computational fluid dynamics (CFD), and machine learning to understand how urban form shapes ventilation, heat, and pedestrian-level environmental quality.</p>
-  <p>Before NUS, I completed an MSc by Research in Civil and Environmental Engineering at <strong>KAIST</strong> in South Korea and a BSc in Civil and Environmental Engineering at the <strong>Technion - Israel Institute of Technology</strong>. I have also worked as a Senior Research Engineer at the Berkeley Education Alliance for Research in Singapore.</p>
+  <p>Before NUS, I completed an MSc by Research in Civil and Environmental Engineering at <strong>KAIST</strong> in South Korea and a BSc in Civil and Environmental Engineering at the <strong>Technion - Israel Institute of Technology</strong>. I have also worked as a Senior Research Engineer at the <strong>Berkeley Education Alliance for Research in Singapore</strong>.</p>
   <div class="route-band" aria-label="Academic route from Israel to South Korea to Singapore">
     <div class="route-stop"><span>2016-2020</span><strong>Israel</strong><p>Civil &amp; environmental engineering</p></div>
     <div class="route-stop"><span>2020-2022</span><strong>South Korea</strong><p>Water, data, and machine learning</p></div>

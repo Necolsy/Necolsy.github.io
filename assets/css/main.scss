@@ -49,6 +49,11 @@ body {
   animation: ambient-drift 32s ease-in-out infinite;
 }
 
+strong,
+b {
+  font-weight: 800;
+}
+
 body::before {
   position: fixed;
   z-index: 0;
