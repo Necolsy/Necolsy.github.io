@@ -27,8 +27,8 @@ nav_order: 2
       <h2>Technion - Israel Institute of Technology</h2>
       <p class="journey-degree">BSc in Civil and Environmental Engineering</p>
       <p class="journey-location">Haifa, Israel &middot; GPA 89.3/100</p>
-      <p>Studied and lived in Israel for four years on a full scholarship. Completed the Technion preparatory programme in Hebrew before beginning the degree, and received Dean's List scholarships.</p>
-      <div class="journey-tags"><span>Full scholarship</span><span>Hebrew preparatory programme</span></div>
+      <p>Studied and lived in Israel for four years on a full scholarship. Built broad civil-engineering foundations through coursework in construction materials, environmental engineering, transportation, structural mechanics, and related core subjects, while receiving Dean's List scholarships.</p>
+      <div class="journey-tags"><span>Full scholarship</span><span>Civil engineering foundations</span></div>
     </div>
   </article>
 
@@ -43,8 +43,8 @@ nav_order: 2
       <h2>KAIST</h2>
       <p class="journey-degree">MSc by Research in Civil and Environmental Engineering</p>
       <p class="journey-location">Daejeon, South Korea &middot; GPA 96.67/100</p>
-      <p>Researched data-rich water-treatment operations and deep learning while expanding formal training in machine learning, deep learning, programming, and probability.</p>
-      <div class="journey-tags"><span>Full scholarship</span><span>Water + AI</span></div>
+      <p>Worked at the intersection of water treatment, AI, and data science, using operational treatment-plant data and deep learning while expanding formal training in machine learning, programming, and probability.</p>
+      <div class="journey-tags"><span>Full scholarship</span><span>Water treatment + AI</span><span>Data science</span></div>
     </div>
   </article>
 
