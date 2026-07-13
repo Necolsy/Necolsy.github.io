@@ -4,27 +4,27 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-publications",
-          title: "publications",
+          title: "Publications",
           description: "Journal articles, conference papers, and workshop publications in urban environmental science, AI, and human-computer interaction.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-academic-journey",
-          title: "academic journey",
+          title: "Academic Journey",
           description: "A chronological path through Israel, South Korea, and Singapore.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/journey/";
           },
         },{id: "nav-interests",
-          title: "interests",
+          title: "Interests",
           description: "Travel, games, and creative work beyond research.",
           section: "Navigation",
           handler: () => {
