@@ -1645,17 +1645,6 @@ body.about-motion-ready .strength-card.about-card-reveal.is-visible:active {
 .diagram-pipeline span:nth-child(2) { color: #8f5c33; background: #fbefd9; }
 .diagram-pipeline span:nth-child(3) { color: #5f4a84; background: #eee8f5; }
 
-/* A zoomed publication preview must sit above the entire page and stay opaque. */
-.medium-zoom-overlay {
-  z-index: 2200 !important;
-  background: rgba(13, 39, 51, 0.94) !important;
-}
-
-.medium-zoom-image--opened {
-  z-index: 2201 !important;
-  background: #fff !important;
-  box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.42);
-}
 
 body.about-motion-ready .about-word {
   display: inline-block;
