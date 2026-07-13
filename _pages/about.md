@@ -60,21 +60,23 @@ latest_posts:
     <div class="glance-card glance-card--urban">
       <div class="research-diagram research-diagram--urban" aria-hidden="true">
         <div class="diagram-building diagram-building--left"></div><div class="diagram-building diagram-building--right"></div>
+        <div class="diagram-city-road"><div class="diagram-city-car"></div></div>
         <div class="diagram-flow diagram-flow--one"></div><div class="diagram-flow diagram-flow--two"></div><div class="diagram-flow diagram-flow--three"></div>
+        <span class="diagram-caption diagram-caption--wind">WIND</span><span class="diagram-caption diagram-caption--street">STREET</span>
       </div>
       <span>01</span><strong>Urban air</strong><p>Ventilation, building porosity, and street-canyon flow.</p>
     </div>
     <div class="glance-card glance-card--experiment">
       <div class="research-diagram research-diagram--experiment" aria-hidden="true">
-        <div class="diagram-tunnel-wall diagram-tunnel-wall--left"></div><div class="diagram-tunnel-wall diagram-tunnel-wall--right"></div>
-        <div class="diagram-stream diagram-stream--one"></div><div class="diagram-stream diagram-stream--two"></div><div class="diagram-probe"></div><div class="diagram-particle diagram-particle--one"></div><div class="diagram-particle diagram-particle--two"></div>
+        <div class="diagram-tunnel-shell"><div class="diagram-tunnel-fan"></div><div class="diagram-test-model"></div><div class="diagram-probe"></div></div>
+        <span class="diagram-caption diagram-caption--fan">FAN</span><span class="diagram-caption diagram-caption--model">MODEL</span><span class="diagram-caption diagram-caption--probe">SENSOR</span>
       </div>
       <span>02</span><strong>Hands-on experiments</strong><p>Wind-tunnel measurements, water-treatment wet-lab work, and model validation.</p>
     </div>
     <div class="glance-card glance-card--ai">
       <div class="research-diagram research-diagram--ai" aria-hidden="true">
-        <div class="diagram-connection diagram-connection--one"></div><div class="diagram-connection diagram-connection--two"></div><div class="diagram-connection diagram-connection--three"></div><div class="diagram-connection diagram-connection--four"></div>
-        <div class="diagram-node diagram-node--one"></div><div class="diagram-node diagram-node--two"></div><div class="diagram-node diagram-node--three"></div><div class="diagram-node diagram-node--four"></div><div class="diagram-node diagram-node--five"></div>
+        <div class="diagram-monitor"><div class="diagram-monitor__city"></div><div class="diagram-monitor__field"></div></div>
+        <div class="diagram-pipeline"><span>DATA</span><span>PHYSICS</span><span>AI</span></div>
       </div>
       <span>03</span><strong>Physics + AI</strong><p>Surrogate models, graph learning, and scientific automation.</p>
     </div>

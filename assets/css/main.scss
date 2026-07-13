@@ -1413,6 +1413,250 @@ body.about-motion-ready .strength-card.about-card-reveal.is-visible:active {
 .diagram-connection--three { top: 44%; left: 50%; width: 25%; transform: rotate(-31deg); }
 .diagram-connection--four { top: 51%; left: 51%; width: 23%; transform: rotate(29deg); }
 
+/* Clearer visual stories for the research cards. */
+.research-diagram {
+  height: 7.3rem;
+  background: linear-gradient(180deg, #dcedee 0%, #f6f0e4 100%);
+}
+
+.research-diagram::after { display: none; }
+
+.diagram-city-road {
+  position: absolute;
+  right: 9%;
+  bottom: 0.55rem;
+  left: 9%;
+  height: 0.85rem;
+  border-radius: 0.12rem;
+  background: #344e5b;
+  box-shadow: inset 0 0.32rem 0 #eef0e8;
+}
+
+.diagram-city-road::before {
+  position: absolute;
+  top: 0.59rem;
+  right: 10%;
+  left: 10%;
+  height: 1px;
+  content: "";
+  background: repeating-linear-gradient(90deg, #edcb71 0 0.75rem, transparent 0.75rem 1.25rem);
+}
+
+.diagram-city-car {
+  position: absolute;
+  bottom: 0.27rem;
+  left: 45%;
+  width: 1.15rem;
+  height: 0.33rem;
+  border-radius: 0.18rem 0.18rem 0.09rem 0.09rem;
+  background: #ce8749;
+}
+
+.diagram-city-car::before,
+.diagram-city-car::after {
+  position: absolute;
+  bottom: -0.12rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  content: "";
+  border-radius: 50%;
+  background: #1f3139;
+}
+
+.diagram-city-car::before { left: 0.18rem; }
+.diagram-city-car::after { right: 0.18rem; }
+
+.diagram-caption {
+  position: absolute;
+  z-index: 4;
+  color: #315667;
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.diagram-caption--wind { top: 0.52rem; left: 0.65rem; color: #a86738; }
+.diagram-caption--street { right: 0.62rem; bottom: 0.14rem; color: #e5e6df; }
+
+.research-diagram--experiment {
+  background: linear-gradient(180deg, #d7e9e8, #eff5ee);
+}
+
+.diagram-tunnel-shell {
+  position: absolute;
+  top: 1.2rem;
+  right: 0.85rem;
+  bottom: 1.45rem;
+  left: 0.85rem;
+  overflow: hidden;
+  border: 3px solid #3b6878;
+  border-radius: 0.45rem;
+  background: rgba(255, 255, 255, 0.38);
+  box-shadow: inset 0 0 0 0.28rem rgba(255, 255, 255, 0.35);
+}
+
+.diagram-tunnel-shell::before {
+  position: absolute;
+  top: 35%;
+  left: 2.9rem;
+  width: calc(100% - 3.7rem);
+  height: 28%;
+  content: "";
+  border-top: 2px dotted #4c92a8;
+  border-bottom: 2px dotted #4c92a8;
+}
+
+.diagram-tunnel-fan {
+  position: absolute;
+  top: 50%;
+  left: 0.47rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border: 0.22rem solid #244f61;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #7c62a3, #d9a14a, #7c62a3, #d9a14a, #7c62a3);
+  transform: translateY(-50%);
+}
+
+.diagram-tunnel-fan::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.35rem;
+  height: 0.35rem;
+  content: "";
+  border-radius: 50%;
+  background: #f7f3e8;
+  transform: translate(-50%, -50%);
+}
+
+.diagram-test-model {
+  position: absolute;
+  bottom: 0;
+  left: 54%;
+  width: 1.6rem;
+  height: 2.45rem;
+  border-radius: 0.14rem 0.14rem 0 0;
+  background: linear-gradient(90deg, #c78346 0 72%, #8e5e36 72%);
+  box-shadow: 1.85rem 0 0 -0.2rem #4c92a8;
+}
+
+.diagram-tunnel-shell .diagram-probe {
+  top: -0.25rem;
+  bottom: auto;
+  left: 65%;
+  width: 2px;
+  height: 2.5rem;
+  background: #76599e;
+  box-shadow: none;
+}
+
+.diagram-tunnel-shell .diagram-probe::after {
+  top: 2.2rem;
+  left: -0.28rem;
+  width: 0.62rem;
+  height: 0.62rem;
+  background: #76599e;
+}
+
+.diagram-caption--fan { bottom: 0.4rem; left: 1.05rem; }
+.diagram-caption--model { bottom: 0.4rem; left: 51%; }
+.diagram-caption--probe { top: 0.45rem; right: 18%; color: #76599e; }
+
+.research-diagram--ai {
+  background: linear-gradient(145deg, #ebeff6, #e9f3ef);
+}
+
+.diagram-monitor {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.9rem;
+  width: 48%;
+  height: 5.3rem;
+  overflow: hidden;
+  border: 0.25rem solid #284b5a;
+  border-radius: 0.42rem;
+  background: #173949;
+  box-shadow: 0 0.35rem 0 #94a9ae;
+}
+
+.diagram-monitor::after {
+  position: absolute;
+  right: 0.38rem;
+  bottom: 0.28rem;
+  color: rgba(255, 255, 255, 0.83);
+  content: "CFD";
+  font-size: 0.5rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.diagram-monitor__city {
+  position: absolute;
+  right: 15%;
+  bottom: 0.55rem;
+  left: 13%;
+  height: 44%;
+  background: linear-gradient(90deg, #52a5b2 0 24%, transparent 24% 33%, #e7a24b 33% 58%, transparent 58% 66%, #7b64a2 66%);
+  clip-path: polygon(0 38%, 21% 38%, 21% 0, 41% 0, 41% 54%, 61% 54%, 61% 19%, 81% 19%, 81% 42%, 100% 42%, 100% 100%, 0 100%);
+}
+
+.diagram-monitor__field {
+  position: absolute;
+  inset: 0.55rem 0.5rem 0.65rem;
+  opacity: 0.5;
+  background-image: linear-gradient(rgba(137, 217, 222, 0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(137, 217, 222, 0.6) 1px, transparent 1px);
+  background-size: 0.7rem 0.7rem;
+}
+
+.diagram-pipeline {
+  position: absolute;
+  top: 1.2rem;
+  right: 0.82rem;
+  width: 38%;
+  display: grid;
+  gap: 0.38rem;
+}
+
+.diagram-pipeline span {
+  position: relative;
+  padding: 0.33rem 0.38rem;
+  border: 1px solid rgba(70, 111, 129, 0.25);
+  border-radius: 0.28rem;
+  color: #315667;
+  background: rgba(255, 255, 255, 0.76);
+  font-size: 0.52rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.diagram-pipeline span:not(:last-child)::after {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: -0.39rem;
+  width: 1px;
+  height: 0.32rem;
+  content: "";
+  background: #6d96a3;
+}
+
+.diagram-pipeline span:nth-child(2) { color: #8f5c33; background: #fbefd9; }
+.diagram-pipeline span:nth-child(3) { color: #5f4a84; background: #eee8f5; }
+
+/* A zoomed publication preview must sit above the entire page and stay opaque. */
+.medium-zoom-overlay {
+  z-index: 2200 !important;
+  background: rgba(13, 39, 51, 0.94) !important;
+}
+
+.medium-zoom-image--opened {
+  z-index: 2201 !important;
+  background: #fff !important;
+  box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.42);
+}
+
 body.about-motion-ready .about-word {
   display: inline-block;
   opacity: 0;
@@ -1494,7 +1738,7 @@ html[data-theme="dark"] .strength-card {
   .about-motion-intro__signals { margin-top: 1.15rem; }
   .about-motion-intro__signals span { font-size: 0.71rem; }
   .route-band::before { display: none; }
-  .research-diagram { height: 5.8rem; }
+  .research-diagram { height: 6.8rem; }
 
   .post-header {
     padding-right: 0;
