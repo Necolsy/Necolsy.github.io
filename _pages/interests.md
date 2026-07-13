@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /interests/
-title: interests
+title: Interests
 description: Travel, games, and creative work beyond research.
 nav: true
 nav_order: 3

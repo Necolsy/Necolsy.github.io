@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: Journal articles, conference papers, and workshop publications in urban environmental science, AI, and human-computer interaction.
 nav: true
 nav_order: 1
