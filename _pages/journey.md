@@ -59,8 +59,8 @@ nav_order: 2
       <h2>Berkeley Education Alliance for Research in Singapore</h2>
       <p class="journey-degree">Senior Research Engineer</p>
       <p class="journey-location">Singapore</p>
-      <p>Worked on urban and building-environment research before beginning doctoral study, connecting environmental data with the built environment.</p>
-      <div class="journey-tags"><span>Green buildings</span><span>Research engineering</span></div>
+      <p>Supported an infrared thermography field campaign, including thermal-camera data collection, image preprocessing, data-quality checks, Python analysis workflows, and manuscript preparation for built-environment sensing research.</p>
+      <div class="journey-tags"><span>Infrared thermography</span><span>Image preprocessing</span><span>Python analysis</span></div>
     </div>
   </article>
 
