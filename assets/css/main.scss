@@ -25,13 +25,77 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
-/* Personal visual accents: keep al-folio's academic layout, with a quieter sense of air and landscape. */
+/* Site-wide atmosphere: a quiet, research-led version of the layered backgrounds
+   used by contemporary motion portfolios. It intentionally extends beyond the
+   content column, so every page has visual depth rather than white side margins. */
+html {
+  background: #edf3f4;
+}
+
 body {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
   background:
-    radial-gradient(58rem 34rem at 100% 3%, rgba(115, 168, 184, 0.24), transparent 70%),
-    radial-gradient(36rem 24rem at 0% 48%, rgba(222, 174, 113, 0.2), transparent 72%),
-    var(--global-bg-color);
+    radial-gradient(48rem 38rem at -13% 6%, rgba(91, 159, 181, 0.48), transparent 68%),
+    radial-gradient(46rem 34rem at 110% 11%, rgba(216, 173, 111, 0.34), transparent 70%),
+    radial-gradient(50rem 40rem at 108% 90%, rgba(147, 120, 184, 0.36), transparent 70%),
+    linear-gradient(118deg, #e8f3f5 0%, #fbfaf5 48%, #f0ebf7 100%);
   background-attachment: fixed;
+  background-size: 108% 108%, 112% 112%, 112% 112%, 100% 100%;
+  animation: ambient-drift 32s ease-in-out infinite;
+}
+
+body::before {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  opacity: 0.46;
+  background-image:
+    linear-gradient(rgba(74, 132, 151, 0.13) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(74, 132, 151, 0.13) 1px, transparent 1px);
+  background-size: 4.5rem 4.5rem;
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, transparent 28%, transparent 72%, #000 100%);
+  mask-image: linear-gradient(90deg, #000 0%, transparent 28%, transparent 72%, #000 100%);
+}
+
+body > header,
+body > [role="main"],
+body > footer {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes ambient-drift {
+  0%,
+  100% {
+    background-position: 0 0, 0 0, 0 0, 0 0;
+  }
+
+  50% {
+    background-position: 3vw -1vw, -3vw 2vw, 2vw -2vw, 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
+}
+
+[role="main"] {
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(74, 132, 151, 0.12);
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 0 4rem rgba(59, 80, 94, 0.035);
+}
+
+.post-header {
+  padding: 1.3rem 1.45rem 0.85rem;
+  border-bottom: 1px solid rgba(74, 132, 151, 0.16);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0));
 }
 
 html[data-theme="dark"] body {
