@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Candidate in Built Environment, National University of Singapore
+subtitle: PhD Candidate at NUS · Graduating January 2027 · Seeking Postdoctoral and R&D Roles
 about_animation: true
 
 profile:
@@ -11,11 +11,10 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <div class="profile-summary">
-      <strong>Singapore</strong>
-      <span>PhD candidate at NUS</span>
-      <span>Expected completion: Dec 2026</span>
-      <span>Available: Dec 2026 / Jan 2027</span>
-      <span>Open to postdoctoral and R&amp;D roles</span>
+      <strong>Subin Lin</strong>
+      <span>PhD Candidate, National University of Singapore</span>
+      <span>Urban CFD · Experimental Fluid Mechanics · Environmental AI</span>
+      <span class="profile-summary__status">Graduating January 2027 · Open to opportunities</span>
       <div class="profile-summary__links">
         <a href="https://scholar.google.com/citations?user=tbNGYBQAAAAJ&hl=en">Google Scholar</a>
         <a href="https://www.linkedin.com/in/subin-lin-81710b211/">LinkedIn</a>
@@ -38,14 +37,29 @@ latest_posts:
 ---
 
 <section class="about-motion-intro" aria-labelledby="about-manifesto">
-  <div class="about-motion-intro__orb about-motion-intro__orb--one" aria-hidden="true"></div>
-  <div class="about-motion-intro__orb about-motion-intro__orb--two" aria-hidden="true"></div>
-  <p class="about-motion-intro__label">EXPERIMENTAL FLUID MECHANICS &middot; CFD &middot; ENVIRONMENTAL AI</p>
-  <h2 id="about-manifesto">From physical measurements to <em>predictive models.</em></h2>
-  <p class="about-motion-intro__manifesto">I am an interdisciplinary environmental engineer who connects field and wind-tunnel experiments, validated CFD, and machine learning to understand airflow, heat, and environmental systems. I have published four first-author journal articles in <strong>Water Research</strong>, the <strong>Journal of Water Process Engineering</strong>, <strong>Scientific Data</strong>, and the <strong>Journal of Wind Engineering and Industrial Aerodynamics</strong>.</p>
+  <p class="about-motion-intro__label">RESEARCH PROFILE</p>
+  <h2 id="about-manifesto">Experiments, CFD, and AI for <em>environmental systems.</em></h2>
+  <p class="about-motion-intro__manifesto">I combine field and wind-tunnel measurements, validated CFD, and machine learning to study urban airflow, heat, and environmental processes.</p>
+  <p class="about-motion-intro__availability"><strong>Graduating January 2027.</strong> Seeking postdoctoral, research scientist, and engineering opportunities in CFD, fluid mechanics, and physics-informed AI.</p>
   <div class="about-motion-intro__signals" aria-label="Key research practices">
     <span>4 first-author journal articles</span><span>Independent wind-tunnel campaign</span><span>PyTorch + CFD</span><span>Research across 3 countries</span>
   </div>
+</section>
+
+<section class="about-panel first-author-publications" aria-labelledby="first-author-publications-title">
+  <div class="publication-heading">
+    <div>
+      <p class="achievement-kicker">PUBLICATION RECORD</p>
+      <h2 id="first-author-publications-title">First-author Journal Articles</h2>
+    </div>
+    <p>Four peer-reviewed articles spanning urban aerodynamics, environmental sensing, and data-driven water treatment.</p>
+  </div>
+  <ol class="publication-list">
+    <li><span>2026</span><div><strong>Design trade-offs in building porosity: A parametric analysis of vertical placement and geometry for urban ventilation</strong><p><em>Journal of Wind Engineering and Industrial Aerodynamics</em>, 271, 106369. <a href="https://doi.org/10.1016/j.jweia.2026.106369">DOI</a></p></div></li>
+    <li><span>2023</span><div><strong>District-scale surface temperatures generated from high-resolution longitudinal thermal infrared images</strong><p><em>Scientific Data</em>, 10, 859. <a href="https://doi.org/10.1038/s41597-023-02749-0">DOI</a></p></div></li>
+    <li><span>2023</span><div><strong>Coagulant dosage determination using deep learning-based graph attention multivariate time series forecasting model</strong><p><em>Water Research</em>, 232, 119665. <a href="https://doi.org/10.1016/j.watres.2023.119665">DOI</a></p></div></li>
+    <li><span>2023</span><div><strong>Comparing artificial and deep neural network models for prediction of coagulant amount and settled water turbidity: Lessons learned from big data in water treatment operations</strong><p><em>Journal of Water Process Engineering</em>, 54, 103949. <a href="https://doi.org/10.1016/j.jwpe.2023.103949">DOI</a></p></div></li>
+  </ol>
 </section>
 
 <section class="about-panel about-achievements" aria-labelledby="achievements-title">
@@ -82,7 +96,7 @@ latest_posts:
 
 <section class="about-panel about-bio">
   <h2>About Me</h2>
-  <p>I am a PhD candidate in the Department of the Built Environment at the <strong>National University of Singapore (NUS)</strong>, expecting to graduate in December 2026. I study how urban form shapes ventilation, aerodynamic exchange, heat, and pedestrian-level environmental quality by combining independently conducted wind-tunnel experiments with RANS/LES simulation and data-driven modelling.</p>
+  <p>I am a PhD candidate in the Department of the Built Environment at the <strong>National University of Singapore (NUS)</strong>, graduating in January 2027. I study how urban form shapes ventilation, aerodynamic exchange, heat, and pedestrian-level environmental quality by combining independently conducted wind-tunnel experiments with RANS/LES simulation and data-driven modelling.</p>
   <p>My research profile is unusual in breadth but consistent in purpose: I build evidence from real measurements, turn it into reliable computational models, and use AI where it can make environmental prediction more useful. I have developed environmental time-series models in PyTorch, produced a reusable district-scale thermal-imaging dataset from field measurements, and carried a wind-tunnel campaign from model preparation and instrumentation through calibration, uncertainty analysis, and CFD validation.</p>
   <p>Before NUS, I completed an MSc by Research in Civil and Environmental Engineering at <strong>KAIST</strong> in South Korea and a BSc in Civil and Environmental Engineering at the <strong>Technion - Israel Institute of Technology</strong>. I have also worked as a Senior Research Engineer at the <strong>Berkeley Education Alliance for Research in Singapore</strong>.</p>
   <div class="route-band" aria-label="Academic route from Israel to South Korea to Singapore">
