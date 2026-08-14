@@ -1147,6 +1147,79 @@ ol.bibliography .periodical {
   backdrop-filter: blur(5px);
 }
 
+.about-achievements {
+  border-top: 0.24rem solid #315f73;
+  background: linear-gradient(180deg, rgba(235, 244, 246, 0.76), rgba(255, 255, 255, 0.97));
+}
+
+.achievement-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(15rem, 1.1fr);
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 1.25rem;
+}
+
+.achievement-heading h2 {
+  margin-bottom: 0;
+}
+
+.achievement-heading > p {
+  margin: 0 0 0.12rem;
+  color: #52666e;
+  line-height: 1.55;
+}
+
+.achievement-kicker {
+  margin: 0 0 0.28rem;
+  color: #8d5e22;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid rgba(49, 95, 115, 0.24);
+  border-left: 1px solid rgba(49, 95, 115, 0.24);
+}
+
+.achievement-item {
+  min-height: 9.2rem;
+  padding: 1.05rem 1.15rem;
+  border-right: 1px solid rgba(49, 95, 115, 0.24);
+  border-bottom: 1px solid rgba(49, 95, 115, 0.24);
+  background: rgba(255, 255, 255, 0.66);
+}
+
+.achievement-item--featured {
+  background: rgba(240, 210, 142, 0.17);
+}
+
+.achievement-item strong {
+  display: block;
+  margin: 0.25rem 0 0.35rem;
+  color: #183d4c;
+  font-size: 1.03rem;
+  line-height: 1.25;
+}
+
+.achievement-item p {
+  margin: 0;
+  color: #53646b;
+  font-size: 0.91rem;
+  line-height: 1.48;
+}
+
+.achievement-year {
+  color: #9a6a27;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
 .about-panel {
   overflow: hidden;
 }
@@ -1755,6 +1828,9 @@ html[data-theme="dark"] .strength-card {
   .about-motion-intro__orb--one { top: -10rem; right: -10rem; }
   .about-motion-intro__signals { margin-top: 1.15rem; }
   .about-motion-intro__signals span { font-size: 0.71rem; }
+  .achievement-heading { grid-template-columns: 1fr; gap: 0.45rem; }
+  .achievement-grid { grid-template-columns: 1fr; }
+  .achievement-item { min-height: 0; }
   .route-band::before { display: none; }
   .research-diagram { height: 6.8rem; }
 

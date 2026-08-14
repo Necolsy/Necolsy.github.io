@@ -29,17 +29,50 @@ latest_posts:
 <section class="about-motion-intro" aria-labelledby="about-manifesto">
   <div class="about-motion-intro__orb about-motion-intro__orb--one" aria-hidden="true"></div>
   <div class="about-motion-intro__orb about-motion-intro__orb--two" aria-hidden="true"></div>
-  <p class="about-motion-intro__label">RESEARCHER &middot; MAKER &middot; EXPLORER</p>
-  <h2 id="about-manifesto">Observe. Model. <em>Move forward.</em></h2>
-  <p class="about-motion-intro__manifesto">I take difficult questions across experiments, simulations, data, and new places - then learn what it takes to answer them.</p>
+  <p class="about-motion-intro__label">EXPERIMENTAL FLUID MECHANICS &middot; CFD &middot; ENVIRONMENTAL AI</p>
+  <h2 id="about-manifesto">From physical measurements to <em>predictive models.</em></h2>
+  <p class="about-motion-intro__manifesto">I am an interdisciplinary environmental engineer who connects field and wind-tunnel experiments, validated CFD, and machine learning to understand airflow, heat, and environmental systems. My work spans first-author research in <strong>Water Research</strong>, <strong>Scientific Data</strong>, and the <strong>Journal of Wind Engineering and Industrial Aerodynamics</strong>.</p>
   <div class="about-motion-intro__signals" aria-label="Key research practices">
-    <span>Wind tunnels</span><span>CFD</span><span>Machine learning</span><span>Open horizons</span>
+    <span>4 first-author journal articles</span><span>Independent wind-tunnel campaign</span><span>PyTorch + CFD</span><span>Research across 3 countries</span>
+  </div>
+</section>
+
+<section class="about-panel about-achievements" aria-labelledby="achievements-title">
+  <div class="achievement-heading">
+    <div>
+      <p class="achievement-kicker">RECOGNITION</p>
+      <h2 id="achievements-title">Awards &amp; Distinctions</h2>
+    </div>
+    <p>Competitive support recognising research promise, international study, and applied AI work.</p>
+  </div>
+  <div class="achievement-grid">
+    <article class="achievement-item achievement-item--featured">
+      <span class="achievement-year">2026</span>
+      <strong>IAQVEC Fellowship</strong>
+      <p>Participation Support for IAQVEC 2026 at the University of Southern California.</p>
+    </article>
+    <article class="achievement-item">
+      <span class="achievement-year">2022</span>
+      <strong>A*STAR Merit Award &amp; SINGA</strong>
+      <p>Competitive scholarship support for doctoral research at NUS.</p>
+    </article>
+    <article class="achievement-item">
+      <span class="achievement-year">2021</span>
+      <strong>Third Prize, AI &amp; Big Data Hackathon</strong>
+      <p>Awarded for a coded skin-analysis application using computer vision and deep learning.</p>
+    </article>
+    <article class="achievement-item">
+      <span class="achievement-year">2016-2022</span>
+      <strong>Full Scholarships &amp; Dean's List</strong>
+      <p>Full scholarship support at KAIST and the Technion, with Dean's List recognition.</p>
+    </article>
   </div>
 </section>
 
 <section class="about-panel about-bio">
-  <h2>Short Bio</h2>
-  <p>I am a PhD candidate in the Department of Built Environment at the <strong>National University of Singapore (NUS)</strong>. My work combines wind-tunnel experiments, computational fluid dynamics (CFD), and machine learning to understand how urban form shapes ventilation, heat, and pedestrian-level environmental quality.</p>
+  <h2>About Me</h2>
+  <p>I am a PhD candidate in the Department of the Built Environment at the <strong>National University of Singapore (NUS)</strong>, expecting to graduate in December 2026. I study how urban form shapes ventilation, aerodynamic exchange, heat, and pedestrian-level environmental quality by combining independently conducted wind-tunnel experiments with RANS/LES simulation and data-driven modelling.</p>
+  <p>My research profile is unusual in breadth but consistent in purpose: I build evidence from real measurements, turn it into reliable computational models, and use AI where it can make environmental prediction more useful. I have developed environmental time-series models in PyTorch, produced a reusable district-scale thermal-imaging dataset from field measurements, and carried a wind-tunnel campaign from model preparation and instrumentation through calibration, uncertainty analysis, and CFD validation.</p>
   <p>Before NUS, I completed an MSc by Research in Civil and Environmental Engineering at <strong>KAIST</strong> in South Korea and a BSc in Civil and Environmental Engineering at the <strong>Technion - Israel Institute of Technology</strong>. I have also worked as a Senior Research Engineer at the <strong>Berkeley Education Alliance for Research in Singapore</strong>.</p>
   <div class="route-band" aria-label="Academic route from Israel to South Korea to Singapore">
     <div class="route-stop"><span>2016-2020</span><strong>Israel</strong><p>Civil &amp; environmental engineering</p></div>
