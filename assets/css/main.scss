@@ -1814,9 +1814,36 @@ html[data-theme="dark"] .strength-card {
   }
 
   .post .profile {
+    display: grid;
+    float: none;
+    grid-template-columns: 7rem minmax(0, 1fr);
+    gap: 0.9rem;
+    align-items: center;
     width: 100%;
-    max-width: 22rem;
-    margin: 0 auto 1.6rem;
+    max-width: none;
+    margin: 0 0 1.15rem;
+    padding: 0.65rem;
+  }
+
+  .post .profile::before,
+  .post .profile::after,
+  .about-motion-intro__orb {
+    display: none;
+  }
+
+  .post .profile figure {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .post .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .post .profile .more-info {
+    margin: 0;
   }
 
   .about-motion-intro {
