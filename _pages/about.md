@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Candidate at NUS · Graduating January 2027 · Seeking Postdoctoral and R&D Roles
+subtitle: PhD Candidate in Built Environment, National University of Singapore
 about_animation: true
 
 profile:
@@ -40,7 +40,6 @@ latest_posts:
   <p class="about-motion-intro__label">RESEARCH PROFILE</p>
   <h2 id="about-manifesto">Experiments, CFD, and AI for <em>environmental systems.</em></h2>
   <p class="about-motion-intro__manifesto">I combine field and wind-tunnel measurements, validated CFD, and machine learning to study urban airflow, heat, and environmental processes.</p>
-  <p class="about-motion-intro__availability"><strong>Graduating January 2027.</strong> Seeking postdoctoral, research scientist, and engineering opportunities in CFD, fluid mechanics, and physics-informed AI.</p>
   <div class="about-motion-intro__signals" aria-label="Key research practices">
     <span>4 first-author journal articles</span><span>Independent wind-tunnel campaign</span><span>PyTorch + CFD</span><span>Research across 3 countries</span>
   </div>
@@ -96,7 +95,7 @@ latest_posts:
 
 <section class="about-panel about-bio">
   <h2>About Me</h2>
-  <p>I am a PhD candidate in the Department of the Built Environment at the <strong>National University of Singapore (NUS)</strong>, graduating in January 2027. I study how urban form shapes ventilation, aerodynamic exchange, heat, and pedestrian-level environmental quality by combining independently conducted wind-tunnel experiments with RANS/LES simulation and data-driven modelling.</p>
+  <p>I am a PhD candidate in the Department of the Built Environment at the <strong>National University of Singapore (NUS)</strong>. I study how urban form shapes ventilation, aerodynamic exchange, heat, and pedestrian-level environmental quality by combining independently conducted wind-tunnel experiments with RANS/LES simulation and data-driven modelling.</p>
   <p>My research profile is unusual in breadth but consistent in purpose: I build evidence from real measurements, turn it into reliable computational models, and use AI where it can make environmental prediction more useful. I have developed environmental time-series models in PyTorch, produced a reusable district-scale thermal-imaging dataset from field measurements, and carried a wind-tunnel campaign from model preparation and instrumentation through calibration, uncertainty analysis, and CFD validation.</p>
   <p>Before NUS, I completed an MSc by Research in Civil and Environmental Engineering at <strong>KAIST</strong> in South Korea and a BSc in Civil and Environmental Engineering at the <strong>Technion - Israel Institute of Technology</strong>. I have also worked as a Senior Research Engineer at the <strong>Berkeley Education Alliance for Research in Singapore</strong>.</p>
   <div class="route-band" aria-label="Academic route from Israel to South Korea to Singapore">
