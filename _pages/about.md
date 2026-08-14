@@ -23,11 +23,10 @@ latest_posts:
 
 <section class="about-overview" aria-labelledby="about-me-title">
   <div class="about-panel about-bio about-overview__bio">
-    <p class="achievement-kicker">ABOUT ME</p>
-    <h2 id="about-me-title">Experiments, CFD, and AI for environmental systems</h2>
-    <p>I am a PhD candidate in the Department of the Built Environment at the <strong>National University of Singapore (NUS)</strong>. I study how urban form shapes ventilation, aerodynamic exchange, heat, and pedestrian-level environmental quality by combining independently conducted wind-tunnel experiments with RANS/LES simulation and data-driven modelling.</p>
-    <p>I build evidence from real measurements, turn it into reliable computational models, and use AI where it can make environmental prediction more useful. My work spans PyTorch environmental time-series models, a reusable district-scale thermal-imaging dataset, and a wind-tunnel campaign carried from instrumentation and calibration through uncertainty analysis and CFD validation.</p>
-    <div class="about-overview__tags" aria-label="Core expertise"><span>Validated CFD</span><span>Wind-tunnel experiments</span><span>Environmental AI</span></div>
+    <h2 id="about-me-title">About Me</h2>
+    <p class="about-lead"><strong>I connect experiments, CFD, and AI to understand environmental systems.</strong></p>
+    <p>I am a PhD candidate in the Department of the Built Environment at the <strong>National University of Singapore (NUS)</strong>. I study how urban form shapes ventilation, aerodynamic exchange, heat, and pedestrian-level environmental quality through <strong>independently conducted wind-tunnel experiments</strong>, RANS/LES simulation, and data-driven modelling.</p>
+    <p>I build evidence from real measurements, turn it into <strong>validated computational models</strong>, and use AI where it can make environmental prediction more useful. My work spans PyTorch environmental time-series models, a reusable district-scale thermal-imaging dataset, and an end-to-end wind-tunnel campaign.</p>
   </div>
   <aside class="profile-card" aria-label="Profile and availability">
     <img src="{{ '/assets/img/subin-lin-beach.jpg' | relative_url }}" alt="Subin Lin">
@@ -49,10 +48,8 @@ latest_posts:
 <div class="about-panel first-author-publications" aria-labelledby="first-author-publications-title">
   <div class="publication-heading">
     <div>
-      <p class="achievement-kicker">PUBLICATION RECORD</p>
       <h2 id="first-author-publications-title">First-author Journal Articles</h2>
     </div>
-    <p>Four peer-reviewed articles spanning urban aerodynamics, environmental sensing, and data-driven water treatment.</p>
   </div>
   <ol class="publication-list">
     <li><span>2026</span><div><strong>Design trade-offs in building porosity: A parametric analysis of vertical placement and geometry for urban ventilation</strong><p><em>Journal of Wind Engineering and Industrial Aerodynamics</em>, 271, 106369. <a href="https://doi.org/10.1016/j.jweia.2026.106369">DOI</a></p></div></li>
@@ -65,10 +62,8 @@ latest_posts:
 <aside class="about-panel about-achievements" aria-labelledby="achievements-title">
   <div class="achievement-heading">
     <div>
-      <p class="achievement-kicker">RECOGNITION</p>
       <h2 id="achievements-title">Awards &amp; Distinctions</h2>
     </div>
-    <p>Recognition for research, international study, and applied AI work.</p>
   </div>
   <div class="achievement-grid">
     <article class="achievement-item">
