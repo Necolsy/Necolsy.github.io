@@ -1123,19 +1123,26 @@ ol.bibliography .periodical {
 
 .profile-summary {
   display: grid;
-  gap: 0.22rem;
+  gap: 0.38rem;
 }
 
 .profile-summary > strong {
   color: #173e4d;
-  font-size: 0.9rem;
+  font-size: 1.55rem;
+  line-height: 1.1;
 }
 
 .profile-summary > span {
   color: #54666d;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   font-weight: 600;
-  line-height: 1.35;
+  line-height: 1.4;
+}
+
+.profile-summary > span:first-of-type {
+  color: #294855;
+  font-size: 1rem;
+  font-weight: 750;
 }
 
 .profile-summary .profile-summary__status {
@@ -1144,6 +1151,7 @@ ol.bibliography .periodical {
   border-left: 3px solid #d9904b;
   color: #173e4d;
   background: rgba(255, 255, 255, 0.58);
+  font-size: 0.92rem;
   font-weight: 800;
 }
 
@@ -1157,9 +1165,88 @@ ol.bibliography .periodical {
 }
 
 .profile-summary__links a {
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   font-weight: 800;
 }
+
+.about-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(19rem, 0.75fr);
+  gap: 1.5rem;
+  align-items: stretch;
+  margin: 0.2rem 0 1.5rem;
+}
+
+.about-overview .about-panel { margin: 0; }
+
+.about-overview__bio h2 {
+  max-width: 44rem;
+  margin-top: 0.25rem;
+  font-size: clamp(2rem, 3.5vw, 3.35rem);
+  line-height: 1.03;
+}
+
+.about-overview__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1.1rem;
+}
+
+.about-overview__tags span {
+  padding: 0.35rem 0.58rem;
+  border: 1px solid rgba(52, 105, 124, 0.25);
+  border-radius: 999px;
+  color: #294855;
+  background: rgba(222, 238, 240, 0.5);
+  font-size: 0.76rem;
+  font-weight: 750;
+}
+
+.profile-card {
+  overflow: hidden;
+  border: 1px solid rgba(74, 132, 151, 0.2);
+  border-radius: 0.5rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(220, 236, 239, 0.72));
+  box-shadow: 0 1rem 2.4rem rgba(35, 69, 83, 0.12);
+}
+
+.profile-card > img {
+  display: block;
+  width: 100%;
+  max-height: 22rem;
+  object-fit: cover;
+  object-position: center 32%;
+}
+
+.profile-card .profile-summary { padding: 1rem 1.05rem 1.1rem; }
+
+.about-evidence {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(19rem, 0.8fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin: 1.5rem 0;
+}
+
+.about-evidence > .about-panel { margin: 0; }
+
+.about-evidence .publication-heading,
+.about-evidence .achievement-heading { grid-template-columns: 1fr; gap: 0.45rem; }
+
+.about-evidence .achievement-grid { grid-template-columns: 1fr; }
+
+.about-evidence .achievement-item {
+  min-height: 0;
+  padding: 0.85rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.about-evidence .achievement-item:last-child { border-bottom: 0; }
 
 .about-motion-intro__manifesto {
   max-width: 42rem;
@@ -1900,6 +1987,21 @@ html[data-theme="dark"] .strength-card {
   background: rgba(39, 41, 45, 0.86);
 }
 
+@media (max-width: 900px) {
+  .about-overview,
+  .about-evidence { grid-template-columns: 1fr; }
+
+  .profile-card {
+    display: grid;
+    grid-template-columns: minmax(12rem, 0.7fr) minmax(0, 1fr);
+  }
+
+  .profile-card > img {
+    height: 100%;
+    max-height: none;
+  }
+}
+
 @media (max-width: 640px) {
   .about-panel {
     margin: 1.2rem 0;
@@ -1917,6 +2019,14 @@ html[data-theme="dark"] .strength-card {
     margin: 0 0 1.15rem;
     padding: 0.65rem;
   }
+
+  .about-overview,
+  .about-evidence { grid-template-columns: 1fr; }
+
+  .profile-card { display: grid; grid-template-columns: 7rem minmax(0, 1fr); }
+  .profile-card > img { width: 7rem; height: 100%; max-height: none; object-fit: cover; }
+  .profile-card .profile-summary { padding: 0.75rem; }
+  .profile-summary > strong { font-size: 1.35rem; }
 
   .post .profile::before,
   .post .profile::after,

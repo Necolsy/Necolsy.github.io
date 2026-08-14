@@ -5,22 +5,7 @@ permalink: /
 subtitle: PhD Candidate in Built Environment, National University of Singapore
 about_animation: true
 
-profile:
-  align: right
-  image: subin-lin-beach.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <div class="profile-summary">
-      <strong>Subin Lin</strong>
-      <span>PhD Candidate, National University of Singapore</span>
-      <span>Urban CFD · Experimental Fluid Mechanics · Environmental AI</span>
-      <span class="profile-summary__status">Graduating January 2027 · Open to opportunities</span>
-      <div class="profile-summary__links">
-        <a href="https://scholar.google.com/citations?user=tbNGYBQAAAAJ&hl=en">Google Scholar</a>
-        <a href="https://www.linkedin.com/in/subin-lin-81710b211/">LinkedIn</a>
-        <a href="/assets/pdf/subin-lin-cv.pdf">CV</a>
-      </div>
-    </div>
+profile: false
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -36,16 +21,32 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-<section class="about-motion-intro" aria-labelledby="about-manifesto">
-  <p class="about-motion-intro__label">RESEARCH PROFILE</p>
-  <h2 id="about-manifesto">Experiments, CFD, and AI for <em>environmental systems.</em></h2>
-  <p class="about-motion-intro__manifesto">I combine field and wind-tunnel measurements, validated CFD, and machine learning to study urban airflow, heat, and environmental processes.</p>
-  <div class="about-motion-intro__signals" aria-label="Key research practices">
-    <span>4 first-author journal articles</span><span>Independent wind-tunnel campaign</span><span>PyTorch + CFD</span><span>Research across 3 countries</span>
+<section class="about-overview" aria-labelledby="about-me-title">
+  <div class="about-panel about-bio about-overview__bio">
+    <p class="achievement-kicker">ABOUT ME</p>
+    <h2 id="about-me-title">Experiments, CFD, and AI for environmental systems</h2>
+    <p>I am a PhD candidate in the Department of the Built Environment at the <strong>National University of Singapore (NUS)</strong>. I study how urban form shapes ventilation, aerodynamic exchange, heat, and pedestrian-level environmental quality by combining independently conducted wind-tunnel experiments with RANS/LES simulation and data-driven modelling.</p>
+    <p>I build evidence from real measurements, turn it into reliable computational models, and use AI where it can make environmental prediction more useful. My work spans PyTorch environmental time-series models, a reusable district-scale thermal-imaging dataset, and a wind-tunnel campaign carried from instrumentation and calibration through uncertainty analysis and CFD validation.</p>
+    <div class="about-overview__tags" aria-label="Core expertise"><span>Validated CFD</span><span>Wind-tunnel experiments</span><span>Environmental AI</span></div>
   </div>
+  <aside class="profile-card" aria-label="Profile and availability">
+    <img src="{{ '/assets/img/subin-lin-beach.jpg' | relative_url }}" alt="Subin Lin">
+    <div class="profile-summary">
+      <strong>Subin Lin</strong>
+      <span>PhD Candidate, National University of Singapore</span>
+      <span>Urban CFD · Experimental Fluid Mechanics · Environmental AI</span>
+      <span class="profile-summary__status">Graduating January 2027 · Open to opportunities</span>
+      <div class="profile-summary__links">
+        <a href="https://scholar.google.com/citations?user=tbNGYBQAAAAJ&hl=en">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/subin-lin-81710b211/">LinkedIn</a>
+        <a href="{{ '/assets/pdf/subin-lin-cv.pdf' | relative_url }}">CV</a>
+      </div>
+    </div>
+  </aside>
 </section>
 
-<section class="about-panel first-author-publications" aria-labelledby="first-author-publications-title">
+<section class="about-evidence" aria-label="Publications and awards">
+<div class="about-panel first-author-publications" aria-labelledby="first-author-publications-title">
   <div class="publication-heading">
     <div>
       <p class="achievement-kicker">PUBLICATION RECORD</p>
@@ -59,15 +60,15 @@ latest_posts:
     <li><span>2023</span><div><strong>Coagulant dosage determination using deep learning-based graph attention multivariate time series forecasting model</strong><p><em>Water Research</em>, 232, 119665. <a href="https://doi.org/10.1016/j.watres.2023.119665">DOI</a></p></div></li>
     <li><span>2023</span><div><strong>Comparing artificial and deep neural network models for prediction of coagulant amount and settled water turbidity: Lessons learned from big data in water treatment operations</strong><p><em>Journal of Water Process Engineering</em>, 54, 103949. <a href="https://doi.org/10.1016/j.jwpe.2023.103949">DOI</a></p></div></li>
   </ol>
-</section>
+</div>
 
-<section class="about-panel about-achievements" aria-labelledby="achievements-title">
+<aside class="about-panel about-achievements" aria-labelledby="achievements-title">
   <div class="achievement-heading">
     <div>
       <p class="achievement-kicker">RECOGNITION</p>
       <h2 id="achievements-title">Awards &amp; Distinctions</h2>
     </div>
-    <p>Competitive support recognising research promise, international study, and applied AI work.</p>
+    <p>Recognition for research, international study, and applied AI work.</p>
   </div>
   <div class="achievement-grid">
     <article class="achievement-item">
@@ -91,12 +92,11 @@ latest_posts:
       <p>Fully funded undergraduate, master's, and doctoral education at the Technion, KAIST, and NUS, with Dean's List recognition.</p>
     </article>
   </div>
+</aside>
 </section>
 
-<section class="about-panel about-bio">
-  <h2>About Me</h2>
-  <p>I am a PhD candidate in the Department of the Built Environment at the <strong>National University of Singapore (NUS)</strong>. I study how urban form shapes ventilation, aerodynamic exchange, heat, and pedestrian-level environmental quality by combining independently conducted wind-tunnel experiments with RANS/LES simulation and data-driven modelling.</p>
-  <p>My research profile is unusual in breadth but consistent in purpose: I build evidence from real measurements, turn it into reliable computational models, and use AI where it can make environmental prediction more useful. I have developed environmental time-series models in PyTorch, produced a reusable district-scale thermal-imaging dataset from field measurements, and carried a wind-tunnel campaign from model preparation and instrumentation through calibration, uncertainty analysis, and CFD validation.</p>
+<section class="about-panel academic-route">
+  <h2>Academic Journey</h2>
   <p>Before NUS, I completed an MSc by Research in Civil and Environmental Engineering at <strong>KAIST</strong> in South Korea and a BSc in Civil and Environmental Engineering at the <strong>Technion - Israel Institute of Technology</strong>. I have also worked as a Senior Research Engineer at the <strong>Berkeley Education Alliance for Research in Singapore</strong>.</p>
   <div class="route-band" aria-label="Academic route from Israel to South Korea to Singapore">
     <div class="route-stop"><span>2016-2020</span><strong>Israel</strong><p>Civil &amp; environmental engineering</p></div>
