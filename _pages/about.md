@@ -26,15 +26,25 @@ latest_posts:
     <h2 id="about-me-title">About Me</h2>
     <p class="about-lead"><strong>I connect experiments, CFD, and AI to understand environmental systems.</strong></p>
     <p>I am a PhD candidate in the Department of the Built Environment at the <strong>National University of Singapore (NUS)</strong>. I study how urban form shapes ventilation, aerodynamic exchange, heat, and pedestrian-level environmental quality through <strong>independently conducted wind-tunnel experiments</strong>, RANS/LES simulation, and data-driven modelling.</p>
-    <p>I build evidence from real measurements, turn it into <strong>validated computational models</strong>, and use AI where it can make environmental prediction more useful. My work spans PyTorch environmental time-series models, a reusable district-scale thermal-imaging dataset, and an end-to-end wind-tunnel campaign.</p>
+    <p>I build evidence from <strong>real measurements</strong>, turn it into <strong>validated computational models</strong>, and use AI where it can make environmental prediction more useful. My work spans <strong>PyTorch environmental time-series models</strong>, a <strong>reusable district-scale thermal-imaging dataset</strong>, and an <strong>end-to-end wind-tunnel campaign</strong>.</p>
   </div>
   <aside class="profile-card" aria-label="Profile and availability">
     <img src="{{ '/assets/img/subin-lin-beach.jpg' | relative_url }}" alt="Subin Lin">
     <div class="profile-summary">
       <strong>Subin Lin</strong>
-      <span>PhD Candidate, National University of Singapore</span>
-      <span>Urban CFD · Experimental Fluid Mechanics · Environmental AI</span>
-      <span class="profile-summary__status">Graduating January 2027 · Open to opportunities</span>
+      <div class="profile-summary__position">
+        <strong>PhD Candidate</strong>
+        <span>National University of Singapore</span>
+      </div>
+      <div class="profile-summary__focus">
+        <strong>Urban CFD</strong>
+        <strong>Experimental Fluid Mechanics</strong>
+        <strong>Environmental AI</strong>
+      </div>
+      <div class="profile-summary__status">
+        <strong>Graduating January 2027</strong>
+        <span>Open to postdoctoral and R&amp;D opportunities</span>
+      </div>
       <div class="profile-summary__links">
         <a href="https://scholar.google.com/citations?user=tbNGYBQAAAAJ&hl=en">Google Scholar</a>
         <a href="https://www.linkedin.com/in/subin-lin-81710b211/">LinkedIn</a>
