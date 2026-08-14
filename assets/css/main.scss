@@ -1121,6 +1121,37 @@ ol.bibliography .periodical {
   color: #f3cc77;
 }
 
+.profile-summary {
+  display: grid;
+  gap: 0.22rem;
+}
+
+.profile-summary > strong {
+  color: #173e4d;
+  font-size: 0.9rem;
+}
+
+.profile-summary > span {
+  color: #54666d;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.profile-summary__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.6rem;
+  margin-top: 0.45rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid rgba(41, 72, 85, 0.18);
+}
+
+.profile-summary__links a {
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
 .about-motion-intro__manifesto {
   max-width: 42rem;
   margin: 0;
@@ -1198,10 +1229,6 @@ ol.bibliography .periodical {
   border-right: 1px solid rgba(49, 95, 115, 0.24);
   border-bottom: 1px solid rgba(49, 95, 115, 0.24);
   background: rgba(255, 255, 255, 0.66);
-}
-
-.achievement-item--featured {
-  background: rgba(240, 210, 142, 0.17);
 }
 
 .achievement-item strong {

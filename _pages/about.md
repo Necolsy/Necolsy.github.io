@@ -10,7 +10,18 @@ profile:
   image: subin-lin-beach.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <div>Singapore<br><a href="https://scholar.google.com/citations?user=tbNGYBQAAAAJ&hl=en">Google Scholar</a><br><a href="https://www.linkedin.com/in/subin-lin-81710b211/">LinkedIn</a></div>
+    <div class="profile-summary">
+      <strong>Singapore</strong>
+      <span>PhD candidate at NUS</span>
+      <span>Expected completion: Dec 2026</span>
+      <span>Available: Dec 2026 / Jan 2027</span>
+      <span>Open to postdoctoral and R&amp;D roles</span>
+      <div class="profile-summary__links">
+        <a href="https://scholar.google.com/citations?user=tbNGYBQAAAAJ&hl=en">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/subin-lin-81710b211/">LinkedIn</a>
+        <a href="/assets/pdf/subin-lin-cv.pdf">CV</a>
+      </div>
+    </div>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -31,7 +42,7 @@ latest_posts:
   <div class="about-motion-intro__orb about-motion-intro__orb--two" aria-hidden="true"></div>
   <p class="about-motion-intro__label">EXPERIMENTAL FLUID MECHANICS &middot; CFD &middot; ENVIRONMENTAL AI</p>
   <h2 id="about-manifesto">From physical measurements to <em>predictive models.</em></h2>
-  <p class="about-motion-intro__manifesto">I am an interdisciplinary environmental engineer who connects field and wind-tunnel experiments, validated CFD, and machine learning to understand airflow, heat, and environmental systems. My work spans first-author research in <strong>Water Research</strong>, <strong>Scientific Data</strong>, and the <strong>Journal of Wind Engineering and Industrial Aerodynamics</strong>.</p>
+  <p class="about-motion-intro__manifesto">I am an interdisciplinary environmental engineer who connects field and wind-tunnel experiments, validated CFD, and machine learning to understand airflow, heat, and environmental systems. I have published four first-author journal articles in <strong>Water Research</strong>, the <strong>Journal of Water Process Engineering</strong>, <strong>Scientific Data</strong>, and the <strong>Journal of Wind Engineering and Industrial Aerodynamics</strong>.</p>
   <div class="about-motion-intro__signals" aria-label="Key research practices">
     <span>4 first-author journal articles</span><span>Independent wind-tunnel campaign</span><span>PyTorch + CFD</span><span>Research across 3 countries</span>
   </div>
@@ -46,7 +57,7 @@ latest_posts:
     <p>Competitive support recognising research promise, international study, and applied AI work.</p>
   </div>
   <div class="achievement-grid">
-    <article class="achievement-item achievement-item--featured">
+    <article class="achievement-item">
       <span class="achievement-year">2026</span>
       <strong>IAQVEC Fellowship</strong>
       <p>Participation Support for IAQVEC 2026 at the University of Southern California.</p>
@@ -54,7 +65,7 @@ latest_posts:
     <article class="achievement-item">
       <span class="achievement-year">2022</span>
       <strong>A*STAR Merit Award &amp; SINGA</strong>
-      <p>Competitive scholarship support for doctoral research at NUS.</p>
+      <p>Competitive full scholarship support for doctoral research at NUS.</p>
     </article>
     <article class="achievement-item">
       <span class="achievement-year">2021</span>
@@ -62,9 +73,9 @@ latest_posts:
       <p>Awarded for a coded skin-analysis application using computer vision and deep learning.</p>
     </article>
     <article class="achievement-item">
-      <span class="achievement-year">2016-2022</span>
-      <strong>Full Scholarships &amp; Dean's List</strong>
-      <p>Full scholarship support at KAIST and the Technion, with Dean's List recognition.</p>
+      <span class="achievement-year">2016-2026</span>
+      <strong>Full Scholarships across BSc, MSc &amp; PhD</strong>
+      <p>Fully funded undergraduate, master's, and doctoral education at the Technion, KAIST, and NUS, with Dean's List recognition.</p>
     </article>
   </div>
 </section>
