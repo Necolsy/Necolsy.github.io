@@ -1148,6 +1148,11 @@ ol.bibliography .periodical {
   backdrop-filter: blur(5px);
 }
 
+.about-motion-intro .about-word,
+.about-motion-intro__manifesto strong {
+  color: inherit;
+}
+
 .about-achievements {
   border-top: 0.24rem solid #315f73;
   background: linear-gradient(180deg, rgba(235, 244, 246, 0.76), rgba(255, 255, 255, 0.97));
