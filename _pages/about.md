@@ -120,26 +120,15 @@ latest_posts:
   </ul>
   <div class="research-glance" aria-label="Research at a glance">
     <div class="glance-card glance-card--urban">
-      <div class="research-diagram research-diagram--urban" aria-hidden="true">
-        <div class="diagram-building diagram-building--left"></div><div class="diagram-building diagram-building--right"></div>
-        <div class="diagram-city-road"><div class="diagram-city-car"></div></div>
-        <div class="diagram-flow diagram-flow--one"></div><div class="diagram-flow diagram-flow--two"></div><div class="diagram-flow diagram-flow--three"></div>
-        <span class="diagram-caption diagram-caption--wind">WIND</span><span class="diagram-caption diagram-caption--street">STREET</span>
-      </div>
+      <div class="research-image"><img src="{{ '/assets/img/research/urban-cfd-flow.webp' | relative_url }}" alt="CFD contours and streamlines across porous urban street-canyon arrays" loading="lazy"></div>
       <span>01</span><strong>Urban air</strong><p>Ventilation, building porosity, and street-canyon flow.</p>
     </div>
     <div class="glance-card glance-card--experiment">
-      <div class="research-diagram research-diagram--experiment" aria-hidden="true">
-        <div class="diagram-tunnel-shell"><div class="diagram-tunnel-fan"></div><div class="diagram-test-model"></div><div class="diagram-probe"></div></div>
-        <span class="diagram-caption diagram-caption--fan">FAN</span><span class="diagram-caption diagram-caption--model">MODEL</span><span class="diagram-caption diagram-caption--probe">SENSOR</span>
-      </div>
+      <div class="research-image"><img src="{{ '/assets/img/research/wind-tunnel-concept.webp' | relative_url }}" alt="Concept illustration of pressure-tap wind-tunnel experiments and data acquisition" loading="lazy"></div>
       <span>02</span><strong>Hands-on experiments</strong><p>Wind-tunnel measurements, water-treatment wet-lab work, and model validation.</p>
     </div>
     <div class="glance-card glance-card--ai">
-      <div class="research-diagram research-diagram--ai" aria-hidden="true">
-        <div class="diagram-monitor"><div class="diagram-monitor__city"></div><div class="diagram-monitor__field"></div></div>
-        <div class="diagram-pipeline"><span>DATA</span><span>PHYSICS</span><span>AI</span></div>
-      </div>
+      <div class="research-image"><img src="{{ '/assets/img/research/physics-ai-concept.webp' | relative_url }}" alt="Concept illustration of CFD, physics constraints, neural networks, and accelerated flow prediction" loading="lazy"></div>
       <span>03</span><strong>Physics + AI</strong><p>Surrogate models, graph learning, and scientific automation.</p>
     </div>
   </div>
