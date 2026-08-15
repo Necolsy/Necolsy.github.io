@@ -2,7 +2,6 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Candidate in Built Environment, National University of Singapore
 about_animation: true
 
 profile: false
@@ -27,6 +26,7 @@ latest_posts:
     <p class="about-lead"><strong>I connect experiments, CFD, and AI to understand environmental systems.</strong></p>
     <p>I am a PhD candidate in the Department of the Built Environment at the <strong>National University of Singapore (NUS)</strong>. I study how urban form shapes ventilation, aerodynamic exchange, heat, and pedestrian-level environmental quality through <strong>independently conducted wind-tunnel experiments</strong>, RANS/LES simulation, and data-driven modelling.</p>
     <p>I build evidence from <strong>real measurements</strong>, turn it into <strong>validated computational models</strong>, and use AI where it can make environmental prediction more useful. My work spans <strong>PyTorch environmental time-series models</strong>, a <strong>reusable district-scale thermal-imaging dataset</strong>, and an <strong>end-to-end wind-tunnel campaign</strong>.</p>
+    <p>Before moving into urban fluid mechanics, I worked on <strong>drinking-water treatment</strong>, using long-term treatment-plant data to develop graph-attention and recurrent neural-network models for coagulant dosage and turbidity forecasting. This work led to first-author articles in <strong>Water Research</strong> and the <strong>Journal of Water Process Engineering</strong>, and established my foundation in environmental data science.</p>
     <p>I am currently seeking <strong>postdoctoral, research scientist, and R&amp;D engineering opportunities</strong>. I am particularly interested in <strong>urban and environmental CFD</strong>, <strong>experimental fluid mechanics</strong>, <strong>physics-informed AI</strong>, and data-driven methods that accelerate or improve the reliability of CFD.</p>
   </div>
   <aside class="profile-card" aria-label="Profile and availability">

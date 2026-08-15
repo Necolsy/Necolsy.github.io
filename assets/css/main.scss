@@ -1229,6 +1229,9 @@ ol.bibliography .periodical {
 }
 
 .profile-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   overflow: hidden;
   border: 0;
   border-radius: 0;
@@ -1239,12 +1242,21 @@ ol.bibliography .periodical {
 .profile-card > img {
   display: block;
   width: 100%;
-  max-height: 22rem;
+  max-height: 14rem;
   object-fit: cover;
-  object-position: center 32%;
+  object-position: center 34%;
 }
 
-.profile-card .profile-summary { padding: 1rem 1.05rem 1.1rem; }
+.profile-card .profile-summary {
+  flex: 1;
+  grid-template-rows: auto auto auto auto minmax(0, 1fr);
+  padding: 1rem 1.05rem 1.1rem;
+}
+
+.profile-card .profile-summary__links {
+  align-self: end;
+  width: 100%;
+}
 
 .about-evidence {
   display: grid;
