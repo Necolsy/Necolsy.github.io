@@ -2085,6 +2085,69 @@ html[data-theme="dark"] .strength-card {
 
 .profile-card .profile-summary { padding-right: 0; padding-left: 0; }
 
+/* Use the same quiet list-and-hover language for every repeated homepage block. */
+.academic-route,
+.about-research,
+.about-strengths {
+  overflow: visible;
+  margin: 2.25rem 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.academic-route h2::after,
+.about-research h2::after,
+.about-strengths h2::after { display: none; }
+
+.academic-route > h2,
+.about-research > h2,
+.about-strengths > h2 {
+  display: block;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.academic-route .route-band {
+  gap: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.academic-route .route-stop {
+  min-height: 0;
+  padding: 0.9rem;
+  border: 0;
+  border-right: 1px solid var(--global-divider-color);
+  background: transparent;
+  transition: background 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+
+.academic-route .route-stop:last-child { border-right: 0; }
+
+.academic-route .route-stop:hover,
+.about-research .glance-card:hover,
+.about-strengths .strength-card:hover {
+  background: rgba(232, 242, 244, 0.72);
+  box-shadow: 0 0.65rem 1.35rem rgba(42, 76, 89, 0.1);
+  transform: translateY(-0.18rem);
+}
+
+.about-research .glance-card,
+.about-strengths .strength-card {
+  border: 0;
+  border-top: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.about-research .research-glance,
+.about-strengths .strength-grid { gap: 0.8rem; }
+
 @media (max-width: 900px) {
   .about-overview,
   .about-evidence { grid-template-columns: 1fr; }
@@ -2125,6 +2188,13 @@ html[data-theme="dark"] .strength-card {
   .profile-card > img { width: 7rem; height: 100%; max-height: none; object-fit: cover; }
   .profile-card .profile-summary { padding: 0.75rem; }
   .profile-summary > strong { font-size: 1.35rem; }
+
+  .academic-route .route-stop {
+    border-right: 0;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .academic-route .route-stop:last-child { border-bottom: 0; }
 
   .post .profile::before,
   .post .profile::after,
