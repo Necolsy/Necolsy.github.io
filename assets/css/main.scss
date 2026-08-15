@@ -1394,6 +1394,21 @@ ol.bibliography .periodical {
   font-size: 0.84rem;
 }
 
+// Keep publication thumbnails visually centred in their dedicated column.
+.publications ol.bibliography li .abbr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.publications ol.bibliography li .abbr figure,
+.publications ol.bibliography li .abbr .preview {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .about-motion-intro .about-word,
 .about-motion-intro__manifesto strong {
   color: inherit;
