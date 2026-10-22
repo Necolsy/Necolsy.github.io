@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "Journal articles, conference papers, and workshop publications in urban environmental science, AI, and human-computer interaction.",
+          description: "Experiments, computational fluid dynamics, and AI for environmental systems — with a detour into games and human experience.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -44,6 +44,15 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-presented-validation-of-rans-and-les-against-wind-tunnel-measurements-for-urban-street-canyon-aerodynamics-at-indoor-air-2026-in-singapore",
           title: 'Presented Validation of RANS and LES Against Wind Tunnel Measurements for Urban Street...',
+          description: "",
+          section: "News",},{id: "news-joined-bps5234a-cfd-applications-in-the-built-environment-at-nus-as-a-teaching-assistant-supporting-graduate-students-with-modelling-simulation-and-troubleshooting",
+          title: 'Joined BPS5234A CFD Applications in the Built Environment at NUS as a Teaching...',
+          description: "",
+          section: "News",},{id: "news-our-preprint-does-building-porosity-consistently-improve-street-canyon-ventilation-a-wind-tunnel-validated-cfd-assessment-is-now-available-on-ssrn",
+          title: 'Our preprint, Does building porosity consistently improve street canyon ventilation? A wind tunnel...',
+          description: "",
+          section: "News",},{id: "news-started-a-research-internship-at-a-star-working-on-pollutant-dispersion-source-identification-and-concentration-forecasting-alongside-my-phd",
+          title: 'Started a Research Internship at A*STAR, working on pollutant dispersion, source identification, and...',
           description: "",
           section: "News",},{
         id: 'social-cv',
