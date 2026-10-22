@@ -13,7 +13,7 @@ body.portfolio-2026::before { opacity: .16; background-size: 64px 64px; }
 .portfolio-2026 > [role="main"] { max-width: 1280px; width: calc(100% - 96px); margin: 0 auto !important; padding: 0; border: none; background: none; box-shadow: none; }
 .portfolio-2026.fixed-top-nav { padding-top: 108px; }
 .portfolio-2026 > header { z-index: 1500; }
-.portfolio-2026 #navbar.navbar { inset: 16px 28px auto; min-height: 66px; padding: 12px 22px; border: 1px solid #d9e2e3; border-radius: 18px; background: #fafcfb; box-shadow: 0 10px 40px #102e3912; z-index: 1500; }
+.portfolio-2026 #navbar.navbar { inset: 16px 28px auto; min-height: 66px; padding: 12px 22px; border: 1px solid #d9e2e3; border-radius: 18px; background: #fafcfb; opacity: 1; box-shadow: 0 10px 40px #102e3912; z-index: 1500; }
 .portfolio-2026 #navbar > .container { max-width: 1280px; }
 .portfolio-2026 #navbar .navbar-brand { font-family: "Space Grotesk", sans-serif; font-size: 1.25rem; letter-spacing: -.05em; font-weight: 700 !important; color: var(--ink); }
 .portfolio-2026 #navbar .nav-link { padding: 8px 13px; font-size: 15px; font-weight: 700; letter-spacing: -.015em; color: var(--ink); text-transform: none; }
@@ -120,18 +120,16 @@ body.portfolio-2026::before { opacity: .16; background-size: 64px 64px; }
 .portfolio-2026 .publications ol.bibliography li .row { align-items: center; gap: 16px 0; }
 .portfolio-2026 .publications ol.bibliography li .preview { border-radius: 9px; background: white; }
 .portfolio-2026 .publications ol.bibliography li .abbr { max-width: none; }
-.portfolio-2026 .publications .abbr .badge { background: #e7eefb; color: #214edd; box-shadow: none; padding: 6px 12px; font-size: 12px; }
+.portfolio-2026 .publications .abbr .badge { background: #e7eefb; color: #214edd !important; box-shadow: none; padding: 6px 12px; font-size: 12px; }
+.portfolio-2026 .publications .abbr .badge a { color: inherit !important; }
 .portfolio-2026 .publications img { object-fit: contain; height: auto; max-height: none; background: white; }
 .portfolio-2026 .publications .title { font-size: 1.1rem; line-height: 1.5; font-weight: 800; }
 .portfolio-2026 .publications .author, .portfolio-2026 .publications .periodical { font-size: .93rem; line-height: 1.65; }
 .portfolio-2026 .publications .paper-summary { font-size: 1rem; color: #364d53; }
 .portfolio-2026 .publications .links .btn { border-radius: 30px; padding: 6px 17px; font-size: 13px; color: var(--blue); border-color: #b5c5e5; }
 .portfolio-2026 .publications .text-only .abbr, .portfolio-2026 .publications .text-only .abbr + div { flex: 0 0 100%; max-width: 100%; }
+.portfolio-2026 .publications .text-only .abbr { align-items: flex-start; justify-content: flex-start; }
 .portfolio-2026 .publications .text-only .abbr abbr { width: auto !important; min-width: 90px; padding: 7px 14px; }
-.portfolio-2026 .manuscripts { margin: 40px 0 50px; padding: 28px; border-radius: 20px; background: #e7eef8; }
-.manuscripts h2 { font-size: 2rem; }
-.manuscripts p { margin-bottom: 0; font-size: 1rem; }
-.manuscripts li { margin-bottom: 18px; }
 .portfolio-2026 .journey-stage { margin: 0 0 50px; min-height: 210px; padding: 38px; background: linear-gradient(115deg,#183e4b,#245d64); border: none; border-radius: 24px; }
 .portfolio-2026 .journey-stage h2 { color: white; font-size: clamp(2.5rem,5vw,4.4rem); }
 .portfolio-2026 .journey-stage p { color: #d7eae9; }

@@ -17,13 +17,7 @@ nav_order: 1
 
 <h2>First-author preprints &amp; manuscripts</h2>
 
-{% bibliography --query @*[preprint=true]* %}
-
-<section class="manuscripts" aria-label="Additional manuscript under review">
-  <p><strong>Beyond porosity ratio: Opening configuration and array length shape aerodynamic exchange and pedestrian wind.</strong></p>
-  <p><strong>Subin Lin</strong>, Jason Leong, Boo Cheong Khoo, and Hee Joo Poh.</p>
-  <p><em>Building and Environment</em> · Under review</p>
-</section>
+{% bibliography --query @*[under_review=true]* %}
 
 <h2>First-author publications</h2>
 
