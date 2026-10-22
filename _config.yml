@@ -7,9 +7,9 @@ first_name: Subin
 middle_name:
 last_name: Lin
 contact_note: >
-  I welcome research conversations and collaboration opportunities in urban environmental design, CFD, and AI.
+  Open to postdoctoral, research scientist, and R&D opportunities in environmental fluid mechanics, validated CFD, and AI.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Subin Lin is a PhD candidate at the National University of Singapore researching urban ventilation, validated CFD, and physics-informed AI.
+  Subin Lin is a PhD candidate at the National University of Singapore and Research Intern at A*STAR, connecting experiments, CFD, and AI for environmental systems. Open to postdoctoral and research opportunities.
 footer_text: >
   Built with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> and hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: urban ventilation, computational fluid dynamics, CFD, physics-informed AI, built environment, building porosity
@@ -52,7 +52,7 @@ external_services:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: true

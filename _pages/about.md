@@ -2,146 +2,95 @@
 layout: about
 title: About
 permalink: /
-about_animation: true
-
+editorial_hero: true
 profile: false
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
+selected_papers: true
+social: true
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
+  enabled: true
+  scrollable: false
+  limit: 6
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
-<section class="about-overview" aria-labelledby="about-me-title">
-  <div class="about-panel about-bio about-overview__bio">
-    <h2 id="about-me-title">About Me</h2>
-    <p class="about-lead"><strong>I connect experiments, CFD, and AI to understand environmental systems.</strong></p>
-    <p><strong>Urban fluid mechanics.</strong> I am a PhD candidate in the Department of the Built Environment at the <strong>National University of Singapore (NUS)</strong>. My current research examines how building design shapes urban ventilation, aerodynamic exchange, and pedestrian-level wind conditions. I combine an <strong>independently conducted wind-tunnel campaign</strong> with validated RANS/LES simulations and design-oriented flow analysis.</p>
-    <p><strong>Environmental AI.</strong> Before beginning my PhD, I studied <strong>drinking-water treatment</strong> using long-term operational data. I coded graph-attention and recurrent neural-network models in <strong>Python and PyTorch</strong> to forecast coagulant dosage and treated-water turbidity. This research produced first-author articles in <strong>Water Research</strong> and the <strong>Journal of Water Process Engineering</strong>.</p>
-    <p><strong>Field sensing and reusable data.</strong> I also contributed to a district-scale thermal-imaging campaign in Singapore, working with Infrared measurements, data-quality assessment, and Python processing workflows. The resulting reusable urban surface-temperature dataset was published in <strong>Scientific Data</strong>.</p>
-    <p>I am currently seeking <strong>postdoctoral, research scientist, and R&amp;D engineering opportunities</strong>. I am particularly interested in <strong>urban and environmental CFD</strong>, <strong>experimental fluid mechanics</strong>, <strong>physics-informed AI</strong>, and data-driven methods that accelerate or improve the reliability of CFD.</p>
+<section class="portfolio-hero" aria-labelledby="hero-name">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="status-dot"></span> RESEARCHER / ENGINEER / EXPLORER</p>
+    <h1 id="hero-name">Subin <em>Lin.</em></h1>
+    <p class="hero-statement">Making sense of<br><span>air, data, and cities.</span></p>
+    <p class="hero-description">I connect hands-on experiments, computational fluid dynamics, and AI to understand environmental systems.</p>
+    <div class="hero-role"><strong>PhD Candidate · NUS</strong><span>Research Intern · A*STAR</span><span>Singapore</span></div>
+    <div class="hero-actions"><a class="portfolio-button" href="#research">Explore my research</a><a class="text-link" href="mailto:necolsy@gmail.com">Get in touch</a></div>
+    <p class="availability"><span></span> Open to postdoctoral, research scientist, and R&amp;D opportunities</p>
   </div>
-  <aside class="profile-card" aria-label="Profile and availability">
-    <img src="{{ '/assets/img/subin-lin-beach.jpg' | relative_url }}" alt="Subin Lin">
-    <div class="profile-summary">
-      <strong>Subin Lin</strong>
-      <div class="profile-summary__position">
-        <strong>PhD Candidate</strong>
-        <span>National University of Singapore</span>
-      </div>
-      <div class="profile-summary__focus">
-        <strong>Urban CFD</strong>
-        <strong>Experimental Fluid Mechanics</strong>
-        <strong>Environmental AI</strong>
-      </div>
-      <div class="profile-summary__status">
-        <strong>Graduating January 2027</strong>
-      </div>
-      <div class="profile-summary__links">
-        <a href="https://scholar.google.com/citations?user=tbNGYBQAAAAJ&hl=en">Google Scholar</a>
-        <a href="https://www.linkedin.com/in/subin-lin-81710b211/">LinkedIn</a>
-        <a href="{{ '/assets/pdf/subin-lin-cv.pdf' | relative_url }}">CV</a>
-      </div>
-    </div>
-  </aside>
+  <figure class="hero-portrait">
+    <div class="portrait-frame"><img src="{{ '/assets/img/subin-lin-beach.jpg' | relative_url }}" alt="Subin Lin overlooking the coast" fetchpriority="high" width="960" height="1200"></div>
+    <figcaption><span>Curious by nature.</span><span>Across disciplines &amp; borders.</span></figcaption>
+    <div class="portrait-stamp" aria-hidden="true">EXPERIMENT<br>SIMULATE<br>LEARN</div>
+  </figure>
+  <div class="hero-footer"><div class="hero-contact"><a href="https://scholar.google.com/citations?user=tbNGYBQAAAAJ&amp;hl=en">Google Scholar ↗</a><a href="https://www.linkedin.com/in/subin-lin-81710b211/">LinkedIn ↗</a><a href="{{ '/assets/pdf/subin-lin-cv.pdf' | relative_url }}">Curriculum Vitae ↗</a></div><span>Israel / South Korea / Singapore</span></div>
 </section>
 
-<section class="about-evidence" aria-label="Publications and awards">
-<div class="about-panel first-author-publications" aria-labelledby="first-author-publications-title">
-  <div class="publication-heading">
-    <div>
-      <h2 id="first-author-publications-title">First-author Journal Articles</h2>
-    </div>
-  </div>
-  <ol class="publication-list">
-    <li><span>2026</span><div><strong>Design trade-offs in building porosity: A parametric analysis of vertical placement and geometry for urban ventilation</strong><p><em>Journal of Wind Engineering and Industrial Aerodynamics</em>, 271, 106369. <a href="https://doi.org/10.1016/j.jweia.2026.106369">DOI</a></p></div></li>
-    <li><span>2023</span><div><strong>District-scale surface temperatures generated from high-resolution longitudinal thermal infrared images</strong><p><em>Scientific Data</em>, 10, 859. <a href="https://doi.org/10.1038/s41597-023-02749-0">DOI</a></p></div></li>
-    <li><span>2023</span><div><strong>Coagulant dosage determination using deep learning-based graph attention multivariate time series forecasting model</strong><p><em>Water Research</em>, 232, 119665. <a href="https://doi.org/10.1016/j.watres.2023.119665">DOI</a></p></div></li>
-    <li><span>2023</span><div><strong>Comparing artificial and deep neural network models for prediction of coagulant amount and settled water turbidity: Lessons learned from big data in water treatment operations</strong><p><em>Journal of Water Process Engineering</em>, 54, 103949. <a href="https://doi.org/10.1016/j.jwpe.2023.103949">DOI</a></p></div></li>
-  </ol>
+<div class="flow-ribbon" aria-label="Decorative airflow animation">
+  <canvas id="flow-canvas" aria-hidden="true"></canvas>
+  <div class="flow-ribbon__label"><span>FOLLOWING THE FLOW</span><span>From observations to understanding.</span></div>
+  <button id="flow-toggle" type="button" aria-pressed="false">Pause motion</button>
 </div>
 
-<aside class="about-panel about-achievements" aria-labelledby="achievements-title">
-  <div class="achievement-heading">
-    <div>
-      <h2 id="achievements-title">Awards &amp; Distinctions</h2>
-    </div>
+<section class="portfolio-section bio-section" aria-labelledby="bio-heading">
+  <div class="section-heading"><span class="section-index">01 / SHORT BIO</span><h2 id="bio-heading">A researcher who<br><em>crosses boundaries.</em></h2></div>
+  <div class="bio-content">
+    <p class="lead-copy">I am a PhD candidate in the Department of the Built Environment at the <strong>National University of Singapore</strong>, working at the intersection of environmental fluid mechanics, experiments, and data-driven modelling.</p>
+    <p>My doctoral research asks how building geometry and porosity shape street-canyon ventilation. I designed and conducted <strong>pressure-tap wind-tunnel experiments</strong> and use RANS/LES simulations to examine pedestrian wind, air exchange, and model fidelity.</p>
+    <p>My route here began with civil and environmental engineering at the <strong>Technion</strong>, followed by an MSc at <strong>KAIST</strong> combining water-treatment experiments, operational data, and machine learning. I developed graph-attention and recurrent models for dosage and turbidity prediction, leading to first-author papers in <strong>Water Research</strong> and the <strong>Journal of Water Process Engineering</strong>.</p>
+    <p>At the <strong>Berkeley Education Alliance for Research in Singapore</strong>, I worked on infrared-camera data collection, image preprocessing, and urban thermal analytics. That work contributed to a first-author dataset publication in <strong>Scientific Data</strong>.</p>
   </div>
-  <div class="achievement-grid">
-    <article class="achievement-item">
-      <span class="achievement-year">2026</span>
-      <strong>IAQVEC Fellowship</strong>
-      <p>Participation Support for IAQVEC 2026 at the University of Southern California.</p>
-    </article>
-    <article class="achievement-item">
-      <span class="achievement-year">2022</span>
-      <strong>A*STAR Merit Award &amp; SINGA</strong>
-      <p>Competitive full scholarship support for doctoral research at NUS.</p>
-    </article>
-    <article class="achievement-item">
-      <span class="achievement-year">2021</span>
-      <strong>Third Prize, AI &amp; Big Data Hackathon</strong>
-      <p>Awarded for a coded skin-analysis application using computer vision and deep learning.</p>
-    </article>
-    <article class="achievement-item">
-      <span class="achievement-year">2016-2026</span>
-      <strong>Full Scholarships across BSc, MSc &amp; PhD</strong>
-      <p>Fully funded undergraduate, master's, and doctoral education at the Technion, KAIST, and NUS, with Dean's List recognition.</p>
-    </article>
-  </div>
-</aside>
-</section>
-
-<section class="about-panel academic-route">
-  <h2>Academic Journey</h2>
-  <p>Before NUS, I completed an MSc by Research in Civil and Environmental Engineering at <strong>KAIST</strong> in South Korea and a BSc in Civil and Environmental Engineering at the <strong>Technion - Israel Institute of Technology</strong>. I have also worked as a Senior Research Engineer at the <strong>Berkeley Education Alliance for Research in Singapore</strong>.</p>
-  <div class="route-band" aria-label="Academic route from Israel to South Korea to Singapore">
-    <div class="route-stop"><span>2016-2020</span><strong>Israel</strong><p>Civil &amp; environmental engineering</p></div>
-    <div class="route-stop"><span>2020-2022</span><strong>South Korea</strong><p>Water, data, and machine learning</p></div>
-    <div class="route-stop"><span>2023-now</span><strong>Singapore</strong><p>Wind tunnels, CFD, and urban air</p></div>
+  <div class="now-grid">
+    <article class="now-card"><span>NOW / A*STAR</span><h3>Tracing pollutants.</h3><p>Since September 2026, my research internship has focused on pollutant dispersion, source identification, and concentration forecasting with computational and statistical methods.</p></article>
+    <article class="now-card"><span>RESEARCH / NUS–SIA</span><h3>Designing local airflow.</h3><p>Comparing aircraft-cabin air-terminal designs using CFD, with prototyping and experimental validation work in the NUS–Singapore Airlines collaboration.</p></article>
+    <article class="now-card"><span>TEACHING / NUS</span><h3>Sharing what I learn.</h3><p>Teaching Assistant for BPS5234A CFD Applications in the Built Environment, supporting modelling, simulation, and practical troubleshooting.</p></article>
   </div>
 </section>
 
-<section class="about-panel about-research">
-  <h2>Research Interests</h2>
-  <ul>
-    <li><strong>Urban ventilation and building porosity</strong> - how openings, geometry, and density affect air exchange in street canyons.</li>
-    <li><strong>Experiments and validated CFD</strong> - wind-tunnel and wet-lab experience connected to RANS and LES workflows for robust, design-ready evidence.</li>
-    <li><strong>Physics-informed AI</strong> - graph neural networks, time-series learning, surrogate models, and LLM-assisted research workflows.</li>
-    <li><strong>Data-rich environmental systems</strong> - AI-enabled building-energy forecasting and water-treatment process prediction.</li>
-  </ul>
-  <div class="research-glance" aria-label="Research at a glance">
-    <div class="glance-card glance-card--urban">
-      <div class="research-image"><img src="{{ '/assets/img/research/urban-cfd-flow.webp' | relative_url }}" alt="CFD contours and streamlines across porous urban street-canyon arrays" loading="lazy"></div>
-      <span>01</span><strong>Urban air</strong><p>Ventilation, building porosity, and street-canyon flow.</p>
-    </div>
-    <div class="glance-card glance-card--experiment">
-      <div class="research-image"><img src="{{ '/assets/img/research/wind-tunnel-concept.webp' | relative_url }}" alt="Concept illustration of pressure-tap wind-tunnel experiments and data acquisition" loading="lazy"></div>
-      <span>02</span><strong>Hands-on experiments</strong><p>Wind-tunnel measurements, water-treatment wet-lab work, and model validation.</p>
-    </div>
-    <div class="glance-card glance-card--ai">
-      <div class="research-image"><img src="{{ '/assets/img/research/physics-ai-concept.webp' | relative_url }}" alt="Concept illustration of CFD, physics constraints, neural networks, and accelerated flow prediction" loading="lazy"></div>
-      <span>03</span><strong>Physics + AI</strong><p>Surrogate models, graph learning, and scientific automation.</p>
+<section class="portfolio-section research-section" id="research" aria-labelledby="research-heading">
+  <div class="section-heading"><span class="section-index">02 / RESEARCH INTERESTS</span><h2 id="research-heading">Measure. Model.<br><em>Make connections.</em></h2><p>Three complementary ways of asking better environmental questions.</p></div>
+  <div class="research-editorial">
+    <article class="research-feature">
+      <div class="research-feature__image"><img src="{{ '/assets/img/research/urban-cfd-flow.webp' | relative_url }}" alt="Concept visual of airflow around porous buildings" loading="lazy"><span>01 / URBAN FLUID MECHANICS</span></div>
+      <div class="research-feature__body"><h3>Air moves.<br>Geometry matters.</h3><p>Building porosity, opening configuration, and array length can change pedestrian wind and canyon-scale exchange in different ways. I study those trade-offs through validated CFD.</p><div class="method-tags"><span>RANS / LES</span><span>Urban ventilation</span><span>Model fidelity</span></div><a class="text-link" href="{{ '/publications/#lin2026porosity' | relative_url }}">Read the research</a></div>
+    </article>
+    <article class="research-feature">
+      <div class="research-feature__image"><img src="{{ '/assets/img/research/wind-tunnel-concept.webp' | relative_url }}" alt="Concept illustration of a wind tunnel, pressure taps, and data acquisition" loading="lazy"><span>02 / HANDS-ON EXPERIMENTS</span></div>
+      <div class="research-feature__body"><h3>From the lab<br>to the model.</h3><p>Wind-tunnel models, pressure taps, tubing, data acquisition, and uncertainty analysis. Earlier work also brought me into water-treatment wet labs and infrared field sensing.</p><div class="method-tags"><span>Wind tunnels</span><span>Wet lab</span><span>Thermal imaging</span></div><a class="text-link" href="{{ '/journey/' | relative_url }}">My experimental background</a></div>
+    </article>
+    <article class="research-feature">
+      <div class="research-feature__image"><img src="{{ '/assets/img/research/physics-ai-concept.webp' | relative_url }}" alt="Concept visual connecting physical models, data, and neural networks" loading="lazy"><span>03 / ENVIRONMENTAL AI</span></div>
+      <div class="research-feature__body"><h3>Learning with<br>physical context.</h3><p>Graph learning and time-series forecasting for environmental operations; LLM-generated heuristics for building energy and HVAC diagnostics; emerging work on pollutant-source inference.</p><div class="method-tags"><span>Python / PyTorch</span><span>Graph learning</span><span>Physics-informed AI</span></div><a class="text-link" href="{{ '/publications/#lin2023coagulant' | relative_url }}">Models &amp; publications</a></div>
+    </article>
+  </div>
+  <p class="figure-note">Concept illustrations of my research themes. Original study figures appear in Publications.</p>
+</section>
+
+<section class="portfolio-section recognition-section" aria-labelledby="recognition-heading">
+  <div class="section-heading"><span class="section-index">03 / RECOGNITION</span><h2 id="recognition-heading">Built on curiosity.<br><em>Backed by commitment.</em></h2></div>
+  <div class="recognition-layout">
+    <div class="recognition-feature"><span class="large-number">03</span><h3>Stages of study.<br>Three countries.<br>Full scholarships.</h3><p>My BSc, MSc, and ongoing PhD education has been supported by full scholarships, allowing me to build an independent path through Israel, South Korea, and Singapore.</p><a href="{{ '/journey/' | relative_url }}" class="text-link">Follow my academic journey</a></div>
+    <div class="recognition-list">
+      <article><span>2026</span><div><h3>IAQVEC Fellowship</h3><p>Participation support for IAQVEC 2026.</p></div></article>
+      <article><span>2022</span><div><h3>A*STAR Merit Award · SINGA</h3><p>Doctoral scholarship support at NUS.</p></div></article>
+      <article><span>2021</span><div><h3>AI &amp; Big Data Hackathon · Third Prize</h3><p>Daewoong Foundation; computer vision and an AI skin-analysis prototype.</p></div></article>
+      <article><span>2018–19</span><div><h3>Technion Dean’s List</h3><p>Academic recognition and scholarships.</p></div></article>
     </div>
   </div>
 </section>
 
-<section class="about-panel about-strengths">
-  <h2>Curious, adaptive, and self-directed</h2>
-  <div class="strength-grid">
-    <article class="strength-card"><strong>Hands-on thinker</strong><p>I enjoy moving between water-treatment wet-lab experiments, long-term operational data, wind-tunnel measurements, RANS/LES simulations, and AI models.</p></article>
-    <article class="strength-card"><strong>Learn fast, then go deep</strong><p>I have moved from civil and environmental engineering into ML, deep learning, programming, probability, CFD, and now LLMs - always taking time to build the fundamentals.</p></article>
-    <article class="strength-card"><strong>Independent and resilient</strong><p>I funded my international education through full scholarships across my BSc, MSc, and PhD, and I am comfortable taking ownership of difficult problems from start to finish.</p></article>
-    <article class="strength-card"><strong>Open to the unfamiliar</strong><p>Life in Israel, South Korea, and Singapore taught me to adapt across cultures and languages - from the Technion preparatory programme in Hebrew to learning Korean in Daejeon.</p></article>
+<section class="portfolio-section personality-section" aria-labelledby="personality-heading">
+  <div class="section-heading"><span class="section-index">04 / BEYOND THE CV</span><h2 id="personality-heading">Always a beginner<br><em>at something new.</em></h2></div>
+  <div class="personality-grid">
+    <article><span>01</span><h3>Hands-on &amp; self-directed</h3><p>I like building the experiment, writing the code, and following a question through the details. Learning a new tool is part of the work.</p></article>
+    <article><span>02</span><h3>Adaptive across disciplines</h3><p>From civil engineering and water treatment to deep learning, CFD, and LLMs, I take time to learn the fundamentals before making connections.</p></article>
+    <article><span>03</span><h3>Open to unfamiliar places</h3><p>Living in three countries taught me to adapt across cultures and languages, including studying Hebrew and learning Korean.</p></article>
   </div>
+  <a class="beyond-link" href="{{ '/interests/' | relative_url }}"><span>OFF THE CLOCK</span><strong>Mountains, console games,<br>and life through a lens.</strong><span>Explore my interests ↗</span></a>
 </section>
-
-<p class="about-links">Explore my <a href="{{ '/journey/' | relative_url }}">academic journey</a> and <a href="{{ '/publications/' | relative_url }}">publications</a>.</p>

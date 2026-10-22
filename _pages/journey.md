@@ -71,12 +71,27 @@ nav_order: 2
       </div>
     </div>
     <div class="journey-event__card">
-      <p class="journey-date">Jan 2023 - Dec 2026 (expected)</p>
+      <p class="journey-date">Jan 2023 - Present</p>
       <h2>National University of Singapore</h2>
-      <p class="journey-degree">PhD in Built Environment</p>
+      <p class="journey-degree">PhD Candidate in Built Environment</p>
       <p class="journey-location">Singapore</p>
       <p>Researching urban ventilation, wind-tunnel-validated CFD, building porosity, and physics-informed AI for healthier cities. Built practical CFD foundations by conducting wind-tunnel experiments, running RANS and LES simulations, and carrying out detailed model validation.</p>
+      <p>In the <strong>NUS–Singapore Airlines collaboration</strong>, I compare aircraft-cabin air-terminal designs using CFD and support prototyping and experimental validation. I also develop physics-informed approaches to HVAC diagnostics and building-energy forecasting.</p>
       <div class="journey-tags"><span>Full scholarship</span><span>Wind tunnel + CFD</span><span>Physics-informed AI</span></div>
+    </div>
+  </article>
+
+  <article class="journey-event journey-event--astar">
+    <div class="journey-event__pin">
+      <div class="journey-logo journey-logo--astar" aria-label="A*STAR">A*STAR</div>
+    </div>
+    <div class="journey-event__card">
+      <p class="journey-date">Sep 2026 - Present</p>
+      <h2>Agency for Science, Technology and Research</h2>
+      <p class="journey-degree">Research Intern · A*STAR</p>
+      <p class="journey-location">Singapore</p>
+      <p>Working on <strong>pollutant dispersion, source identification, and concentration time-series prediction</strong>, combining CFD with statistical and machine-learning methods alongside my doctoral research.</p>
+      <div class="journey-tags"><span>Pollutant transport</span><span>Source inference</span><span>Time-series modelling</span></div>
     </div>
   </article>
 </section>
@@ -93,8 +108,9 @@ nav_order: 2
   <article class="journey-mini-card">
     <p class="journey-kicker">TEACHING</p>
     <ul>
-      <li><strong>2026</strong> TA, <mark class="journey-highlight journey-highlight--teaching">BCA-GMAAP CFD Modelling for Naturally Ventilated Buildings</mark></li>
-      <li><strong>2024</strong> TA, <mark class="journey-highlight journey-highlight--teaching">BPS5112 Green Building Integration and Evaluation Studio</mark>, NUS</li>
+      <li><strong>Aug 2026 - Present</strong> TA, <mark class="journey-highlight journey-highlight--teaching">BPS5234A CFD Applications in the Built Environment</mark>, NUS. Modelling guidance and simulation troubleshooting for graduate students.</li>
+      <li><strong>Jun 2026</strong> TA, <mark class="journey-highlight journey-highlight--teaching">BCA-GMAAP CFD Modelling for Naturally Ventilated Buildings</mark></li>
+      <li><strong>Aug - Nov 2024</strong> TA, <mark class="journey-highlight journey-highlight--teaching">BPS5112 Green Building Integration and Evaluation Studio</mark>, NUS</li>
     </ul>
   </article>
 </section>
