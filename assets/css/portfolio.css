@@ -6,20 +6,20 @@ body.portfolio-2026::before { opacity: .16; background-size: 64px 64px; }
 .portfolio-2026 * { box-sizing: border-box; }
 .portfolio-2026 h1, .portfolio-2026 h2, .portfolio-2026 h3, .portfolio-2026 h4 { color: var(--ink); font-family: "Space Grotesk", sans-serif; font-weight: 600; line-height: 1.12; letter-spacing: -.045em; }
 .portfolio-2026 strong, .portfolio-2026 b { font-weight: 800; }
-.portfolio-2026 h2 em, .portfolio-2026 h3 em, .portfolio-2026 h1 em { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; letter-spacing: -.03em; }
+.portfolio-2026 h2 em, .portfolio-2026 h3 em, .portfolio-2026 h1 em { color: inherit; font-family: "Instrument Serif", Georgia, serif; font-weight: 400; letter-spacing: -.03em; }
 .portfolio-2026 a { color: var(--blue); }
 .portfolio-2026 a:hover { color: var(--teal); }
 .portfolio-2026 :focus-visible { outline: 3px solid #e77539; outline-offset: 5px; }
 .portfolio-2026 > [role="main"] { max-width: 1280px; width: calc(100% - 96px); margin: 0 auto !important; padding: 0; border: none; background: none; box-shadow: none; }
 .portfolio-2026.fixed-top-nav { padding-top: 108px; }
 .portfolio-2026 > header { z-index: 1500; }
-.portfolio-2026 #navbar.navbar { inset: 16px 28px auto; min-height: 66px; padding: 12px 22px; border: 1px solid #d9e2e3; border-radius: 18px; background: rgba(250,252,251,.97); box-shadow: 0 10px 40px #102e3912; z-index: 1500; }
+.portfolio-2026 #navbar.navbar { inset: 16px 28px auto; min-height: 66px; padding: 12px 22px; border: 1px solid #d9e2e3; border-radius: 18px; background: #fafcfb; box-shadow: 0 10px 40px #102e3912; z-index: 1500; }
 .portfolio-2026 #navbar > .container { max-width: 1280px; }
 .portfolio-2026 #navbar .navbar-brand { font-family: "Space Grotesk", sans-serif; font-size: 1.25rem; letter-spacing: -.05em; font-weight: 700 !important; color: var(--ink); }
 .portfolio-2026 #navbar .nav-link { padding: 8px 13px; font-size: 15px; font-weight: 700; letter-spacing: -.015em; color: var(--ink); text-transform: none; }
 .portfolio-2026 #navbar .active .nav-link { background: #e8edfc; color: #214edd; border-radius: 9px; }
 .portfolio-2026 #search-toggle { border: 0; background: none; }
-.portfolio-2026 #progress { top: 0; height: 3px; z-index: 1600; color: var(--blue); }
+.portfolio-2026 #progress { top: 0 !important; height: 3px; z-index: 1600; color: var(--blue); }
 .portfolio-2026 #progress::-webkit-progress-value { background: var(--blue); }
 .skip-content { position: fixed; top: -100px; left: 30px; z-index: 5000; background: white; padding: 12px 20px; }
 .skip-content:focus { top: 8px; }
@@ -57,7 +57,7 @@ body.portfolio-2026::before { opacity: .16; background-size: 64px 64px; }
 #flow-canvas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 .flow-ribbon__label { position: relative; z-index: 1; display: flex; height: 100%; flex-direction: column; justify-content: center; padding: 30px 35px; width: max-content; max-width: 75%; background: linear-gradient(90deg,#123c46 60%,#123c4600); }
 .flow-ribbon__label span:first-child { font-size: 11px; letter-spacing: .15em; color: #bde9d9; }
-.flow-ribbon__label span:last-child { font-family: "Instrument Serif",serif; font-size: 30px; font-style: italic; }
+.portfolio-2026 .flow-ribbon__label span:last-child { color: #e8faf8; font-family: "Instrument Serif",serif; font-size: 30px; font-style: italic; }
 #flow-toggle { position: absolute; z-index: 2; right: 20px; bottom: 18px; background: #123c46; color: #e8faf8; border: 1px solid #8bbdbd; border-radius: 25px; font-size: 12px; padding: 6px 14px; }
 .portfolio-section { padding: 85px 0; border-bottom: 1px solid var(--line); }
 .section-heading { margin-bottom: 34px; }
@@ -75,9 +75,11 @@ body.portfolio-2026::before { opacity: .16; background-size: 64px 64px; }
 .now-card > span { font-size: 11px; letter-spacing: .13em; font-weight: 800; }
 .now-card h3 { font-size: 1.5rem; margin: 16px 0; }
 .now-card p { font-size: .96rem; margin: 0; line-height: 1.7; color: #35494e; }
+.now-card, .recognition-feature { transition: transform .3s, box-shadow .3s; }
+.now-card:hover, .recognition-feature:hover { transform: translateY(-5px); box-shadow: 0 16px 32px #17314015; }
 .research-editorial { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 23px; }
 .research-feature { border: 1px solid #d3dfe2; border-radius: 22px; overflow: hidden; background: white; transition: transform .35s, box-shadow .35s; }
-.research-feature:hover { transform: translateY(-8px); box-shadow: 0 22px 45px #17314018; }
+.portfolio-2026 .research-feature:hover { transform: translateY(-8px); box-shadow: 0 22px 45px #17314018; }
 .research-feature__image { position: relative; padding: 12px; background: #e5edf3; }
 .research-feature__image img { width: 100%; height: 220px; object-fit: cover; border-radius: 14px; }
 .research-feature__image > span { display: block; padding: 12px 5px 4px; font-size: 10px; font-weight: 800; letter-spacing: .12em; }
@@ -106,6 +108,7 @@ body.portfolio-2026::before { opacity: .16; background-size: 64px 64px; }
 .beyond-link > span:first-child { color: #c9eece; font-size: 11px; letter-spacing: .15em; }
 .beyond-link > strong { font-family: "Space Grotesk",sans-serif; font-size: clamp(1.5rem,3vw,2.5rem); letter-spacing: -.04em; line-height: 1.2; margin: 20px 0 24px; }
 .beyond-link > span:last-child { font-size: 14px; }
+.portfolio-2026 .beyond-link > strong, .portfolio-2026 .beyond-link > span:last-child { color: white; }
 .portfolio-2026 .beyond-link:hover { color: white; text-decoration: none; box-shadow: 0 16px 40px #142f3525; }
 .portfolio-2026 .news .table { color: var(--ink); font-size: 1rem; }
 .portfolio-2026 .news .table th { color: var(--teal); font-family: "Space Grotesk",sans-serif; font-size: .9rem; padding: 20px 20px 20px 0; white-space: normal; min-width: 140px; }
@@ -117,11 +120,14 @@ body.portfolio-2026::before { opacity: .16; background-size: 64px 64px; }
 .portfolio-2026 .publications ol.bibliography li .row { align-items: center; gap: 16px 0; }
 .portfolio-2026 .publications ol.bibliography li .preview { border-radius: 9px; background: white; }
 .portfolio-2026 .publications ol.bibliography li .abbr { max-width: none; }
+.portfolio-2026 .publications .abbr .badge { background: #e7eefb; color: #214edd; box-shadow: none; padding: 6px 12px; font-size: 12px; }
 .portfolio-2026 .publications img { object-fit: contain; height: auto; max-height: none; background: white; }
 .portfolio-2026 .publications .title { font-size: 1.1rem; line-height: 1.5; font-weight: 800; }
 .portfolio-2026 .publications .author, .portfolio-2026 .publications .periodical { font-size: .93rem; line-height: 1.65; }
 .portfolio-2026 .publications .paper-summary { font-size: 1rem; color: #364d53; }
 .portfolio-2026 .publications .links .btn { border-radius: 30px; padding: 6px 17px; font-size: 13px; color: var(--blue); border-color: #b5c5e5; }
+.portfolio-2026 .publications .text-only .abbr, .portfolio-2026 .publications .text-only .abbr + div { flex: 0 0 100%; max-width: 100%; }
+.portfolio-2026 .publications .text-only .abbr abbr { width: auto !important; min-width: 90px; padding: 7px 14px; }
 .portfolio-2026 .manuscripts { margin: 40px 0 50px; padding: 28px; border-radius: 20px; background: #e7eef8; }
 .manuscripts h2 { font-size: 2rem; }
 .manuscripts p { margin-bottom: 0; font-size: 1rem; }
@@ -141,13 +147,25 @@ body.portfolio-2026::before { opacity: .16; background-size: 64px 64px; }
 .portfolio-2026 .travel-route__heading h2 { font-size: clamp(2.1rem,4vw,3.5rem); }
 .portfolio-2026 .travel-route__places { font-size: 1rem; line-height: 1.9; }
 .portfolio-2026 .interest-card { border-radius: 24px; }
+.portfolio-2026 .interest-card:hover { transform: translateY(-5px); }
 .portfolio-2026 .interest-card h2 { font-size: 2.1rem; }
 .portfolio-2026 .interest-card p { font-size: 1rem; }
 .portfolio-2026 .interest-card--play h2, .portfolio-2026 .interest-card--next h2 { color: inherit; }
+.portfolio-2026 .interest-card--play em { color: inherit; }
+.portfolio-2026 .interest-card--play .interest-card__link, .portfolio-2026 .interest-card--play .interest-card__link span { color: #fff9e9; }
+.portfolio-2026 .travel-route .interests-eyebrow { color: var(--teal); }
+.portfolio-2026 .world-map { aspect-ratio: 2 / 1; }
+.portfolio-2026 .world-map__base { inset: 0; width: 100%; height: 100%; filter: none; opacity: 1; object-fit: contain; }
+.portfolio-2026 .world-marker { width: 10px; height: 10px; }
+.portfolio-2026 .world-marker::after { display: block; }
+.portfolio-2026 .world-marker:hover, .portfolio-2026 .world-marker:focus { z-index: 5; }
+.portfolio-2026 .world-map__legend span { color: #fbf8eb; }
+.portfolio-2026 .map-note { font-size: 12px; line-height: 1.6; color: var(--muted); }
 .portfolio-2026 .social { margin: 60px 0; }
 .portfolio-2026 .social .contact-note { font-size: 1rem; color: var(--muted); }
 .portfolio-2026 > footer { padding: 30px 0; margin-top: 50px; background: #173b43; color: #e0eeec; font-size: 13px; }
 .portfolio-2026 > footer a { color: white; }
+.portfolio-2026 > footer .container { color: #e0eeec; }
 .portfolio-2026 [data-reveal] { opacity: 1; transform: none; }
 .portfolio-2026.motion-enabled [data-reveal].reveal-waiting { opacity: 0; transform: translateY(28px); }
 .portfolio-2026.motion-enabled [data-reveal] { transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
@@ -184,6 +202,7 @@ body.portfolio-2026::before { opacity: .16; background-size: 64px 64px; }
   .portfolio-2026 .publications .abbr img { max-width: 100%; width: auto; margin: auto; max-height: 350px; }
 }
 @media (max-width: 480px) {
+  .portfolio-2026 .world-marker { width: 6px; height: 6px; }
   .hero-statement { font-size: 1.9rem; }
   .eyebrow { font-size: 10px; letter-spacing: .1em; }
   .hero-portrait { width: 90%; }
