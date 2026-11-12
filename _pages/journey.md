@@ -19,7 +19,7 @@ nav_order: 2
   <article class="journey-event journey-event--technion">
     <div class="journey-event__pin">
       <div class="journey-logo journey-logo--technion">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Technion-logo5.png" alt="Technion logo">
+        <img src="{{ '/assets/img/newspaper/technion.png' | relative_url }}" alt="Technion logo">
       </div>
     </div>
     <div class="journey-event__card">
@@ -35,7 +35,7 @@ nav_order: 2
   <article class="journey-event journey-event--kaist">
     <div class="journey-event__pin">
       <div class="journey-logo journey-logo--kaist">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/KAIST_logo.svg" alt="KAIST logo">
+        <img src="{{ '/assets/img/newspaper/kaist.svg' | relative_url }}" alt="KAIST logo">
       </div>
     </div>
     <div class="journey-event__card">
@@ -51,7 +51,7 @@ nav_order: 2
   <article class="journey-event journey-event--bears">
     <div class="journey-event__pin">
       <div class="journey-logo journey-logo--bears">
-        <img src="{{ '/assets/img/bears-logo.png' | relative_url }}" alt="BEARS logo">
+        <img src="{{ '/assets/img/newspaper/bears-bear.png' | relative_url }}" alt="BEARS logo">
       </div>
     </div>
     <div class="journey-event__card">
@@ -67,7 +67,7 @@ nav_order: 2
   <article class="journey-event journey-event--nus">
     <div class="journey-event__pin">
       <div class="journey-logo journey-logo--nus">
-        <img src="https://nus.edu.sg/images/default-source/identity-images/nus-logo-blue-horizontal.jpg" alt="National University of Singapore logo">
+        <img src="{{ '/assets/img/newspaper/nus-crest.png' | relative_url }}" alt="National University of Singapore logo">
       </div>
     </div>
     <div class="journey-event__card">
@@ -83,7 +83,7 @@ nav_order: 2
 
   <article class="journey-event journey-event--astar">
     <div class="journey-event__pin">
-      <div class="journey-logo journey-logo--astar" aria-label="A*STAR">A*STAR</div>
+      <div class="journey-logo journey-logo--astar"><img src="{{ '/assets/img/newspaper/astar-mark.png' | relative_url }}" alt="A*STAR logo"></div>
     </div>
     <div class="journey-event__card">
       <p class="journey-date">Sep 2026 - Present</p>
