@@ -1,7 +1,8 @@
 ---
 layout: about
-title: About
-permalink: /
+title: Classic
+permalink: /classic/
+classic_home: true
 editorial_hero: true
 profile: false
 selected_papers: true
