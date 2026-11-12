@@ -77,10 +77,14 @@ h2{font-size:clamp(30px,4.2vw,54px);text-align:center;margin-bottom:6px}
 .ad:hover{transform:rotate(-1.5deg) scale(1.03);background:rgba(143,36,22,.08)}
 .ad b{display:block;font:900 30px "Playfair Display",serif;letter-spacing:.1em}
 .ad p{font-size:14px;line-height:1.4;margin:6px 0}
+.ad .addr{font-size:14px;margin:8px 0 0;letter-spacing:.02em;user-select:all}
 .ad a{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
-.ticker{margin-top:22px;border-top:3px double var(--rule);border-bottom:3px double var(--rule);overflow:hidden;white-space:nowrap;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:7px 0}
-.ticker span{display:inline-block;padding-left:100%;animation:tick 32s linear infinite}
-@keyframes tick{to{transform:translateX(-100%)}}
+.honours{margin-top:22px;border-top:3px double var(--rule);border-bottom:3px double var(--rule);display:grid;grid-template-columns:repeat(4,1fr)}
+.honours div{padding:10px 16px}
+.honours div+div{border-left:1px solid var(--rule)}
+.honours b{display:block;color:var(--red);font-size:12px;letter-spacing:.18em;margin-bottom:3px}
+.honours span{display:block;font:700 16px/1.2 "Playfair Display",serif}
+.honours small{display:block;font-size:13px;font-style:italic;margin-top:2px}
 
 /* research */
 .three{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
@@ -104,14 +108,21 @@ th{font-size:12px;letter-spacing:.18em;text-transform:uppercase;text-align:left;
 td{padding:15px 10px;border-bottom:1px dashed var(--rule);vertical-align:top;line-height:1.4;transition:background .25s}
 tr:hover td{background:rgba(143,36,22,.08)}
 td:first-child{font:900 26px "Playfair Display",serif;white-space:nowrap}
+.st{display:flex;align-items:center;gap:14px}
+.lg{flex:0 0 58px;height:58px;display:flex;align-items:center;justify-content:center;border:1px solid var(--rule);background:#fff;padding:5px;font:900 11px "Playfair Display",serif;white-space:nowrap}
+.lg img{max-width:100%;max-height:100%;object-fit:contain}
+.lg.dark{background:#07366d;padding:0}.lg.dark img{width:100%;height:100%;object-fit:cover}
 td small{display:block;font:400 12px "Old Standard TT",serif;letter-spacing:.14em;text-transform:uppercase;margin-top:4px}
 td i{color:var(--red);font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-style:normal;font-weight:700;white-space:nowrap}
 
 /* supplement */
 .supp{display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:start}
 .supp>*+*{border-left:1px solid var(--rule);padding-left:30px}
-.map{border:1px solid var(--rule);padding:12px;background:#fff}
-.map img{display:block;width:100%;filter:grayscale(1) contrast(1.6) brightness(.8)}
+.map{position:relative;aspect-ratio:2/1;border:1px solid var(--rule);background:#fff;overflow:hidden}
+.pin{position:absolute;z-index:2;top:var(--y);left:var(--x);width:11px;height:11px;border-radius:50%;background:var(--red);border:2px solid #fff;box-shadow:0 0 0 1px var(--red);transform:translate(-50%,-50%)}
+.pin:after{content:attr(data-place);position:absolute;left:50%;bottom:calc(100% + 7px);transform:translateX(-50%);background:var(--ink);color:#fff;font:700 11px/1 "Old Standard TT",serif;letter-spacing:.06em;padding:5px 7px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .15s}
+.pin:hover,.pin:focus{z-index:3;outline:0}.pin:hover:after,.pin:focus:after{opacity:1}
+.map img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:grayscale(1) contrast(1.6) brightness(.8)}
 .supp .press{aspect-ratio:4/3}
 
 @media (max-width:900px){
@@ -121,6 +132,8 @@ td i{color:var(--red);font-size:13px;letter-spacing:.12em;text-transform:upperca
   .front>*+*,.three>*+*,.supp>*+*{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:18px}
   .front .press{max-width:340px}
   th:nth-child(3),td:nth-child(3){display:none}
+  .honours{grid-template-columns:1fr 1fr}.honours div:nth-child(3){border-left:0}.honours div:nth-child(n+3){border-top:1px solid var(--rule)}
+  .lg{flex-basis:46px;height:46px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
@@ -175,11 +188,16 @@ a.clip{display:block;text-decoration:none}
      <div class="brief"><b>A*STAR</b><h3>Tracing pollutants.</h3><p>Research internship since September 2026 on pollutant dispersion, source identification, and concentration forecasting.</p></div>
      <div class="brief"><b>NUS&ndash;SIA</b><h3>Designing local airflow.</h3><p>Comparing aircraft-cabin air-terminal designs using CFD, with prototyping and experimental validation.</p></div>
      <div class="brief"><b>Teaching</b><h3>Sharing what I learn.</h3><p>Teaching Assistant for BPS5234A CFD Applications in the Built Environment.</p></div>
-     <div class="ad"><b>WANTED</b><p>Postdoctoral, research scientist, and R&amp;D opportunities.</p><a href="mailto:necolsy@gmail.com">Get in touch</a></div>
+     <div class="ad"><b>WANTED</b><p>Postdoctoral, research scientist, and R&amp;D opportunities.</p><a id="mail" href="mailto:necolsy@gmail.com">Get in touch</a><p class="addr" id="addr">necolsy@gmail.com</p></div>
     </aside>
    </div>
 
-   <div class="ticker"><span>2026 &middot; IAQVEC Fellowship &nbsp;&#9670;&nbsp; 2022 &middot; A*STAR Merit Award, SINGA &nbsp;&#9670;&nbsp; 2021 &middot; AI &amp; Big Data Hackathon, Third Prize &nbsp;&#9670;&nbsp; 2018&ndash;19 &middot; Technion Dean&rsquo;s List &nbsp;&#9670;&nbsp; Three stages of study, three countries, full scholarships</span></div>
+   <div class="honours" aria-label="Honours">
+    <div><b>2026</b><span>IAQVEC Fellowship</span><small>Participation support</small></div>
+    <div><b>2022</b><span>A*STAR Merit Award</span><small>SINGA doctoral scholarship</small></div>
+    <div><b>2021</b><span>Third Prize</span><small>AI &amp; Big Data Hackathon</small></div>
+    <div><b>2018&ndash;19</b><span>Dean&rsquo;s List</span><small>Technion</small></div>
+   </div>
    <nav class="more"><a href="https://scholar.google.com/citations?user=tbNGYBQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a><a href="https://www.linkedin.com/in/subin-lin-81710b211/" target="_blank" rel="noopener">LinkedIn</a><a href="{{ '/assets/pdf/subin-lin-cv.pdf' | relative_url }}">Curriculum vitae (PDF)</a><a href="{{ '/news/' | relative_url }}">News</a><a href="{{ '/classic/' | relative_url }}">Classic site</a></nav>
   </section>
 
@@ -222,11 +240,11 @@ a.clip{display:block;text-decoration:none}
    <p class="deck">BSc, MSc and PhD, each supported by a full scholarship.</p>
    <table>
     <tr><th>Station</th><th>Line of work</th><th>Place</th><th>Notes</th></tr>
-    <tr><td>Technion<small>BSc</small></td><td>Civil engineering foundations.</td><td>Israel</td><td><i>Full scholarship</i></td></tr>
-    <tr><td>KAIST<small>MSc</small></td><td>Water treatment + AI; data science.</td><td>South Korea</td><td><i>Full scholarship</i></td></tr>
-    <tr><td>BEARS<small>Berkeley Education Alliance for Research in Singapore</small></td><td>Infrared thermography, image preprocessing, Python analysis.</td><td>Singapore</td><td><i>Research</i></td></tr>
-    <tr><td>NUS<small>PhD &middot; Built Environment</small></td><td>Wind tunnel + CFD; physics-informed AI; NUS&ndash;Singapore Airlines collaboration.</td><td>Singapore</td><td><i>A*STAR SINGA scholarship</i><small>Jan 2023 &ndash; Jan 2027</small></td></tr>
-    <tr><td>A*STAR<small>Research internship</small></td><td>Pollutant transport, source inference, time-series modelling.</td><td>Singapore</td><td><i>Now</i><small>Sep 2026 &ndash; present</small></td></tr>
+    <tr><td><div class="st"><span class="lg"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Technion-logo5.png" alt="Technion logo"></span><div>Technion<small>BSc</small></div></div></td><td>Civil engineering foundations.</td><td>Israel</td><td><i>Full scholarship</i></td></tr>
+    <tr><td><div class="st"><span class="lg"><img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/KAIST_logo.svg" alt="KAIST logo"></span><div>KAIST<small>MSc</small></div></div></td><td>Water treatment + AI; data science.</td><td>South Korea</td><td><i>Full scholarship</i></td></tr>
+    <tr><td><div class="st"><span class="lg dark"><img loading="lazy" src="{{ '/assets/img/bears-logo.png' | relative_url }}" alt="BEARS logo"></span><div>BEARS<small>Berkeley Education Alliance for Research in Singapore</small></div></div></td><td>Infrared thermography, image preprocessing, Python analysis.</td><td>Singapore</td><td><i>Research</i></td></tr>
+    <tr><td><div class="st"><span class="lg"><img loading="lazy" src="https://nus.edu.sg/images/default-source/identity-images/nus-logo-blue-horizontal.jpg" alt="National University of Singapore logo"></span><div>NUS<small>PhD &middot; Built Environment</small></div></div></td><td>Wind tunnel + CFD; physics-informed AI; NUS&ndash;Singapore Airlines collaboration.</td><td>Singapore</td><td><i>A*STAR SINGA scholarship</i><small>Jan 2023 &ndash; Jan 2027</small></td></tr>
+    <tr><td><div class="st"><span class="lg" aria-hidden="true">A*STAR</span><div>A*STAR<small>Research internship</small></div></div></td><td>Pollutant transport, source inference, time-series modelling.</td><td>Singapore</td><td><i>Now</i><small>Sep 2026 &ndash; present</small></td></tr>
    </table>
    <nav class="more"><a href="{{ '/journey/' | relative_url }}">The full journey</a></nav>
   </section>
@@ -238,7 +256,7 @@ a.clip{display:block;text-decoration:none}
    <h2>Always a beginner <em>at something new.</em></h2>
    <p class="deck">Mountains, console games, and life through a lens.</p>
    <div class="supp">
-    <figure><div class="map"><img loading="lazy" src="{{ '/assets/img/travel-world.svg' | relative_url }}" alt="World map of places visited"></div><figcaption class="cap">Nineteen places so far.</figcaption></figure>
+    <figure><div class="map"><img loading="lazy" src="{{ '/assets/img/travel-world.svg' | relative_url }}" alt="World map of places visited"><span class="pin" style="--x:75.95%;--y:49.22%" data-place="Singapore" tabindex="0" role="img" aria-label="Singapore"></span><span class="pin" style="--x:58.34%;--y:31.72%" data-place="Israel" tabindex="0" role="img" aria-label="Israel"></span><span class="pin" style="--x:74.99%;--y:41.32%" data-place="Thailand" tabindex="0" role="img" aria-label="Thailand"></span><span class="pin" style="--x:75.48%;--y:47.69%" data-place="Malaysia" tabindex="0" role="img" aria-label="Malaysia"></span><span class="pin" style="--x:79.45%;--y:36.26%" data-place="Taiwan" tabindex="0" role="img" aria-label="Taiwan"></span><span class="pin" style="--x:79.93%;--y:28.92%" data-place="South Korea" tabindex="0" role="img" aria-label="South Korea"></span><span class="pin" style="--x:79.49%;--y:51.74%" data-place="Indonesia" tabindex="0" role="img" aria-label="Indonesia"></span><span class="pin" style="--x:82.23%;--y:28.52%" data-place="Japan" tabindex="0" role="img" aria-label="Japan"></span><span class="pin" style="--x:58.11%;--y:27.36%" data-place="Turkey" tabindex="0" role="img" aria-label="Turkey"></span><span class="pin" style="--x:51.15%;--y:19.85%" data-place="Netherlands" tabindex="0" role="img" aria-label="Netherlands"></span><span class="pin" style="--x:55.16%;--y:13.55%" data-place="Finland" tabindex="0" role="img" aria-label="Finland"></span><span class="pin" style="--x:56.94%;--y:21.64%" data-place="Ukraine" tabindex="0" role="img" aria-label="Ukraine"></span><span class="pin" style="--x:50.56%;--y:23.05%" data-place="France" tabindex="0" role="img" aria-label="France"></span><span class="pin" style="--x:52.85%;--y:25.34%" data-place="Italy" tabindex="0" role="img" aria-label="Italy"></span><span class="pin" style="--x:49.15%;--y:26.78%" data-place="Spain" tabindex="0" role="img" aria-label="Spain"></span><span class="pin" style="--x:27.07%;--y:27.36%" data-place="United States" tabindex="0" role="img" aria-label="United States"></span><span class="pin" style="--x:27.66%;--y:17.77%" data-place="Canada" tabindex="0" role="img" aria-label="Canada"></span><span class="pin" style="--x:82.51%;--y:64.50%" data-place="Australia" tabindex="0" role="img" aria-label="Australia"></span><span class="pin" style="--x:89.60%;--y:73.80%" data-place="New Zealand" tabindex="0" role="img" aria-label="New Zealand"></span></div><figcaption class="cap">Nineteen places so far. Hover a dot to see where.</figcaption></figure>
     <div>
      <div class="press"><img loading="lazy" src="{{ '/assets/img/newspaper/subin-lin-paradise.jpg' | relative_url }}" alt="Subin Lin travelling"></div>
      <p class="cap" style="margin-bottom:14px">From the correspondent&rsquo;s own album.</p>
@@ -265,6 +283,14 @@ document.querySelectorAll('.ed').forEach(function(t){
       if(history.replaceState)history.replaceState(null,'',t.dataset.s==='p1'?location.pathname:'#'+names[t.dataset.s]);
     },270);
   });
+});
+// "Get in touch" copies the address as well, for visitors without a mail app
+var mail=document.getElementById('mail'),addr=document.getElementById('addr');
+mail.addEventListener('click',function(){
+  var a=addr.dataset.a||(addr.dataset.a=addr.textContent);
+  var pick=function(){var r=document.createRange();r.selectNodeContents(addr);var g=getSelection();g.removeAllRanges();g.addRange(r)};
+  var done=function(){addr.textContent='Copied: '+a;setTimeout(function(){addr.textContent=a},2600)};
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(a).then(done,pick);else pick();
 });
 // open the edition named in the address, e.g. /#publications
 var names={p1:'front',p2:'research',p3:'publications',p4:'journey',p5:'interests'};
