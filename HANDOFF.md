@@ -22,7 +22,7 @@ The home page (`/`) is a newspaper: a rack of folded papers at the top, and the 
 | Behaviour (pull-out, address fragment, copy e-mail) | `assets/js/newspaper.js` |
 | Pictures and logos (resized, web-ready) | `assets/img/newspaper/` |
 
-To change wording, a link, a date or a picture on the home page, edit `_data/newspaper.yml` only. To add a section, add an entry under `sections` there and a matching `{% when %}` block in `_pages/newspaper.html`. Each section's `id` is also its address fragment (`/#journey`).
+To change wording, a link, a date or a picture on the home page, edit `_data/newspaper.yml` only. To add a section, add an entry under `sections` there and a matching `when` branch in the section `case` in `_pages/newspaper.html`. Each section's `id` is also its address fragment (`/#journey`).
 
 ### Inner pages
 
@@ -66,6 +66,7 @@ Push changes to the `main` branch. GitHub Actions runs `.github/workflows/deploy
 
 ## Handoff notes
 
+- `HANDOFF.md` is listed under `exclude` in `_config.yml` so it is not published; keep Liquid tags out of it all the same.
 - This machine has no Ruby/Jekyll, so changes are verified on the deployed site after the Actions build. Pushing to `main` deploys.
 - The home page is a standalone document (it does not use `default.liquid`), so `main.scss` and `portfolio.css` do not apply to it.
 

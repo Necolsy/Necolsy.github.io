@@ -184,6 +184,7 @@ exclude:
   - FAQ.md
   - Gemfile
   - Gemfile.lock
+  - HANDOFF.md
   - INSTALL.md
   - LICENSE
   - lighthouse_results/
