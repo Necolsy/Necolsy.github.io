@@ -80,6 +80,14 @@
 {% endunless %}
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
+{% unless site.enable_darkmode %}
+  <!-- theme.js is not loaded when dark mode is off, but common.js and search-setup.js still ask for the theme -->
+  <script>
+    window.determineComputedTheme = function () {
+      return "light";
+    };
+  </script>
+{% endunless %}
 {% if site.enable_darkmode %}
   <!-- Dark Mode -->
   <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>

@@ -244,6 +244,12 @@ body.newsprint .bibsearch-form-input {
   color: var(--np-ink) !important;
 }
 
+/* matched text when filtering the list */
+::highlight(search) {
+  background-color: #f1dca7;
+  color: #161616;
+}
+
 /* ---------- journey ---------- */
 body.newsprint .journey-stage,
 body.newsprint .interests-hero,
