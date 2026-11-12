@@ -22,16 +22,20 @@ a{color:inherit}
 
 /* stack of folded editions = navigation */
 .stand{max-width:1180px;margin:0 auto}
-.editions{display:flex;justify-content:center;padding:34px 18px 0;position:relative;z-index:1}
+.editions{display:flex;justify-content:center;padding:26px 18px 0;position:relative;z-index:1}
 .ed{--r:0deg;width:232px;margin:0 -12px;text-align:left;font-family:inherit;color:var(--ink);cursor:pointer;border:1px solid #cfccc3;background:var(--news);padding:10px 14px 46px;
   box-shadow:0 -4px 12px rgba(0,0,0,.14),inset 0 -26px 22px -18px rgba(0,0,0,.12);transform:translateY(38px) rotate(var(--r));
   transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .3s,opacity .35s}
 .ed:nth-child(1){--r:-2deg}.ed:nth-child(2){--r:1.5deg}.ed:nth-child(3){--r:-1deg}.ed:nth-child(4){--r:2deg}.ed:nth-child(5){--r:-1.5deg}
 .ed:hover{transform:translateY(0) rotate(0);box-shadow:0 -16px 28px rgba(0,0,0,.25);z-index:2}
 .ed.on{transform:translateY(-150px) rotate(-9deg);opacity:0;pointer-events:none}
-.ed b{display:block;font:900 15px "Playfair Display",serif;border-bottom:2px solid var(--rule);padding-bottom:4px;margin-bottom:6px;white-space:nowrap}
-.ed small{display:block;color:var(--red);font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:3px}
-.ed span{display:block;font:700 14px/1.2 "Playfair Display",serif}
+.ed b{display:block;font:900 21px/1.1 "Playfair Display",serif;margin-bottom:5px;white-space:nowrap}
+.ed small i{font-style:normal}
+.ed small{display:block;color:var(--red);font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;border-bottom:2px solid var(--rule);padding-bottom:4px;margin-bottom:6px;white-space:nowrap}
+.ed span{display:block;font:italic 400 14px/1.25 "Old Standard TT",Georgia,serif}
+.hint{text-align:center;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:#5c5a55}
+.hint:before,.hint:after{content:"";display:inline-block;vertical-align:middle;width:34px;height:2px;margin:0 12px;background:var(--red)}
+.by strong{display:block;font:900 27px/1.1 "Playfair Display",serif;letter-spacing:0;text-transform:none;margin-bottom:4px}
 .well{position:relative;z-index:3;padding:0 0 30px;perspective:1800px}
 
 /* the open page */
@@ -113,7 +117,7 @@ td i{color:var(--red);font-size:13px;letter-spacing:.12em;text-transform:upperca
 @media (max-width:900px){
   .page{padding:20px 18px 34px}
   .front,.three,.clips,.supp{grid-template-columns:1fr}
-  .editions{flex-wrap:wrap;gap:6px}.ed{width:46%;margin:0;transform:none;padding-bottom:12px}.ed.on{display:none}
+  .editions{flex-wrap:wrap;gap:6px}.ed{width:46%;margin:0;transform:none;padding-bottom:12px}.ed.on{display:none}.ed small i{display:none}.ed b{font-size:19px}.hint:before,.hint:after{display:none}
   .front>*+*,.three>*+*,.supp>*+*{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:18px}
   .front .press{max-width:340px}
   th:nth-child(3),td:nth-child(3){display:none}
@@ -129,16 +133,17 @@ a.clip{display:block;text-decoration:none}
 @media (max-width:900px){table{font-size:14px}th,td{padding-left:5px;padding-right:5px}td:first-child{white-space:normal;font-size:19px}td i{white-space:normal}}
 @media (max-width:560px){table,tbody,tr,td{display:block}tr:first-child{display:none}tr{padding:12px 0;border-bottom:1px dashed var(--rule)}td{border:0;padding:2px 0}th:nth-child(3),td:nth-child(3){display:block}}
 {% endraw %}</style>
-<noscript><style>.page{display:block;margin-bottom:30px}.editions{display:none}</style></noscript>
+<noscript><style>.page{display:block;margin-bottom:30px}.editions,.hint{display:none}</style></noscript>
 </head>
 <body>
 <div class="stand">
+ <p class="hint">Pick a section to pull it out</p>
  <div class="editions">
-  <button class="ed on" data-s="p1"><b>The Urban Wind Times</b><small>A1 &middot; Front page</small><span>Making sense of air, data, and cities.</span></button>
-  <button class="ed" data-s="p2"><b>The Urban Wind Times</b><small>B1 &middot; Research</small><span>Measure. Model. Make connections.</span></button>
-  <button class="ed" data-s="p3"><b>The Urban Wind Times</b><small>C1 &middot; Publications</small><span>From the record: selected papers.</span></button>
-  <button class="ed" data-s="p4"><b>The Urban Wind Times</b><small>D1 &middot; Journey</small><span>Three stages of study. Three countries.</span></button>
-  <button class="ed" data-s="p5"><b>The Urban Wind Times</b><small>E1 &middot; Off the clock</small><span>Always a beginner at something new.</span></button>
+  <button class="ed on" data-s="p1"><b>Front page</b><small>A1<i> &middot; The Urban Wind Times</i></small><span>Making sense of air, data, and cities.</span></button>
+  <button class="ed" data-s="p2"><b>Research</b><small>B1<i> &middot; The Urban Wind Times</i></small><span>Measure. Model. Make connections.</span></button>
+  <button class="ed" data-s="p3"><b>Publications</b><small>C1<i> &middot; The Urban Wind Times</i></small><span>From the record: selected papers.</span></button>
+  <button class="ed" data-s="p4"><b>Journey</b><small>D1<i> &middot; The Urban Wind Times</i></small><span>Three stages of study. Three countries.</span></button>
+  <button class="ed" data-s="p5"><b>Off the clock</b><small>E1<i> &middot; The Urban Wind Times</i></small><span>Always a beginner at something new.</span></button>
  </div>
 
  <div class="well" id="well">
@@ -147,13 +152,13 @@ a.clip{display:block;text-decoration:none}
   <section class="page on" id="p1">
    <div class="top"><span>Singapore edition</span><span>Experiment &middot; Simulate &middot; Learn</span><span>Vol. 2026</span></div>
    <div class="mast">The Urban Wind Times</div>
-   <div class="dateline"><span>Researcher / Engineer / Explorer</span><span>Israel &middot; South Korea &middot; Singapore</span><span>Pull another paper from the rack above</span></div>
+   <div class="dateline"><span>Researcher / Engineer / Explorer</span><span>Israel &middot; South Korea &middot; Singapore</span><span>Research Intern &middot; A*STAR</span></div>
 
    <div class="front">
     <article>
      <div class="kick">Profile</div>
      <h1>Making sense of <em>air, data, and cities.</em></h1>
-     <div class="by">Subin Lin &middot; PhD Candidate, National University of Singapore</div>
+     <div class="by"><strong>Subin Lin</strong>PhD Candidate &middot; National University of Singapore</div>
      <div class="txt">
       <p class="drop">I am a PhD candidate in the Department of the Built Environment at the National University of Singapore, working at the intersection of environmental fluid mechanics, experiments, and data-driven modelling.</p>
       <p>My doctoral research asks how building geometry and porosity shape street-canyon ventilation. I designed and conducted pressure-tap wind-tunnel experiments and use RANS/LES simulations to examine pedestrian wind, air exchange, and model fidelity.</p>
@@ -175,7 +180,7 @@ a.clip{display:block;text-decoration:none}
    </div>
 
    <div class="ticker"><span>2026 &middot; IAQVEC Fellowship &nbsp;&#9670;&nbsp; 2022 &middot; A*STAR Merit Award, SINGA &nbsp;&#9670;&nbsp; 2021 &middot; AI &amp; Big Data Hackathon, Third Prize &nbsp;&#9670;&nbsp; 2018&ndash;19 &middot; Technion Dean&rsquo;s List &nbsp;&#9670;&nbsp; Three stages of study, three countries, full scholarships</span></div>
-   <nav class="more"><a href="{{ '/assets/pdf/subin-lin-cv.pdf' | relative_url }}">Curriculum vitae (PDF)</a><a href="{{ '/news/' | relative_url }}">News</a><a href="{{ '/classic/' | relative_url }}">Classic site</a></nav>
+   <nav class="more"><a href="https://scholar.google.com/citations?user=tbNGYBQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a><a href="https://www.linkedin.com/in/subin-lin-81710b211/" target="_blank" rel="noopener">LinkedIn</a><a href="{{ '/assets/pdf/subin-lin-cv.pdf' | relative_url }}">Curriculum vitae (PDF)</a><a href="{{ '/news/' | relative_url }}">News</a><a href="{{ '/classic/' | relative_url }}">Classic site</a></nav>
   </section>
 
   <!-- B1 -->
