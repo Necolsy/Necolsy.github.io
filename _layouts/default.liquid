@@ -16,7 +16,7 @@
   </head>
 
   <!-- Body -->
-  <body class="portfolio-2026 {% if page.permalink == '/' or page.classic_home %}portfolio-home{% endif %} {% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body class="{% unless page.classic_home %}newsprint {% endunless %}portfolio-2026 {% if page.permalink == '/' or page.classic_home %}portfolio-home{% endif %} {% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
     <a class="skip-content" href="#main-content">Skip to content</a>
     <!-- Header -->
     {% include header.liquid %}
