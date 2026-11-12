@@ -1,0 +1,223 @@
+# Content of the newspaper home page (_pages/newspaper.html).
+# Edit text, links and pictures here; the template only decides how they are laid out.
+#
+# Links: use `url` for a page on this site (e.g. /journey/) and `href` for an external address.
+# Pictures: file names are looked up in assets/img/newspaper/.
+
+meta:
+  title: "Subin Lin · Making sense of air, data, and cities"
+  description: "Subin Lin, PhD candidate at the National University of Singapore. Urban ventilation, wind-tunnel experiments, CFD, and environmental AI."
+  share_image: subin-lin-beach.jpg
+
+masthead: The Urban Wind Times
+rack_hint: Pick a section to pull it out
+email: necolsy@gmail.com
+
+# One entry per paper in the rack, in display order. `id` is also the address
+# fragment, so necolsy.github.io/#journey opens the Journey section.
+sections:
+  - id: front
+    code: A1
+    name: Front page
+    teaser: Making sense of air, data, and cities.
+    topline: ["Singapore edition", "Experiment · Simulate · Learn", "Vol. 2026"]
+    dateline: ["Researcher / Engineer / Explorer", "Israel · South Korea · Singapore", "Research Intern · A*STAR"]
+    links:
+      - label: Google Scholar
+        href: "https://scholar.google.com/citations?user=tbNGYBQAAAAJ&hl=en"
+      - label: LinkedIn
+        href: "https://www.linkedin.com/in/subin-lin-81710b211/"
+      - label: Curriculum vitae (PDF)
+        url: /assets/pdf/subin-lin-cv.pdf
+      - label: News
+        url: /news/
+      - label: Classic site
+        url: /classic/
+
+  - id: research
+    code: B1
+    name: Research
+    teaser: Measure. Model. Make connections.
+    topline: ["Section B", "The Urban Wind Times", "Research"]
+    dateline: ["Research interests", "Experiments · CFD · AI", "B1"]
+    headline: "Measure. Model."
+    headline_em: "Make connections."
+    deck: Three complementary ways of asking better environmental questions.
+    links:
+      - label: All publications
+        url: /publications/
+
+  - id: publications
+    code: C1
+    name: Publications
+    teaser: "From the record: selected papers."
+    topline: ["Section C", "The Urban Wind Times", "Publications"]
+    dateline: ["Press clippings", "Click a clipping to read the paper", "C1"]
+    headline: "From the"
+    headline_em: "record."
+    deck: Selected papers, cut out and kept.
+    links:
+      - label: Full publication list
+        url: /publications/
+
+  - id: journey
+    code: D1
+    name: Journey
+    teaser: Three stages of study. Three countries.
+    topline: ["Section D", "The Urban Wind Times", "Journey"]
+    dateline: ["Academic journey", "Arrivals and departures", "D1"]
+    headline: "Three stages of study."
+    headline_em: "Three countries."
+    deck: BSc, MSc and PhD, each supported by a full scholarship.
+    links:
+      - label: The full journey
+        url: /journey/
+
+  - id: interests
+    code: E1
+    name: Off the clock
+    teaser: Always a beginner at something new.
+    topline: ["Section E", "The Urban Wind Times", "Weekend supplement"]
+    dateline: ["Beyond the CV", "Travel · Games · Photography", "E1"]
+    headline: "Always a beginner"
+    headline_em: "at something new."
+    deck: Mountains, console games, and life through a lens.
+    links:
+      - label: More off the clock
+        url: /interests/
+
+# ---------------------------------------------------------------- A1 Front page
+front:
+  kicker: Profile
+  headline: "Making sense of"
+  headline_em: "air, data, and cities."
+  name: Subin Lin
+  role: "PhD Candidate · National University of Singapore"
+  paragraphs:
+    - I am a PhD candidate in the Department of the Built Environment at the National University of Singapore, working at the intersection of environmental fluid mechanics, experiments, and data-driven modelling.
+    - My doctoral research asks how building geometry and porosity shape street-canyon ventilation. I designed and conducted pressure-tap wind-tunnel experiments and use RANS/LES simulations to examine pedestrian wind, air exchange, and model fidelity.
+  photo:
+    image: subin-lin-beach.jpg
+    alt: Subin Lin overlooking the coast
+    caption: Curious by nature. Across disciplines and borders.
+  now_kicker: Now
+  now:
+    - tag: "A*STAR"
+      title: Tracing pollutants.
+      text: Research internship since September 2026 on pollutant dispersion, source identification, and concentration forecasting.
+    - tag: "NUS–SIA"
+      title: Designing local airflow.
+      text: Comparing aircraft-cabin air-terminal designs using CFD, with prototyping and experimental validation.
+    - tag: Teaching
+      title: Sharing what I learn.
+      text: Teaching Assistant for BPS5234A CFD Applications in the Built Environment.
+  wanted:
+    title: WANTED
+    text: "Postdoctoral, research scientist, and R&D opportunities."
+    button: Get in touch
+  honours:
+    - year: "2026"
+      title: IAQVEC Fellowship
+      note: Participation support
+    - year: "2022"
+      title: "A*STAR Merit Award"
+      note: SINGA doctoral scholarship
+    - year: "2021"
+      title: Third Prize
+      note: "AI & Big Data Hackathon"
+    - year: "2018–19"
+      title: Dean’s List
+      note: Technion
+
+# ------------------------------------------------------------------ B1 Research
+themes:
+  - image: urban-cfd-flow.jpg
+    kicker: Urban fluid mechanics
+    title: Air moves. Geometry matters.
+    text: Building porosity, opening configuration, and array length can change pedestrian wind and canyon-scale exchange in different ways. I study those trade-offs through validated CFD.
+  - image: wind-tunnel-concept.jpg
+    kicker: Hands-on experiments
+    title: From the lab to the model.
+    text: Wind-tunnel models, pressure taps, tubing, data acquisition, and uncertainty analysis. Earlier work also brought me into water-treatment wet labs and infrared field sensing.
+  - image: physics-ai-concept.jpg
+    kicker: Environmental AI
+    title: Learning with physical context.
+    text: Graph learning and time-series forecasting for environmental operations; LLM-generated heuristics for building energy and HVAC diagnostics; emerging work on pollutant-source inference.
+
+# -------------------------------------------------------------- C1 Publications
+# The complete list lives in _bibliography/papers.bib; these six are the ones shown as clippings.
+clippings:
+  - image: porosity-tradeoffs.jpg
+    venue: "J. Wind Eng. Ind. Aerodyn. · 2026"
+    title: "Design trade-offs in building porosity: a parametric analysis of vertical placement and geometry for urban ventilation"
+    doi: 10.1016/j.jweia.2026.106369
+  - image: water-graph-attention.jpg
+    venue: "Water Research · 2023"
+    title: Coagulant dosage determination using deep learning-based graph attention multivariate time series forecasting model
+    doi: 10.1016/j.watres.2023.119665
+  - image: surface-temperature.jpg
+    venue: "Scientific Data · 2023"
+    title: District-scale surface temperatures generated from high-resolution longitudinal thermal infrared images
+    doi: 10.1038/s41597-023-02749-0
+  - image: porosity-iaqvec.jpg
+    venue: "IAQVEC · E3S Web of Conferences · 2026"
+    title: Aerodynamic response and ventilation enhancement in urban street canyons through building porosity
+    doi: 10.1051/e3sconf/202671610003
+  - image: pillm.jpg
+    venue: NeurIPS 2025 Workshop on UrbanAI
+    title: Physics-Informed Large Language Models for HVAC Anomaly Detection with Autonomous Rule Generation
+    doi: 10.48550/arXiv.2510.17146
+  - image: buildevo.jpg
+    venue: ICML 2025 Workshop
+    title: "BuildEvo: Designing Building Energy Consumption Forecasting Heuristics via LLM-driven Evolution"
+    doi: 10.48550/arXiv.2507.12207
+
+# ------------------------------------------------------------------- D1 Journey
+timetable_columns: ["Station", "Line of work", "Place", "Notes"]
+stations:
+  - name: Technion
+    detail: "BSc · Civil & Environmental Engineering"
+    logo: technion.png
+    work: Civil engineering foundations.
+    place: Israel
+    note: Full scholarship
+    dates: "2016 – 2020"
+  - name: KAIST
+    detail: "MSc · Civil & Environmental Engineering"
+    logo: kaist.svg
+    work: Water treatment + AI; data science.
+    place: South Korea
+    note: Full scholarship
+    dates: "2020 – 2022"
+  - name: BEARS
+    detail: Berkeley Education Alliance for Research in Singapore
+    logo: bears-bear.png
+    work: Infrared thermography, image preprocessing, Python analysis.
+    place: Singapore
+    note: Senior Research Engineer
+    dates: "Sep – Dec 2022"
+  - name: NUS
+    detail: "PhD · Built Environment"
+    logo: nus-crest.png
+    work: "Wind tunnel + CFD; physics-informed AI; NUS–Singapore Airlines collaboration."
+    place: Singapore
+    note: "A*STAR Merit Award (SINGA)"
+    dates: "Jan 2023 – Jan 2027"
+  - name: "A*STAR"
+    detail: Research internship
+    logo: astar-mark.png
+    work: Pollutant transport, source inference, time-series modelling.
+    place: Singapore
+    note: Now
+    dates: "Sep 2026 – present"
+
+# ----------------------------------------------------------- E1 Off the clock
+# The map markers come from _data/places.yml, shared with the Interests page.
+supplement:
+  map_alt: World map of places visited
+  map_caption: Nineteen places so far. Hover a dot to see where.
+  photo:
+    image: subin-lin-paradise.jpg
+    alt: Subin Lin travelling
+    caption: From the correspondent’s own album.
+  text: Living in three countries taught me to adapt across cultures and languages, including studying Hebrew and learning Korean.

@@ -1,0 +1,26 @@
+# Countries and regions visited, shown as markers on the travel map
+# (home page "Off the clock" section and the Interests page).
+#
+# x / y are percentages of the map's width and height, in the Natural Earth
+# projection of assets/img/travel-world.svg. To add a place, add a line here;
+# the marker count and the list of names update by themselves.
+
+- { name: Singapore,       x: 75.95, y: 49.22 }
+- { name: Israel,          x: 58.34, y: 31.72 }
+- { name: Thailand,        x: 74.99, y: 41.32 }
+- { name: Malaysia,        x: 75.48, y: 47.69 }
+- { name: Taiwan,          x: 79.45, y: 36.26 }
+- { name: South Korea,     x: 79.93, y: 28.92 }
+- { name: Indonesia,       x: 79.49, y: 51.74 }
+- { name: Japan,           x: 82.23, y: 28.52 }
+- { name: Turkey,          x: 58.11, y: 27.36 }
+- { name: The Netherlands, x: 51.15, y: 19.85 }
+- { name: Finland,         x: 55.16, y: 13.55 }
+- { name: Ukraine,         x: 56.94, y: 21.64 }
+- { name: France,          x: 50.56, y: 23.05 }
+- { name: Italy,           x: 52.85, y: 25.34 }
+- { name: Spain,           x: 49.15, y: 26.78 }
+- { name: United States,   x: 27.07, y: 27.36 }
+- { name: Canada,          x: 27.66, y: 17.77 }
+- { name: Australia,       x: 82.51, y: 64.50 }
+- { name: New Zealand,     x: 89.60, y: 73.80 }

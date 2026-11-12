@@ -22,32 +22,16 @@ nav_order: 3
 
   <div class="world-map" aria-label="Map showing places Subin Lin has visited">
     <img class="world-map__base" src="{{ '/assets/img/travel-world.svg' | relative_url }}" alt="World map in the Natural Earth projection">
-    <span class="world-marker" style="--x:75.95%;--y:49.22%" data-place="Singapore" role="img" tabindex="0" aria-label="Singapore"></span>
-    <span class="world-marker" style="--x:58.34%;--y:31.72%" data-place="Israel" role="img" tabindex="0" aria-label="Israel"></span>
-    <span class="world-marker" style="--x:74.99%;--y:41.32%" data-place="Thailand" role="img" tabindex="0" aria-label="Thailand"></span>
-    <span class="world-marker" style="--x:75.48%;--y:47.69%" data-place="Malaysia" role="img" tabindex="0" aria-label="Malaysia"></span>
-    <span class="world-marker" style="--x:79.45%;--y:36.26%" data-place="Taiwan" role="img" tabindex="0" aria-label="Taiwan"></span>
-    <span class="world-marker" style="--x:79.93%;--y:28.92%" data-place="South Korea" role="img" tabindex="0" aria-label="South Korea"></span>
-    <span class="world-marker" style="--x:79.49%;--y:51.74%" data-place="Indonesia" role="img" tabindex="0" aria-label="Indonesia"></span>
-    <span class="world-marker" style="--x:82.23%;--y:28.52%" data-place="Japan" role="img" tabindex="0" aria-label="Japan"></span>
-    <span class="world-marker" style="--x:58.11%;--y:27.36%" data-place="Turkey" role="img" tabindex="0" aria-label="Turkey"></span>
-    <span class="world-marker" style="--x:51.15%;--y:19.85%" data-place="Netherlands" role="img" tabindex="0" aria-label="Netherlands"></span>
-    <span class="world-marker" style="--x:55.16%;--y:13.55%" data-place="Finland" role="img" tabindex="0" aria-label="Finland"></span>
-    <span class="world-marker" style="--x:56.94%;--y:21.64%" data-place="Ukraine" role="img" tabindex="0" aria-label="Ukraine"></span>
-    <span class="world-marker" style="--x:50.56%;--y:23.05%" data-place="France" role="img" tabindex="0" aria-label="France"></span>
-    <span class="world-marker" style="--x:52.85%;--y:25.34%" data-place="Italy" role="img" tabindex="0" aria-label="Italy"></span>
-    <span class="world-marker" style="--x:49.15%;--y:26.78%" data-place="Spain" role="img" tabindex="0" aria-label="Spain"></span>
-    <span class="world-marker" style="--x:27.07%;--y:27.36%" data-place="United States" role="img" tabindex="0" aria-label="United States"></span>
-    <span class="world-marker" style="--x:27.66%;--y:17.77%" data-place="Canada" role="img" tabindex="0" aria-label="Canada"></span>
-    <span class="world-marker" style="--x:82.51%;--y:64.50%" data-place="Australia" role="img" tabindex="0" aria-label="Australia"></span>
-    <span class="world-marker" style="--x:89.60%;--y:73.80%" data-place="New Zealand" role="img" tabindex="0" aria-label="New Zealand"></span>
-    <div class="world-map__legend"><strong>19</strong><span>countries and regions<br>explored so far</span></div>
+    {%- for place in site.data.places %}
+    <span class="world-marker" style="--x:{{ place.x }}%;--y:{{ place.y }}%" data-place="{{ place.name }}" role="img" tabindex="0" aria-label="{{ place.name }}"></span>
+    {%- endfor %}
+    <div class="world-map__legend"><strong>{{ site.data.places | size }}</strong><span>countries and regions<br>explored so far</span></div>
   </div>
 
   <p class="map-note">Markers indicate countries and regions, not individual stops. Land outlines: <a href="https://www.naturalearthdata.com/">Natural Earth</a>.</p>
 
   <div class="travel-route__places" aria-label="Countries and regions visited">
-    Singapore &middot; Israel &middot; Thailand &middot; Malaysia &middot; Taiwan &middot; South Korea &middot; Indonesia &middot; Japan &middot; Turkey &middot; The Netherlands &middot; Finland &middot; Ukraine &middot; France &middot; Italy &middot; Spain &middot; United States &middot; Canada &middot; Australia &middot; New Zealand
+    {{ site.data.places | map: 'name' | join: ' &middot; ' }}
   </div>
 </section>
 
@@ -62,7 +46,7 @@ nav_order: 3
 
   <article class="interest-card interest-card--lens">
     <div class="interest-card__image">
-      <img src="{{ '/assets/img/subin-lin-paradise.png' | relative_url }}" alt="Mountain landscape in Paradise, New Zealand">
+      <img src="{{ '/assets/img/newspaper/subin-lin-paradise.jpg' | relative_url }}" alt="Mountain landscape in Paradise, New Zealand">
     </div>
     <div class="interest-card__body">
       <p class="interest-card__number">02</p>

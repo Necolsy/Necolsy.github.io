@@ -1,0 +1,852 @@
+/* Newspaper home page (layout: _layouts/newspaper.liquid, markup: _pages/newspaper.html).
+ *
+ * Contents
+ *   1. Tokens and base
+ *   2. Rack of folded papers (navigation)
+ *   3. The open sheet and its pull-out animation
+ *   4. Shared type: masthead, dateline, headlines, copy, photos, links
+ *   5. Front page
+ *   6. Research
+ *   7. Publications (clippings)
+ *   8. Journey (timetable)
+ *   9. Off the clock (travel map)
+ *  10. Narrow screens
+ *  11. Reduced motion
+ */
+
+/* ---------- 1. Tokens and base ---------- */
+:root {
+  --ink: #161616;
+  --red: #b3261a;
+  --news: #fbfaf6;
+  --rule: #1c1c1c;
+  --desk: #e9e7e1;
+  --muted: #5c5a55;
+  --serif: "Old Standard TT", Georgia, serif;
+  --display: "Playfair Display", Georgia, serif;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 30px 16px 80px;
+  color: var(--ink);
+  font-family: var(--serif);
+  background: var(--desk);
+}
+
+a {
+  color: inherit;
+}
+
+.newsstand {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* ---------- 2. Rack of folded papers ---------- */
+.rack-hint {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.rack-hint::before,
+.rack-hint::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 34px;
+  height: 2px;
+  margin: 0 12px;
+  background: var(--red);
+}
+
+.rack {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding: 26px 18px 0;
+}
+
+/* Each paper peeks out above the open sheet; --tilt gives the stack an untidy look. */
+.paper {
+  --tilt: 0deg;
+  flex: 0 1 232px;
+  min-width: 0;
+  margin: 0 -12px;
+  padding: 10px 14px 46px;
+  border: 1px solid #cfccc3;
+  background: var(--news);
+  color: var(--ink);
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  box-shadow:
+    0 -4px 12px rgba(0, 0, 0, 0.14),
+    inset 0 -26px 22px -18px rgba(0, 0, 0, 0.12);
+  transform: translateY(38px) rotate(var(--tilt));
+  transition:
+    transform 0.4s var(--ease-out),
+    box-shadow 0.3s,
+    opacity 0.35s;
+}
+
+.paper:nth-child(1) { --tilt: -2deg; }
+.paper:nth-child(2) { --tilt: 1.5deg; }
+.paper:nth-child(3) { --tilt: -1deg; }
+.paper:nth-child(4) { --tilt: 2deg; }
+.paper:nth-child(5) { --tilt: -1.5deg; }
+
+.paper:hover {
+  z-index: 2;
+  box-shadow: 0 -16px 28px rgba(0, 0, 0, 0.25);
+  transform: translateY(0) rotate(0);
+}
+
+/* The paper being read has left the rack; its slot stays empty. */
+.paper.is-open {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-150px) rotate(-9deg);
+}
+
+.paper__name {
+  display: block;
+  margin-bottom: 5px;
+  overflow: hidden;
+  font: 900 21px/1.1 var(--display);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.paper__code {
+  display: block;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  overflow: hidden;
+  border-bottom: 2px solid var(--rule);
+  color: var(--red);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.paper__teaser {
+  display: block;
+  font: italic 400 14px/1.25 var(--serif);
+}
+
+/* ---------- 3. The open sheet ---------- */
+.desk {
+  position: relative;
+  z-index: 3;
+  padding: 0 0 30px;
+  perspective: 1800px;
+}
+
+.sheet {
+  display: none;
+  position: relative;
+  min-height: 700px;
+  padding: 26px 40px 44px;
+  background: var(--news);
+  box-shadow:
+    0 3px 0 #e2dfd6,
+    0 6px 0 #d6d3ca,
+    0 20px 44px rgba(0, 0, 0, 0.18);
+}
+
+.sheet.is-open {
+  display: block;
+  transform-origin: 50% 0;
+  animation: sheet-pull 0.8s var(--ease-out) both;
+}
+
+/* Set on .desk by newspaper.js while the current sheet folds away. */
+.desk.is-tucking .sheet.is-open {
+  animation: sheet-tuck 0.28s ease-in both;
+}
+
+@keyframes sheet-pull {
+  from {
+    opacity: 0;
+    transform: translateY(-120px) rotateX(-82deg) scale(0.6);
+  }
+  55% {
+    opacity: 1;
+    transform: translateY(8px) rotateX(10deg);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes sheet-tuck {
+  to {
+    opacity: 0;
+    transform: translateY(-120px) rotateX(-82deg) scale(0.6);
+  }
+}
+
+/* ---------- 4. Shared type ---------- */
+.sheet__topline,
+.dateline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.dateline {
+  margin-bottom: 22px;
+  padding: 6px 0;
+  border-top: 3px double var(--rule);
+  border-bottom: 3px double var(--rule);
+}
+
+.dateline--inner {
+  margin-top: 10px;
+}
+
+.masthead {
+  padding: 10px 0 8px;
+  font-family: var(--display);
+  font-size: clamp(42px, 8.4vw, 104px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--display);
+  font-weight: 900;
+  line-height: 1.03;
+}
+
+h1 {
+  font-size: clamp(34px, 5vw, 66px);
+}
+
+h2 {
+  margin-bottom: 6px;
+  font-size: clamp(30px, 4.2vw, 54px);
+  text-align: center;
+}
+
+h1 em,
+h2 em {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.kicker {
+  margin-bottom: 8px;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.deck {
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 19px;
+  font-style: italic;
+  text-align: center;
+}
+
+.copy {
+  font-size: 16.5px;
+  line-height: 1.5;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.copy p + p {
+  text-indent: 1.4em;
+}
+
+/* Drop cap on the opening paragraph. */
+.copy--lead p:first-child::first-letter {
+  float: left;
+  padding: 7px 8px 0 0;
+  font: 900 68px/0.8 var(--display);
+}
+
+.photo {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  background: #222;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s;
+}
+
+.photo:hover img {
+  transform: scale(1.04);
+}
+
+.caption {
+  margin-top: 6px;
+  font-size: 13.5px;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.caption--spaced {
+  margin-bottom: 14px;
+}
+
+/* Links at the foot of each sheet, out to the full pages. */
+.sheet__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 26px;
+  margin-top: 26px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.sheet__links a {
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--red);
+  text-decoration: none;
+}
+
+.sheet__links a:hover {
+  color: var(--red);
+}
+
+.paper:focus-visible,
+.sheet__links a:focus-visible,
+.clipping:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
+
+/* ---------- 5. Front page ---------- */
+.front-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1.2fr 0.95fr;
+  gap: 26px;
+}
+
+.front-grid > * + * {
+  padding-left: 26px;
+  border-left: 1px solid var(--rule);
+}
+
+.front-grid .photo {
+  aspect-ratio: 3 / 4;
+}
+
+.byline {
+  margin: 12px 0;
+  padding: 6px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.byline strong {
+  display: block;
+  margin-bottom: 4px;
+  font: 900 27px/1.1 var(--display);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.brief {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.brief b {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--red);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+}
+
+.brief h3 {
+  margin-bottom: 5px;
+  font-size: 21px;
+}
+
+.brief p {
+  font-size: 14.5px;
+  line-height: 1.45;
+}
+
+.wanted {
+  margin-top: 16px;
+  padding: 14px;
+  border: 3px double var(--rule);
+  text-align: center;
+  transition:
+    transform 0.3s,
+    background 0.3s;
+}
+
+.wanted:hover {
+  background: rgba(143, 36, 22, 0.08);
+  transform: rotate(-1.5deg) scale(1.03);
+}
+
+.wanted b {
+  display: block;
+  font: 900 30px var(--display);
+  letter-spacing: 0.1em;
+}
+
+.wanted p {
+  margin: 6px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.wanted a {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.wanted .wanted__address {
+  margin: 8px 0 0;
+  letter-spacing: 0.02em;
+  user-select: all;
+}
+
+.honours {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 22px;
+  border-top: 3px double var(--rule);
+  border-bottom: 3px double var(--rule);
+}
+
+.honour {
+  padding: 10px 16px;
+}
+
+.honour + .honour {
+  border-left: 1px solid var(--rule);
+}
+
+.honour b {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--red);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+}
+
+.honour span {
+  display: block;
+  font: 700 16px/1.2 var(--display);
+}
+
+.honour small {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* ---------- 6. Research ---------- */
+.themes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.themes > * + * {
+  padding-left: 26px;
+  border-left: 1px solid var(--rule);
+}
+
+.themes .photo {
+  aspect-ratio: 16 / 10;
+  margin-bottom: 10px;
+}
+
+.themes h3 {
+  margin: 4px 0 8px;
+  font-size: 27px;
+}
+
+/* ---------- 7. Publications ---------- */
+.clippings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px 24px;
+  padding-top: 6px;
+}
+
+/* A cut-out pinned at a slight angle; it straightens and lifts on hover. */
+.clipping {
+  position: relative;
+  display: block;
+  padding: 12px 14px 16px;
+  border: 1px solid #d9d6cd;
+  background: #fff;
+  text-decoration: none;
+  box-shadow: 0 6px 14px rgba(30, 20, 5, 0.35);
+  transition:
+    transform 0.35s var(--ease-out),
+    box-shadow 0.35s;
+}
+
+.clipping:nth-child(3n + 1) { transform: rotate(-1.4deg); }
+.clipping:nth-child(3n + 2) { transform: rotate(0.9deg); }
+.clipping:nth-child(3n) { transform: rotate(-0.5deg); }
+
+.clipping:hover {
+  z-index: 4;
+  box-shadow: 0 28px 44px rgba(30, 20, 5, 0.5);
+  transform: translateY(-16px) rotate(0) scale(1.03);
+}
+
+.clipping .photo {
+  aspect-ratio: 16 / 10;
+  margin-bottom: 8px;
+}
+
+.clipping .photo img {
+  object-position: top;
+}
+
+.clipping b {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--red);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.clipping h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+/* ---------- 8. Journey ---------- */
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 16px;
+}
+
+.timetable th {
+  padding: 8px 10px;
+  border-top: 3px double var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Column widths: station, line of work, place; notes takes the rest. */
+.timetable th:nth-child(1) { width: 29%; }
+.timetable th:nth-child(2) { width: 39%; }
+.timetable th:nth-child(3) { width: 11%; }
+
+.timetable td {
+  padding: 15px 10px;
+  border-bottom: 1px dashed var(--rule);
+  line-height: 1.4;
+  vertical-align: top;
+  transition: background 0.25s;
+}
+
+.timetable tbody tr:hover td {
+  background: rgba(143, 36, 22, 0.08);
+}
+
+.timetable small {
+  display: block;
+  margin-top: 4px;
+  font: 400 12px var(--serif);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.timetable__station {
+  font: 900 26px var(--display);
+}
+
+.timetable__note {
+  color: var(--red);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.station {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.station__logo {
+  display: flex;
+  flex: 0 0 64px;
+  align-items: center;
+  justify-content: center;
+  height: 58px;
+}
+
+/* multiply lets any white in a logo take on the paper colour */
+.station__logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+/* ---------- 9. Off the clock ---------- */
+.supplement {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.supplement > * + * {
+  padding-left: 30px;
+  border-left: 1px solid var(--rule);
+}
+
+.supplement .photo {
+  aspect-ratio: 4 / 3;
+}
+
+/* Same 2:1 box as the Interests page, so the marker coordinates in
+   _data/places.yml line up with the map on both. */
+.travel-map {
+  position: relative;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  background: #fff;
+}
+
+.travel-map img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(1) contrast(1.6) brightness(0.8);
+}
+
+.travel-map__pin {
+  position: absolute;
+  z-index: 2;
+  top: var(--y);
+  left: var(--x);
+  width: 11px;
+  height: 11px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 0 0 1px var(--red);
+  transform: translate(-50%, -50%);
+}
+
+/* Place name, shown on hover or keyboard focus. */
+.travel-map__pin::after {
+  content: attr(data-place);
+  position: absolute;
+  bottom: calc(100% + 7px);
+  left: 50%;
+  padding: 5px 7px;
+  background: var(--ink);
+  color: #fff;
+  font: 700 11px/1 var(--serif);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition: opacity 0.15s;
+}
+
+.travel-map__pin:hover,
+.travel-map__pin:focus {
+  z-index: 3;
+  outline: 0;
+}
+
+.travel-map__pin:hover::after,
+.travel-map__pin:focus::after {
+  opacity: 1;
+}
+
+/* ---------- 10. Narrow screens ---------- */
+@media (max-width: 900px) {
+  .sheet {
+    padding: 20px 18px 34px;
+  }
+
+  /* The rack becomes a two-column grid of flat buttons. */
+  .rack-hint::before,
+  .rack-hint::after {
+    display: none;
+  }
+
+  .rack {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .paper {
+    flex: 0 0 46%;
+    margin: 0;
+    padding-bottom: 12px;
+    transform: none;
+  }
+
+  .paper.is-open {
+    display: none;
+  }
+
+  .paper__name {
+    font-size: 17px;
+    white-space: normal;
+  }
+
+  .paper__title {
+    display: none;
+  }
+
+  /* Multi-column layouts stack. */
+  .front-grid,
+  .themes,
+  .clippings,
+  .supplement {
+    grid-template-columns: 1fr;
+  }
+
+  .front-grid > * + *,
+  .themes > * + *,
+  .supplement > * + * {
+    padding-top: 18px;
+    padding-left: 0;
+    border-top: 1px solid var(--rule);
+    border-left: 0;
+  }
+
+  .front-grid .photo {
+    max-width: 340px;
+  }
+
+  .honours {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .honour:nth-child(3) {
+    border-left: 0;
+  }
+
+  .honour:nth-child(n + 3) {
+    border-top: 1px solid var(--rule);
+  }
+
+  /* Timetable: tighter cells, and the Place column is dropped. */
+  .timetable {
+    font-size: 14px;
+  }
+
+  .timetable th,
+  .timetable td {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .timetable th:nth-child(3),
+  .timetable__place {
+    display: none;
+  }
+
+  .timetable__station {
+    font-size: 19px;
+  }
+
+  .station__logo {
+    flex-basis: 52px;
+    height: 42px;
+  }
+}
+
+/* Phones: each station becomes a stacked card. */
+@media (max-width: 560px) {
+  .timetable,
+  .timetable tbody,
+  .timetable tr,
+  .timetable td {
+    display: block;
+  }
+
+  .timetable thead {
+    display: none;
+  }
+
+  .timetable tr {
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--rule);
+  }
+
+  .timetable td {
+    padding: 2px 0;
+    border: 0;
+  }
+}
+
+/* ---------- 11. Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

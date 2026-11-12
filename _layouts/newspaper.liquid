@@ -1,0 +1,49 @@
+{% comment %}
+  Document shell of the newspaper home page.
+  Content: _data/newspaper.yml · Markup: _pages/newspaper.html
+  Styles: assets/css/newspaper.css · Behaviour: assets/js/newspaper.js
+{% endcomment %}
+{% assign paper = site.data.newspaper %}
+{% assign home_url = site.url | append: site.baseurl | append: '/' %}
+{% assign share_image = '/assets/img/newspaper/' | append: paper.meta.share_image | relative_url %}
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ paper.meta.title | escape }}</title>
+    <meta name="description" content="{{ paper.meta.description | escape }}">
+    <link rel="canonical" href="{{ home_url }}">
+    <link
+      rel="shortcut icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>"
+    >
+
+    <!-- Link previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ paper.meta.title | escape }}">
+    <meta property="og:description" content="{{ paper.meta.description | escape }}">
+    <meta property="og:url" content="{{ home_url }}">
+    <meta property="og:image" content="{{ site.url }}{{ share_image }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap"
+    >
+    <link rel="stylesheet" href="{{ '/assets/css/newspaper.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+
+    <!-- Without JavaScript every section is simply shown one after another. -->
+    <noscript>
+      <style>
+        .sheet { display: block; margin-bottom: 30px; }
+        .rack, .rack-hint { display: none; }
+      </style>
+    </noscript>
+  </head>
+
+  <body>
+    {{ content }}
+    <script defer src="{{ '/assets/js/newspaper.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+  </body>
+</html>
