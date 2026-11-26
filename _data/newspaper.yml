@@ -89,12 +89,12 @@ sections:
   - id: qiflow
     code: F1
     name: QiFlow
-    teaser: Feng shui, tested with real wind.
+    teaser: Feng shui (风水), tested with real wind.
     topline: ["Section F", "The Urban Wind Times", "Side project"]
     dateline: ["Invite-only beta", "Runs in your browser", "F1"]
-    headline: "Feng shui,"
+    headline: "Feng shui (风水),"
     headline_em: "tested with real wind."
-    deck: A web app that computes the airflow in your home and checks feng shui (风水, Chinese geomancy) rules against it.
+    deck: A web app that computes the airflow in your home and checks feng shui (Chinese geomancy) rules against it.
     links:
       - label: "Open QiFlow (invited testers)"
         href: "https://qiflow-beta.pages.dev"
