@@ -54,6 +54,9 @@ ninja.data = [{
           section: "News",},{id: "news-started-a-research-internship-at-a-star-working-on-pollutant-dispersion-source-identification-and-concentration-forecasting-alongside-my-phd",
           title: 'Started a Research Internship at A*STAR, working on pollutant dispersion, source identification, and...',
           description: "",
+          section: "News",},{id: "news-served-as-a-teaching-assistant-at-bca-academy-for-the-certification-course-on-cfd-modelling-for-natural-ventilated-buildings-8th-run-26-27-amp-amp-30-nov-guiding-participants-through-the-cfd-software-and-answering-their-modelling-questions",
+          title: 'Served as a Teaching Assistant at BCA Academy for the Certification Course on...',
+          description: "",
           section: "News",},{
         id: 'social-cv',
         title: 'CV',
