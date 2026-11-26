@@ -161,6 +161,32 @@ permalink: /
               </div>
             </div>
 
+          {% when 'qiflow' %}
+            {% assign qf = paper.qiflow %}
+            <div class="qiflow">
+              <figure>
+                <video class="qiflow__video" controls playsinline preload="none" poster="{{ img | append: qf.poster | relative_url }}">
+                  <source src="{{ qf.video | relative_url }}" type="video/mp4">
+                </video>
+                <figcaption class="caption">{{ qf.caption | escape }}</figcaption>
+              </figure>
+              <div>
+                <div class="kicker">{{ qf.kicker | escape }}</div>
+                {% for point in qf.points %}
+                  <div class="brief">
+                    <h3>{{ point.title | escape }}</h3>
+                    <p>{{ point.text | escape }}</p>
+                  </div>
+                {% endfor %}
+                <div class="wanted qiflow__stamp">
+                  <b>{{ qf.stamp.title | escape }}</b>
+                  <p>{{ qf.stamp.text | escape }}</p>
+                  <a href="mailto:{{ paper.email }}?subject={{ qf.stamp.subject | uri_escape }}&amp;body={{ qf.stamp.body | uri_escape }}">{{ qf.stamp.button | escape }}</a>
+                  <p class="wanted__address">{{ paper.email }}</p>
+                </div>
+              </div>
+            </div>
+
         {% endcase %}
 
         <nav class="sheet__links" aria-label="{{ section.name | escape }} links">

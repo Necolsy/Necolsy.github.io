@@ -10,8 +10,9 @@
  *   7. Publications (clippings)
  *   8. Journey (timetable)
  *   9. Off the clock (travel map)
- *  10. Narrow screens
- *  11. Reduced motion
+ *  10. QiFlow
+ *  11. Narrow screens
+ *  12. Reduced motion
  */
 
 /* ---------- 1. Tokens and base ---------- */
@@ -106,6 +107,7 @@ a {
 .paper:nth-child(3) { --tilt: -1deg; }
 .paper:nth-child(4) { --tilt: 2deg; }
 .paper:nth-child(5) { --tilt: -1.5deg; }
+.paper:nth-child(6) { --tilt: 1deg; }
 
 .paper:hover {
   z-index: 2;
@@ -723,7 +725,33 @@ h2 em {
   opacity: 1;
 }
 
-/* ---------- 10. Narrow screens ---------- */
+/* ---------- 10. QiFlow ---------- */
+.qiflow {
+  display: grid;
+  grid-template-columns: minmax(0, 360px) 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.qiflow > * + * {
+  padding-left: 30px;
+  border-left: 1px solid var(--rule);
+}
+
+/* The promo is a 9:16 phone video. */
+.qiflow__video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: 1px solid var(--rule);
+  background: #111;
+}
+
+.qiflow__stamp {
+  max-width: 360px;
+}
+
+/* ---------- 11. Narrow screens ---------- */
 @media (max-width: 900px) {
   .sheet {
     padding: 20px 18px 34px;
@@ -764,20 +792,23 @@ h2 em {
   .front-grid,
   .themes,
   .clippings,
-  .supplement {
+  .supplement,
+  .qiflow {
     grid-template-columns: 1fr;
   }
 
   .front-grid > * + *,
   .themes > * + *,
-  .supplement > * + * {
+  .supplement > * + *,
+  .qiflow > * + * {
     padding-top: 18px;
     padding-left: 0;
     border-top: 1px solid var(--rule);
     border-left: 0;
   }
 
-  .front-grid .photo {
+  .front-grid .photo,
+  .qiflow figure {
     max-width: 340px;
   }
 
@@ -843,7 +874,7 @@ h2 em {
   }
 }
 
-/* ---------- 11. Reduced motion ---------- */
+/* ---------- 12. Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;

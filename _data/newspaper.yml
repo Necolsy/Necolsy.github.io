@@ -86,6 +86,19 @@ sections:
       - label: More off the clock
         url: /interests/
 
+  - id: qiflow
+    code: F1
+    name: QiFlow
+    teaser: Feng shui, tested with real wind.
+    topline: ["Section F", "The Urban Wind Times", "Side project"]
+    dateline: ["Invite-only beta", "Runs in your browser", "F1"]
+    headline: "Feng shui,"
+    headline_em: "tested with real wind."
+    deck: A web app that computes the airflow in your home and checks feng shui (Chinese geomancy) rules against it.
+    links:
+      - label: "Open QiFlow (invited testers)"
+        href: "https://qiflow-beta.pages.dev"
+
 # ---------------------------------------------------------------- A1 Front page
 front:
   kicker: Profile
@@ -221,3 +234,25 @@ supplement:
     alt: Subin Lin travelling
     caption: From the correspondent’s own album.
   text: Living in three countries taught me to adapt across cultures and languages, including studying Hebrew and learning Korean.
+
+# ------------------------------------------------------------------- F1 QiFlow
+qiflow:
+  video: /assets/video/qiflow-3d-en.mp4
+  poster: qiflow-poster.jpg
+  caption: QiFlow in one minute.
+  kicker: What it does
+  points:
+    - title: Airflow at home.
+      text: Draw your floor plan or start from a template. The wind is solved at 1.2 m above the floor, for 38 built-in cities or your own wind.
+    - title: Furniture by the air.
+      text: Beds, desks, pet beds, the air purifier and the air-con, placed and checked against the computed airflow.
+    - title: Your Gua, room by room.
+      text: Your Gua number (the personal feng shui direction) checked against every room, plus daily cards for opening windows.
+    - title: The whole estate.
+      text: In Singapore, the wind across your HDB or condo estate, taken at the height of your floor.
+  stamp:
+    title: INVITE ONLY
+    text: QiFlow is in closed beta. Write to me for an invitation, from the e-mail address you will sign in with.
+    button: Request access
+    subject: QiFlow access request
+    body: "Hi Subin, I would like to try QiFlow. Please invite this e-mail address.\n\nWhat I'd use it for (e.g. my own flat, clients, research): "
